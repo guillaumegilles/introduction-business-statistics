@@ -5,10 +5,21 @@ project:
 book:
   title: "Introduction to Business Statistics"
   author: "Guillaume P.R. Gilles"
-  date: "2/22/2024"
+  search: true
+  repo-url: https://github.com/guillaumegilles/introduction-business-statistics
+  repo-actions: [edit]
+  downloads: [pdf, epub]
+  sharing: [twitter, facebook]
+  sidebar:
+    background: light
+    border: true
+    tools:
+      - icon: shop
+        href: https://guillaumegilles.github.io/misc.html
   chapters:
     - index.qmd
-    - intro.qmd
+    - definitions-statistics-probability-key-terms.qmd
+    - data-sampling-and-variation.qmd
     - summary.qmd
     - references.qmd
 
