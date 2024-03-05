@@ -10,18 +10,28 @@ book:
   repo-actions: [edit]
   downloads: [pdf, epub]
   sharing: [twitter, facebook]
+  
   sidebar:
     background: light
     border: true
     tools:
       - icon: shop
         href: https://guillaumegilles.github.io/misc.html
+  
   chapters:
     - index.qmd
-    - definitions-statistics-probability-key-terms.qmd
-    - data-sampling-and-variation.qmd
+    
+    - part: sampling-data.qmd
+      chapters:
+        - definitions-statistics-probability-key-terms.qmd
+        - data-sampling-and-variation.qmd
+  
     - summary.qmd
     - references.qmd
+  
+  appendices:
+    - syllabus.qmd
+
 
 bibliography: references.bib
 

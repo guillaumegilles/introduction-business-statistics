@@ -1,23 +1,43 @@
 # Data, Sampling, and Variation in Data and Sampling Data
 
+Data may come from a population or from a sample. Lowercase letters like $x$ or
+$y$ generally are used to represent data values. Most data can be put into the
+following categories:
 
-Data may come from a population or from a sample. Lowercase letters like
-or
+- Qualitative
+- Quantitative
 
-generally are used to represent data values. Most data can be put into the following categories:
+**Qualitative data** are the result of categorizing or describing attributes of
+a population. Qualitative data are also often called **categorical data**. Hair
+color, blood type, ethnic group, the car a person drives, and the street a
+person lives on are examples of qualitative (categorical) data. Qualitative
+(categorical) data are generally described by words or letters. For instance,
+hair color might be black, dark brown, light brown, blonde, gray, or red. Blood
+type might be AB+, O-, or B+. Researchers often prefer to use quantitative data
+over qualitative (categorical) data because it lends itself more easily to
+mathematical analysis. For example, it does not make sense to find an average
+hair color or blood type.
 
-    Qualitative
-    Quantitative
+**Quantitative data** are always numbers. Quantitative data are the result of
+**counting** or **measuring** attributes of a population. Amount of money,
+pulse rate, weight, number of people living in your town, and number of
+students who take statistics are examples of quantitative data. Quantitative
+data may be either **discrete** or **continuous**.
 
-Qualitative data are the result of categorizing or describing attributes of a population. Qualitative data are also often called categorical data. Hair color, blood type, ethnic group, the car a person drives, and the street a person lives on are examples of qualitative (categorical) data. Qualitative (categorical) data are generally described by words or letters. For instance, hair color might be black, dark brown, light brown, blonde, gray, or red. Blood type might be AB+, O-, or B+. Researchers often prefer to use quantitative data over qualitative (categorical) data because it lends itself more easily to mathematical analysis. For example, it does not make sense to find an average hair color or blood type.
+All data that are the result of counting are called **quantitative discrete data**.
+These data take on only certain numerical values. If you count the number of
+phone calls you receive for each day of the week, you might get values such as
+zero, one, two, or three.
 
-Quantitative data are always numbers. Quantitative data are the result of counting or measuring attributes of a population. Amount of money, pulse rate, weight, number of people living in your town, and number of students who take statistics are examples of quantitative data. Quantitative data may be either discrete or continuous.
+Data that are not only made up of counting numbers, but that may include
+fractions, decimals, or irrational numbers, are called **quantitative
+continuous data**. Continuous data are often the results of measurements like
+lengths, weights, or times. A list of the lengths in minutes for all the phone
+calls that you make in a week, with numbers like $2.4$, $7.5$, or $11.0$,
+would be quantitative continuous data.
 
-All data that are the result of counting are called quantitative discrete data. These data take on only certain numerical values. If you count the number of phone calls you receive for each day of the week, you might get values such as zero, one, two, or three.
-
-Data that are not only made up of counting numbers, but that may include fractions, decimals, or irrational numbers, are called quantitative continuous data. Continuous data are often the results of measurements like lengths, weights, or times. A list of the lengths in minutes for all the phone calls that you make in a week, with numbers like 2.4, 7.5, or 11.0, would be quantitative continuous data.
-
-Qualitative Data Discussion Below are tables comparing the number of part-time and full-time students at De Anza College and Foothill College enrolled for the most recent spring quarter. The tables display counts (frequencies) and percentages or proportions (relative frequencies). The percent columns make comparing the same categories in the colleges easier. Displaying percentages along with the numbers is often helpful, but it is particularly important when comparing sets of data that do not have the same totals, such as the total enrollments for both colleges in this example. Notice how much larger the percentage for part-time students at Foothill College is compared to De Anza College.
+Qualitative Data Discussion
+Below are tables comparing the number of part-time and full-time students at De Anza College and Foothill College enrolled for the most recent spring quarter. The tables display counts (frequencies) and percentages or proportions (relative frequencies). The percent columns make comparing the same categories in the colleges easier. Displaying percentages along with the numbers is often helpful, but it is particularly important when comparing sets of data that do not have the same totals, such as the total enrollments for both colleges in this example. Notice how much larger the percentage for part-time students at Foothill College is compared to De Anza College.
 
 Tables are a good way of organizing and displaying data. But graphs can be even more helpful in understanding the data. There are no strict rules concerning which graphs to use. Two graphs that are used to display qualitative(categorical) data are pie charts and bar graphs.
 
