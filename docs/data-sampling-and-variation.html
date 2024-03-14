@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -81,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-sampling-and-variation.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data, Sampling, and Variation in Data and Sampling Data</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sampling-and-data.html">Sampling and Data</a></li><li class="breadcrumb-item"><a href="./data-sampling-and-variation.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data, Sampling, and Variation in Data and Sampling Data</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -150,18 +179,29 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./sampling-and-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sampling and Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./definitions-statistics-probability-key-terms.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Definitions of Statistics, Probability, and Key Terms</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./data-sampling-and-variation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data, Sampling, and Variation in Data and Sampling Data</span></span></a>
   </div>
 </li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
@@ -174,6 +214,23 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">References</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Syllabus</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -185,7 +242,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sampling-and-data.html">Sampling and Data</a></li><li class="breadcrumb-item"><a href="./data-sampling-and-variation.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data, Sampling, and Variation in Data and Sampling Data</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data, Sampling, and Variation in Data and Sampling Data</span></h1>
 </div>
@@ -204,14 +261,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Data may come from a population or from a sample. Lowercase letters like or</p>
-<p>generally are used to represent data values. Most data can be put into the following categories:</p>
-<pre><code>Qualitative
-Quantitative</code></pre>
-<p>Qualitative data are the result of categorizing or describing attributes of a population. Qualitative data are also often called categorical data. Hair color, blood type, ethnic group, the car a person drives, and the street a person lives on are examples of qualitative (categorical) data. Qualitative (categorical) data are generally described by words or letters. For instance, hair color might be black, dark brown, light brown, blonde, gray, or red. Blood type might be AB+, O-, or B+. Researchers often prefer to use quantitative data over qualitative (categorical) data because it lends itself more easily to mathematical analysis. For example, it does not make sense to find an average hair color or blood type.</p>
-<p>Quantitative data are always numbers. Quantitative data are the result of counting or measuring attributes of a population. Amount of money, pulse rate, weight, number of people living in your town, and number of students who take statistics are examples of quantitative data. Quantitative data may be either discrete or continuous.</p>
-<p>All data that are the result of counting are called quantitative discrete data. These data take on only certain numerical values. If you count the number of phone calls you receive for each day of the week, you might get values such as zero, one, two, or three.</p>
-<p>Data that are not only made up of counting numbers, but that may include fractions, decimals, or irrational numbers, are called quantitative continuous data. Continuous data are often the results of measurements like lengths, weights, or times. A list of the lengths in minutes for all the phone calls that you make in a week, with numbers like 2.4, 7.5, or 11.0, would be quantitative continuous data.</p>
+<p>Data may come from a population or from a sample. Lowercase letters like <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span> generally are used to represent data values. Most data can be put into the following categories:</p>
+<ul>
+<li>Qualitative</li>
+<li>Quantitative</li>
+</ul>
+<p><strong>Qualitative data</strong> are the result of categorizing or describing attributes of a population. Qualitative data are also often called <strong>categorical data</strong>. Hair color, blood type, ethnic group, the car a person drives, and the street a person lives on are examples of qualitative (categorical) data. Qualitative (categorical) data are generally described by words or letters. For instance, hair color might be black, dark brown, light brown, blonde, gray, or red. Blood type might be AB+, O-, or B+. Researchers often prefer to use quantitative data over qualitative (categorical) data because it lends itself more easily to mathematical analysis. For example, it does not make sense to find an average hair color or blood type.</p>
+<p><strong>Quantitative data</strong> are always numbers. Quantitative data are the result of <strong>counting</strong> or <strong>measuring</strong> attributes of a population. Amount of money, pulse rate, weight, number of people living in your town, and number of students who take statistics are examples of quantitative data. Quantitative data may be either <strong>discrete</strong> or <strong>continuous</strong>.</p>
+<p>All data that are the result of counting are called <strong>quantitative discrete data</strong>. These data take on only certain numerical values. If you count the number of phone calls you receive for each day of the week, you might get values such as zero, one, two, or three.</p>
+<p>Data that are not only made up of counting numbers, but that may include fractions, decimals, or irrational numbers, are called <strong>quantitative continuous data</strong>. Continuous data are often the results of measurements like lengths, weights, or times. A list of the lengths in minutes for all the phone calls that you make in a week, with numbers like <span class="math inline">\(2.4\)</span>, <span class="math inline">\(7.5\)</span>, or <span class="math inline">\(11.0\)</span>, would be quantitative continuous data.</p>
 <p>Qualitative Data Discussion Below are tables comparing the number of part-time and full-time students at De Anza College and Foothill College enrolled for the most recent spring quarter. The tables display counts (frequencies) and percentages or proportions (relative frequencies). The percent columns make comparing the same categories in the colleges easier. Displaying percentages along with the numbers is often helpful, but it is particularly important when comparing sets of data that do not have the same totals, such as the total enrollments for both colleges in this example. Notice how much larger the percentage for part-time students at Foothill College is compared to De Anza College.</p>
 <p>Tables are a good way of organizing and displaying data. But graphs can be even more helpful in understanding the data. There are no strict rules concerning which graphs to use. Two graphs that are used to display qualitative(categorical) data are pie charts and bar graphs.</p>
 <p>In a pie chart, categories of data are represented by wedges in a circle and are proportional in size to the percent of individuals in each category.</p>

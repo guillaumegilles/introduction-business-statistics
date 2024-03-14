@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./data-sampling-and-variation.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./sampling-and-data.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -144,7 +144,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./definitions-statistics-probability-key-terms.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Definitions of Statistics, Probability, and Key Terms</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sampling-and-data.html">Sampling and Data</a></li><li class="breadcrumb-item"><a href="./definitions-statistics-probability-key-terms.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Definitions of Statistics, Probability, and Key Terms</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -213,18 +213,29 @@ window.Quarto = {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./sampling-and-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sampling and Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./definitions-statistics-probability-key-terms.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Definitions of Statistics, Probability, and Key Terms</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./data-sampling-and-variation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data, Sampling, and Variation in Data and Sampling Data</span></span></a>
   </div>
 </li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
@@ -237,6 +248,23 @@ window.Quarto = {
  <span class="menu-text">References</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Syllabus</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -250,20 +278,20 @@ window.Quarto = {
   <li><a href="#statistics" id="toc-statistics" class="nav-link active" data-scroll-target="#statistics"><span class="header-section-number">1.1</span> Statistics</a></li>
   <li><a href="#probability" id="toc-probability" class="nav-link" data-scroll-target="#probability"><span class="header-section-number">1.2</span> Probability</a></li>
   <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms"><span class="header-section-number">1.3</span> Key Terms</a></li>
-  <li><a href="#to-recap" id="toc-to-recap" class="nav-link" data-scroll-target="#to-recap"><span class="header-section-number">1.4</span> To recap</a></li>
-  <li><a href="#exercices" id="toc-exercices" class="nav-link" data-scroll-target="#exercices"><span class="header-section-number">1.5</span> Exercices</a>
+  <li><a href="#exercices" id="toc-exercices" class="nav-link" data-scroll-target="#exercices"><span class="header-section-number">1.4</span> Exercices</a>
   <ul class="collapse">
-  <li><a href="#example-1" id="toc-example-1" class="nav-link" data-scroll-target="#example-1"><span class="header-section-number">1.5.1</span> Example 1</a></li>
-  <li><a href="#example-2" id="toc-example-2" class="nav-link" data-scroll-target="#example-2"><span class="header-section-number">1.5.2</span> Example 2</a></li>
-  <li><a href="#example-3" id="toc-example-3" class="nav-link" data-scroll-target="#example-3"><span class="header-section-number">1.5.3</span> Example 3</a></li>
+  <li><a href="#example-1" id="toc-example-1" class="nav-link" data-scroll-target="#example-1"><span class="header-section-number">1.4.1</span> Example 1</a></li>
+  <li><a href="#example-2" id="toc-example-2" class="nav-link" data-scroll-target="#example-2"><span class="header-section-number">1.4.2</span> Example 2</a></li>
+  <li><a href="#example-3" id="toc-example-3" class="nav-link" data-scroll-target="#example-3"><span class="header-section-number">1.4.3</span> Example 3</a></li>
   </ul></li>
+  <li><a href="#to-recap" id="toc-to-recap" class="nav-link" data-scroll-target="#to-recap"><span class="header-section-number">1.5</span> To recap</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/guillaumegilles/introduction-business-statistics/edit/main/definitions-statistics-probability-key-terms.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sampling-and-data.html">Sampling and Data</a></li><li class="breadcrumb-item"><a href="./definitions-statistics-probability-key-terms.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Definitions of Statistics, Probability, and Key Terms</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Definitions of Statistics, Probability, and Key Terms</span></h1>
 </div>
@@ -284,19 +312,19 @@ window.Quarto = {
 
 <section id="statistics" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="statistics"><span class="header-section-number">1.1</span> Statistics</h2>
-<p>The science of statistics deals with the collection, analysis, interpretation, and presentation of data. We see and use data in our everyday lives.</p>
+<p>The science of <strong>statistics</strong> deals with the collection, analysis, interpretation, and presentation of data. We see and use data in our everyday lives.</p>
 <p>In this course, you will learn how to organize and summarize data. Organizing and summarizing data is called <strong>descriptive statistics</strong>. Two ways to summarize data are by graphing and by using numbers (for example, finding an average). After you have studied probability and probability distributions, you will use formal methods for drawing conclusions from “good” data. The formal methods are called <strong>inferential statistics</strong>. Statistical inference uses probability to determine how confident we can be that our conclusions are correct.</p>
 <p>Effective interpretation of data (inference) is based on good procedures for producing data and thoughtful examination of the data. You will encounter what will seem to be too many mathematical formulas for interpreting data. The goal of statistics is not to perform numerous calculations using the formulas, but to gain an understanding of your data. The calculations can be done using a calculator or a computer. The understanding must come from you. If you can thoroughly grasp the basics of statistics, you can be more confident in the decisions you make in life.</p>
 </section>
 <section id="probability" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="probability"><span class="header-section-number">1.2</span> Probability</h2>
-<p><strong>Probability</strong> is a mathematical tool used to study randomness. It deals with the chance (the likelihood) of an event occurring. For example, if you toss a fair coin four times, the outcomes may not be two heads and two tails. However, if you toss the same coin 4,000 times, the outcomes will be close to half heads and half tails. The expected theoretical probability of heads in any one toss is <span class="math inline">\(\frac{1}{2}\)</span> or 0.5. Even though the outcomes of a few repetitions are uncertain, there is a regular pattern of outcomes when there are many repetitions.</p>
+<p><strong>Probability</strong> is a mathematical tool used to study randomness. It deals with the chance (the likelihood) of an event occurring. For example, if you toss a fair coin four times, the outcomes may not be two heads and two tails. However, if you toss the same coin 4,000 times, the outcomes will be close to half heads and half tails. The expected theoretical probability of heads in any one toss is <span class="math inline">\(\frac{1}{2}\)</span> or <span class="math inline">\(0.5\)</span>. Even though the outcomes of a few repetitions are uncertain, there is a regular pattern of outcomes when there are many repetitions.</p>
 <p>The theory of probability began with the study of games of chance such as poker. Predictions take the form of probabilities. To predict the likelihood of an earthquake, of rain, we use probabilities. Doctors use probability to determine the chance of a vaccination causing the disease the vaccination is supposed to prevent. A stockbroker uses probability to determine the rate of return on a client’s investments. You might use probability to decide to buy a lottery ticket or not. In your study of statistics, you will use the power of mathematics through probability calculations to analyze and interpret your data.</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/obZzOq_wSCg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="key-terms" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="key-terms"><span class="header-section-number">1.3</span> Key Terms</h2>
-<p>In statistics, we generally want to study a <strong>population</strong>. You can think of a population as a collection of persons, things, or objects under study. To study the population, we select a <strong>sample</strong>. The idea of sampling is to select a portion (or subset) of the larger population and study that portion (the sample) to gain information about the population. Data are the result of sampling from a population.</p>
+<p>In statistics, we generally want to study a <strong>population</strong>. You can think of a population as a collection of persons, things, or objects under study. To study the population, we select a <strong>sample</strong>. The idea of <strong>sampling</strong> is to select a portion (or subset) of the larger population and study that portion (the sample) to gain information about the population. Data are the result of sampling from a population.</p>
 <p>Because it takes a lot of time and money to examine an entire population, sampling is a very practical technique. If you wished to compute the overall grade point average at your school, it would make sense to select a sample of students who attend the school. The data collected from the sample would be the students’ grade point averages. In presidential elections, opinion poll samples of 1,000–2,000 people are taken. The opinion poll is supposed to represent the views of the people in the entire country. Manufacturers of canned carbonated drinks take samples to determine if a 16 ounce can contains 16 ounces of carbonated drink.</p>
 <p>From the sample data, we can calculate a <strong>statistic</strong>. A statistic is a number that represents a property of the sample. For example, if we consider one math class to be a sample of the population of all math classes, then the average number of points earned by students in that one math class at the end of the term is an example of a statistic. The statistic is an estimate of a population <strong>parameter</strong>, in this case the mean. A parameter is a numerical characteristic of the whole population that can be estimated by a statistic. Since we considered all math classes to be the population, then the average number of points earned per student over all the math classes is an example of a parameter.</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/VPM84_yfx5Q" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
@@ -313,13 +341,12 @@ Is statistics accurate?
 <p>One of the main concerns in the field of statistics is how accurately a statistic estimates a parameter. The accuracy really depends on how well the sample represents the population. The sample must contain the characteristics of the population in order to be a representative sample. We are interested in both the sample statistic and the population parameter in inferential statistics. In a later chapter, we will use the sample statistic to test the validity of the established population parameter.</p>
 </div>
 </div>
-<p>A <strong>variable</strong>, or <strong>random variable</strong>, usually notated by capital letters such as <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, is a characteristic or measurement that can be determined for each member of a population. Variables may be <strong>numerical</strong> or <strong>categorical</strong>:</p>
+<p>A <strong>variable</strong>, usually notated by capital letters such as <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, is a characteristic or measurement that can be determined for each member of a population. Variables may be <strong>numerical</strong> or <strong>categorical</strong>:</p>
 <ul>
 <li>Numerical variables take on values with equal units such as weight in pounds and time in hours.</li>
 <li>Categorical variables place the person or thing into a category.</li>
 </ul>
 <p>If we let <span class="math inline">\(X\)</span> equal the number of points earned by one math student at the end of a term, then <span class="math inline">\(X\)</span> is a numerical variable. If we let <span class="math inline">\(Y\)</span> be a person’s party affiliation, then some examples of <span class="math inline">\(Y\)</span> include Republican, Democrat, and Independent. <span class="math inline">\(Y\)</span> is a categorical variable. We could do some math with values of <span class="math inline">\(X\)</span> (calculate the average number of points earned, for example), but it makes no sense to do math with values of <span class="math inline">\(Y\)</span> (calculating an average party affiliation makes no sense).</p>
-<p><strong>Data</strong> are the actual values of the variable. They may be numbers or they may be words.</p>
 <p>Two words that come up often in statistics are <strong>mean</strong> and <strong>proportion</strong>. If you were to take three exams in your math classes and obtain scores of 86, 75, and 92, you would calculate your mean score by adding the three exam scores and dividing by three (your mean score would be 84.3 to one decimal place). If, in your math class, there are 40 students and 22 are men and 18 are women, then the proportion of men students is <span class="math inline">\(\frac{22}{40}\)</span> and the proportion of women students is <span class="math inline">\(\frac{18}{40}\)</span>. Mean and proportion are discussed in more detail in later chapters.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -335,34 +362,11 @@ Average or mean ?
 </div>
 </div>
 </section>
-<section id="to-recap" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="to-recap"><span class="header-section-number">1.4</span> To recap</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.4.4     ✔ tibble    3.2.1
-✔ lubridate 1.9.3     ✔ tidyr     1.3.0
-✔ purrr     1.0.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-</div>
-<pre class="mermaid"><code>flowchart TD;
-    population[Population]==&gt; |a portion (or subset) of the population|sample(Sample);
-    sample --&gt; statistic(Statistic);
-    B --&gt; D;
-    C --&gt; D;</code></pre>
-</section>
-<section id="exercices" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="exercices"><span class="header-section-number">1.5</span> Exercices</h2>
-<section id="example-1" class="level3" data-number="1.5.1">
-<h3 data-number="1.5.1" class="anchored" data-anchor-id="example-1"><span class="header-section-number">1.5.1</span> Example 1</h3>
-<div class="callout callout-style-default callout-caution callout-titled">
+<section id="exercices" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="exercices"><span class="header-section-number">1.4</span> Exercices</h2>
+<section id="example-1" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="example-1"><span class="header-section-number">1.4.1</span> Example 1</h3>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -387,19 +391,21 @@ Solution
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>The <strong>population</strong> is all first year students attending ABC College this term.</p>
-<p>The <strong>sample</strong> could be all students enrolled in one section of a beginning statistics course at ABC College (although this sample may not represent the entire population).</p>
-<p>The <strong>parameter</strong> is the average (mean) amount of money spent (excluding books) by first year college students at ABC College this term: the population mean.</p>
-<p>The <strong>statistic</strong> is the average (mean) amount of money spent (excluding books) by first year college students in the sample.</p>
-<p>The <strong>variable</strong> could be the amount of money spent (excluding books) by one first year student. Let X = the amount of money spent (excluding books) by one first year student attending ABC College.</p>
-<p>The <strong>data</strong> are the dollar amounts spent by the first year students. Examples of the data are $150, $200, and $225.</p>
+<ul>
+<li>The <strong>population</strong> is all first year students attending ABC College this term.</li>
+<li>The <strong>sample</strong> could be all students enrolled in one section of a beginning statistics course at ABC College (although this sample may not represent the entire population).</li>
+<li>The <strong>parameter</strong> is the average (mean) amount of money spent (excluding books) by first year college students at ABC College this term: the population mean.</li>
+<li>The <strong>statistic</strong> is the average (mean) amount of money spent (excluding books) by first year college students in the sample.</li>
+<li>The <strong>variable</strong> could be the amount of money spent (excluding books) by one first year student. Let X = the amount of money spent (excluding books) by one first year student attending ABC College.</li>
+<li>The <strong>data</strong> are the dollar amounts spent by the first year students. Examples of the data are $150, $200, and $225.</li>
+</ul>
 </div>
 </div>
 </div>
 </section>
-<section id="example-2" class="level3" data-number="1.5.2">
-<h3 data-number="1.5.2" class="anchored" data-anchor-id="example-2"><span class="header-section-number">1.5.2</span> Example 2</h3>
-<div class="callout callout-style-default callout-caution callout-titled">
+<section id="example-2" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="example-2"><span class="header-section-number">1.4.2</span> Example 2</h3>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -445,9 +451,9 @@ Solution
 </div>
 </div>
 </section>
-<section id="example-3" class="level3" data-number="1.5.3">
-<h3 data-number="1.5.3" class="anchored" data-anchor-id="example-3"><span class="header-section-number">1.5.3</span> Example 3</h3>
-<div class="callout callout-style-default callout-caution callout-titled">
+<section id="example-3" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="example-3"><span class="header-section-number">1.4.3</span> Example 3</h3>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -488,18 +494,43 @@ Solution
 </div>
 <div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>The <strong>population</strong> is all cars containing dummies in the front seat.</p>
-<p>The <strong>sample</strong> is the 75 cars, selected by a simple random sample.</p>
-<p>The <strong>parameter</strong> is the proportion of driver dummies (if they had been real people) who would have suffered head injuries in the population.</p>
-<p>The <strong>statistic</strong> is proportion of driver dummies (if they had been real people) who would have suffered head injuries in the sample.</p>
-<p>The <strong>variable</strong> <span class="math inline">\(X =\)</span> whether a dummy (if it had been a real person) would have suffered head injuries.</p>
-<p>The <strong>data</strong> are either: yes, had head injury, or no, did not.</p>
+<ul>
+<li>The <strong>population</strong> is all cars containing dummies in the front seat.</li>
+<li>The <strong>sample</strong> is the 75 cars, selected by a simple random sample.</li>
+<li>The <strong>parameter</strong> is the proportion of driver dummies (if they had been real people) who would have suffered head injuries in the population.</li>
+<li>The <strong>statistic</strong> is proportion of driver dummies (if they had been real people) who would have suffered head injuries in the sample.</li>
+<li>The <strong>variable</strong> <span class="math inline">\(X =\)</span> whether a dummy (if it had been a real person) would have suffered head injuries.</li>
+<li>The <strong>data</strong> are either: yes, had head injury, or no, did not.</li>
+</ul>
 </div>
 </div>
 </div>
-
-
 </section>
+</section>
+<section id="to-recap" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="to-recap"><span class="header-section-number">1.5</span> To recap</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.0
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+</div>
+<pre class="mermaid"><code>flowchart TD;
+    population[Population]==&gt; |a portion (or subset) of the population|sample(Sample);
+    sample --&gt; statistic(Statistic);
+    B --&gt; D;
+    C --&gt; D;</code></pre>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -887,8 +918,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link  aria-label=" preface"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="./sampling-and-data.html" class="pagination-link  aria-label=" sampling="" and="" data"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Sampling and Data</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

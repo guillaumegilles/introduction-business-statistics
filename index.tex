@@ -1,0 +1,1009 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Introduction to Business Statistics},
+  pdfauthor={Guillaume P.R. Gilles},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Introduction to Business Statistics}
+\author{Guillaume P.R. Gilles}
+\date{}
+
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\bookmarksetup{startatroot}
+
+\chapter*{Preface}\label{preface}
+\addcontentsline{toc}{chapter}{Preface}
+
+\markboth{Preface}{Preface}
+
+Welcome to \textbf{Introduction to Business Statistics}, IBS, a web
+textbook I've created to use in my statistics classes at ESSCA,
+Bordeaux.
+
+\section*{About Introduction to Business
+Statistics}\label{about-introduction-to-business-statistics}
+\addcontentsline{toc}{section}{About Introduction to Business
+Statistics}
+
+\markright{About Introduction to Business Statistics}
+
+Introduction to Business Statistics is designed to meet the scope and
+requirements of one-semester statistics course for business, economics,
+and related majors for undergraduate students in business school. Core
+statistical concepts and skills have been augmented with practical
+business examples, scenarios, and exercises. The result is a meaningful
+understanding of the discipline which will serve students in their
+business careers and real-world experiences.
+
+\section*{Acknowledgements}\label{acknowledgements}
+\addcontentsline{toc}{section}{Acknowledgements}
+
+\markright{Acknowledgements}
+
+IBS is created with \href{https://quarto.org/docs/books/}{Quarto} and
+hosted on
+\href{https://github.com/guillaumegilles/introduction-business-statistics}{Github}.
+
+\part{Sampling and Data}
+
+You are probably asking yourself the question, ``When and where will I
+use statistics?'' If you read any newspaper, watch television, or use
+the Internet, you will see statistical information. There are statistics
+about crime, sports, education, politics, and real estate. Typically,
+when you read a newspaper article or watch a television news program,
+you are given sample information. With this information, you may make a
+decision about the correctness of a statement, claim, or ``fact.''
+Statistical methods can help you make the ``best educated guess.''
+
+Since you will undoubtedly be given statistical information at some
+point in your life, you need to know some techniques for analyzing the
+information thoughtfully. Think about buying a house or managing a
+budget. Think about your chosen profession. The fields of economics,
+business, psychology, education, biology, law, computer science, police
+science, and early childhood development require at least one course in
+statistics.
+
+Included in this chapter are the basic ideas and words of probability
+and statistics. You will soon understand that statistics and probability
+work together. You will also learn how data are gathered and what
+``good'' data can be distinguished from ``bad.''
+
+\chapter{Definitions of Statistics, Probability, and Key
+Terms}\label{definitions-of-statistics-probability-and-key-terms}
+
+\section{Statistics}\label{statistics}
+
+The science of \textbf{statistics} deals with the collection, analysis,
+interpretation, and presentation of data. We see and use data in our
+everyday lives.
+
+In this course, you will learn how to organize and summarize data.
+Organizing and summarizing data is called \textbf{descriptive
+statistics}. Two ways to summarize data are by graphing and by using
+numbers (for example, finding an average). After you have studied
+probability and probability distributions, you will use formal methods
+for drawing conclusions from ``good'' data. The formal methods are
+called \textbf{inferential statistics}. Statistical inference uses
+probability to determine how confident we can be that our conclusions
+are correct.
+
+Effective interpretation of data (inference) is based on good procedures
+for producing data and thoughtful examination of the data. You will
+encounter what will seem to be too many mathematical formulas for
+interpreting data. The goal of statistics is not to perform numerous
+calculations using the formulas, but to gain an understanding of your
+data. The calculations can be done using a calculator or a computer. The
+understanding must come from you. If you can thoroughly grasp the basics
+of statistics, you can be more confident in the decisions you make in
+life.
+
+\section{Probability}\label{probability}
+
+\textbf{Probability} is a mathematical tool used to study randomness. It
+deals with the chance (the likelihood) of an event occurring. For
+example, if you toss a fair coin four times, the outcomes may not be two
+heads and two tails. However, if you toss the same coin 4,000 times, the
+outcomes will be close to half heads and half tails. The expected
+theoretical probability of heads in any one toss is \(\frac{1}{2}\) or
+\(0.5\). Even though the outcomes of a few repetitions are uncertain,
+there is a regular pattern of outcomes when there are many repetitions.
+
+The theory of probability began with the study of games of chance such
+as poker. Predictions take the form of probabilities. To predict the
+likelihood of an earthquake, of rain, we use probabilities. Doctors use
+probability to determine the chance of a vaccination causing the disease
+the vaccination is supposed to prevent. A stockbroker uses probability
+to determine the rate of return on a client's investments. You might use
+probability to decide to buy a lottery ticket or not. In your study of
+statistics, you will use the power of mathematics through probability
+calculations to analyze and interpret your data.
+
+\url{https://www.youtube.com/watch?v=obZzOq_wSCg}
+
+\section{Key Terms}\label{key-terms}
+
+In statistics, we generally want to study a \textbf{population}. You can
+think of a population as a collection of persons, things, or objects
+under study. To study the population, we select a \textbf{sample}. The
+idea of \textbf{sampling} is to select a portion (or subset) of the
+larger population and study that portion (the sample) to gain
+information about the population. Data are the result of sampling from a
+population.
+
+Because it takes a lot of time and money to examine an entire
+population, sampling is a very practical technique. If you wished to
+compute the overall grade point average at your school, it would make
+sense to select a sample of students who attend the school. The data
+collected from the sample would be the students' grade point averages.
+In presidential elections, opinion poll samples of 1,000--2,000 people
+are taken. The opinion poll is supposed to represent the views of the
+people in the entire country. Manufacturers of canned carbonated drinks
+take samples to determine if a 16 ounce can contains 16 ounces of
+carbonated drink.
+
+From the sample data, we can calculate a \textbf{statistic}. A statistic
+is a number that represents a property of the sample. For example, if we
+consider one math class to be a sample of the population of all math
+classes, then the average number of points earned by students in that
+one math class at the end of the term is an example of a statistic. The
+statistic is an estimate of a population \textbf{parameter}, in this
+case the mean. A parameter is a numerical characteristic of the whole
+population that can be estimated by a statistic. Since we considered all
+math classes to be the population, then the average number of points
+earned per student over all the math classes is an example of a
+parameter.
+
+\url{https://www.youtube.com/watch?v=VPM84_yfx5Q&}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, toprule=.15mm, breakable, leftrule=.75mm, left=2mm, rightrule=.15mm, colback=white, opacityback=0, opacitybacktitle=0.6, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Is statistics accurate?}, arc=.35mm, coltitle=black]
+
+One of the main concerns in the field of statistics is how accurately a
+statistic estimates a parameter. The accuracy really depends on how well
+the sample represents the population. The sample must contain the
+characteristics of the population in order to be a representative
+sample. We are interested in both the sample statistic and the
+population parameter in inferential statistics. In a later chapter, we
+will use the sample statistic to test the validity of the established
+population parameter.
+
+\end{tcolorbox}
+
+A \textbf{variable}, usually notated by capital letters such as \(X\)
+and \(Y\), is a characteristic or measurement that can be determined for
+each member of a population. Variables may be \textbf{numerical} or
+\textbf{categorical}:
+
+\begin{itemize}
+\tightlist
+\item
+  Numerical variables take on values with equal units such as weight in
+  pounds and time in hours.
+\item
+  Categorical variables place the person or thing into a category.
+\end{itemize}
+
+If we let \(X\) equal the number of points earned by one math student at
+the end of a term, then \(X\) is a numerical variable. If we let \(Y\)
+be a person's party affiliation, then some examples of \(Y\) include
+Republican, Democrat, and Independent. \(Y\) is a categorical variable.
+We could do some math with values of \(X\) (calculate the average number
+of points earned, for example), but it makes no sense to do math with
+values of \(Y\) (calculating an average party affiliation makes no
+sense).
+
+Two words that come up often in statistics are \textbf{mean} and
+\textbf{proportion}. If you were to take three exams in your math
+classes and obtain scores of 86, 75, and 92, you would calculate your
+mean score by adding the three exam scores and dividing by three (your
+mean score would be 84.3 to one decimal place). If, in your math class,
+there are 40 students and 22 are men and 18 are women, then the
+proportion of men students is \(\frac{22}{40}\) and the proportion of
+women students is \(\frac{18}{40}\). Mean and proportion are discussed
+in more detail in later chapters.
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, toprule=.15mm, breakable, leftrule=.75mm, left=2mm, rightrule=.15mm, colback=white, opacityback=0, opacitybacktitle=0.6, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Average or mean ?}, arc=.35mm, coltitle=black]
+
+The words ``mean'' and ``average'' are often used interchangeably. The
+substitution of one word for the other is common practice. The technical
+term is \texttt{arithmetic\ mean}, and ``average'' is technically a
+center location. However, in practice among non-statisticians,
+``average'' is commonly accepted for \texttt{arithmetic\ mean}.
+
+\end{tcolorbox}
+
+\section{Exercices}\label{exercices}
+
+\subsection{Example 1}\label{example-1}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, toprule=.15mm, breakable, leftrule=.75mm, left=2mm, rightrule=.15mm, colback=white, opacityback=0, opacitybacktitle=0.6, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Problem}, arc=.35mm, coltitle=black]
+
+Determine what the key terms refer to in the following study. We want to
+know the average (mean) amount of money first year college students
+spend at ABC College on school supplies that do not include books. We
+randomly surveyed 100 first year students at the college. Three of those
+students spent \$150, \$200, and \$225, respectively.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, toprule=.15mm, breakable, leftrule=.75mm, left=2mm, rightrule=.15mm, colback=white, opacityback=0, opacitybacktitle=0.6, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Solution}, arc=.35mm, coltitle=black]
+
+\begin{itemize}
+\tightlist
+\item
+  The \textbf{population} is all first year students attending ABC
+  College this term.
+\item
+  The \textbf{sample} could be all students enrolled in one section of a
+  beginning statistics course at ABC College (although this sample may
+  not represent the entire population).
+\item
+  The \textbf{parameter} is the average (mean) amount of money spent
+  (excluding books) by first year college students at ABC College this
+  term: the population mean.
+\item
+  The \textbf{statistic} is the average (mean) amount of money spent
+  (excluding books) by first year college students in the sample.
+\item
+  The \textbf{variable} could be the amount of money spent (excluding
+  books) by one first year student. Let X = the amount of money spent
+  (excluding books) by one first year student attending ABC College.
+\item
+  The \textbf{data} are the dollar amounts spent by the first year
+  students. Examples of the data are \$150, \$200, and \$225.
+\end{itemize}
+
+\end{tcolorbox}
+
+\subsection{Example 2}\label{example-2}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, toprule=.15mm, breakable, leftrule=.75mm, left=2mm, rightrule=.15mm, colback=white, opacityback=0, opacitybacktitle=0.6, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Problem}, arc=.35mm, coltitle=black]
+
+Determine what the key terms refer to in the following study.
+
+A study was conducted at a local college to analyze the average
+cumulative GPA's of students who graduated last year. For each statement
+below find the appropriate statistical term.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The cumulative GPA of one student who graduated from the college last
+  year.
+\item
+  3.65, 2.80, 1.50, 3.90
+\item
+  A group of students who graduated from the college last year, randomly
+  selected.
+\item
+  The average cumulative GPA of students who graduated from the college
+  last year.
+\item
+  All students who graduated from the college last year.
+\item
+  the average cumulative GPA of students in the study who graduated from
+  the college last year.
+\end{enumerate}
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, toprule=.15mm, breakable, leftrule=.75mm, left=2mm, rightrule=.15mm, colback=white, opacityback=0, opacitybacktitle=0.6, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Solution}, arc=.35mm, coltitle=black]
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Population: \textbf{5}
+\item
+  Statistic: \textbf{6}
+\item
+  Parameter: \textbf{4}
+\item
+  Sample: \textbf{3}
+\item
+  Variable: \textbf{1}
+\item
+  Data: \textbf{2}
+\end{enumerate}
+
+\end{tcolorbox}
+
+\subsection{Example 3}\label{example-3}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, toprule=.15mm, breakable, leftrule=.75mm, left=2mm, rightrule=.15mm, colback=white, opacityback=0, opacitybacktitle=0.6, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Problem}, arc=.35mm, coltitle=black]
+
+Determine what the key terms refer to in the following study.
+
+As part of a study designed to test the safety of electric automobiles,
+the National Transportation Safety Board collected and reviewed data
+about the effects of an automobile crash on test dummies. Here is the
+criterion they used:
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Speed at which cars crashed & Location of ``drive'' (i.e.~dummies) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+35 miles/hour & Front Seat \\
+\end{longtable}
+
+Cars with dummies in the front seats were crashed into a wall at a speed
+of 35 miles per hour. We want to know the proportion of dummies in the
+driver's seat that would have had head injuries, if they had been actual
+drivers. We start with a simple random sample of 75 cars.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, toprule=.15mm, breakable, leftrule=.75mm, left=2mm, rightrule=.15mm, colback=white, opacityback=0, opacitybacktitle=0.6, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Solution}, arc=.35mm, coltitle=black]
+
+\begin{itemize}
+\tightlist
+\item
+  The \textbf{population} is all cars containing dummies in the front
+  seat.
+\item
+  The \textbf{sample} is the 75 cars, selected by a simple random
+  sample.
+\item
+  The \textbf{parameter} is the proportion of driver dummies (if they
+  had been real people) who would have suffered head injuries in the
+  population.
+\item
+  The \textbf{statistic} is proportion of driver dummies (if they had
+  been real people) who would have suffered head injuries in the sample.
+\item
+  The \textbf{variable} \(X =\) whether a dummy (if it had been a real
+  person) would have suffered head injuries.
+\item
+  The \textbf{data} are either: yes, had head injury, or no, did not.
+\end{itemize}
+
+\end{tcolorbox}
+
+\section{To recap}\label{to-recap}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+v dplyr     1.1.4     v readr     2.1.5
+v forcats   1.0.0     v stringr   1.5.1
+v ggplot2   3.4.4     v tibble    3.2.1
+v lubridate 1.9.3     v tidyr     1.3.0
+v purrr     1.0.2     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flowchart TD;}
+\NormalTok{    population[Population]==\textgreater{} |a portion (or subset) of the population|sample(Sample);}
+\NormalTok{    sample {-}{-}\textgreater{} statistic(Statistic);}
+\NormalTok{    B {-}{-}\textgreater{} D;}
+\NormalTok{    C {-}{-}\textgreater{} D;}
+\end{Highlighting}
+\end{Shaded}
+
+\chapter{Data, Sampling, and Variation in Data and Sampling
+Data}\label{data-sampling-and-variation-in-data-and-sampling-data}
+
+Data may come from a population or from a sample. Lowercase letters like
+\(x\) or \(y\) generally are used to represent data values. Most data
+can be put into the following categories:
+
+\begin{itemize}
+\tightlist
+\item
+  Qualitative
+\item
+  Quantitative
+\end{itemize}
+
+\textbf{Qualitative data} are the result of categorizing or describing
+attributes of a population. Qualitative data are also often called
+\textbf{categorical data}. Hair color, blood type, ethnic group, the car
+a person drives, and the street a person lives on are examples of
+qualitative (categorical) data. Qualitative (categorical) data are
+generally described by words or letters. For instance, hair color might
+be black, dark brown, light brown, blonde, gray, or red. Blood type
+might be AB+, O-, or B+. Researchers often prefer to use quantitative
+data over qualitative (categorical) data because it lends itself more
+easily to mathematical analysis. For example, it does not make sense to
+find an average hair color or blood type.
+
+\textbf{Quantitative data} are always numbers. Quantitative data are the
+result of \textbf{counting} or \textbf{measuring} attributes of a
+population. Amount of money, pulse rate, weight, number of people living
+in your town, and number of students who take statistics are examples of
+quantitative data. Quantitative data may be either \textbf{discrete} or
+\textbf{continuous}.
+
+All data that are the result of counting are called \textbf{quantitative
+discrete data}. These data take on only certain numerical values. If you
+count the number of phone calls you receive for each day of the week,
+you might get values such as zero, one, two, or three.
+
+Data that are not only made up of counting numbers, but that may include
+fractions, decimals, or irrational numbers, are called
+\textbf{quantitative continuous data}. Continuous data are often the
+results of measurements like lengths, weights, or times. A list of the
+lengths in minutes for all the phone calls that you make in a week, with
+numbers like \(2.4\), \(7.5\), or \(11.0\), would be quantitative
+continuous data.
+
+Qualitative Data Discussion Below are tables comparing the number of
+part-time and full-time students at De Anza College and Foothill College
+enrolled for the most recent spring quarter. The tables display counts
+(frequencies) and percentages or proportions (relative frequencies). The
+percent columns make comparing the same categories in the colleges
+easier. Displaying percentages along with the numbers is often helpful,
+but it is particularly important when comparing sets of data that do not
+have the same totals, such as the total enrollments for both colleges in
+this example. Notice how much larger the percentage for part-time
+students at Foothill College is compared to De Anza College.
+
+Tables are a good way of organizing and displaying data. But graphs can
+be even more helpful in understanding the data. There are no strict
+rules concerning which graphs to use. Two graphs that are used to
+display qualitative(categorical) data are pie charts and bar graphs.
+
+In a pie chart, categories of data are represented by wedges in a circle
+and are proportional in size to the percent of individuals in each
+category.
+
+In a bar graph, the length of the bar for each category is proportional
+to the number or percent of individuals in each category. Bars may be
+vertical or horizontal.
+
+A Pareto chart consists of bars that are sorted into order by category
+size (largest to smallest).
+
+Look at Figure 1.4 and Figure 1.5 and determine which graph (pie or bar)
+you think displays the comparisons better.
+
+It is a good idea to look at a variety of graphs to see which is the
+most helpful in displaying the data. We might make different choices of
+what we think is the ``best'' graph depending on the data and the
+context. Our choice also depends on what we are using the data for.
+
+:::\{callout-important\} Percentages That Add to More (or Less) Than
+100\% Sometimes percentages add up to be more than 100\% (or less than
+100\%). In the graph, the percentages add to more than 100\% because
+students can be in more than one category. A bar graph is appropriate to
+compare the relative size of the categories. A pie chart cannot be used.
+It also could not be used if the percentages added to less than 100\%.
+:::
+
+:::\{callout-important\} Omitting Categories/Missing Data The table
+displays Ethnicity of Students but is missing the ``Other/Unknown''
+category. This category contains people who did not feel they fit into
+any of the ethnicity categories or declined to respond. Notice that the
+frequencies do not add up to the total number of students. In this
+situation, create a bar graph and not a pie chart.
+
+:::
+
+The following graph is the same as the previous graph but the
+``Other/Unknown'' percent (9.6\%) has been included. The
+``Other/Unknown'' category is large compared to some of the other
+categories (Native American, 0.6\%, Pacific Islander 1.0\%). This is
+important to know when we think about what the data are telling us.
+
+This particular bar graph in Figure 1.8 can be difficult to understand
+visually. The graph in Figure 1.9 is a Pareto chart. The Pareto chart
+has the bars sorted from largest to smallest and is easier to read and
+interpret.
+
+Pie Charts: No Missing Data The following pie charts have the
+``Other/Unknown'' category included (since the percentages must add to
+100\%). The chart in Figure 1.10(b) is organized by the size of each
+wedge, which makes it a more visually informative graph than the
+unsorted, alphabetical graph in Figure 1.10(a). Sampling
+
+Gathering information about an entire population often costs too much or
+is virtually impossible. Instead, we use a sample of the population. A
+sample should have the same characteristics as the population it is
+representing. Most statisticians use various methods of random sampling
+in an attempt to achieve this goal. This section will describe a few of
+the most common methods. There are several different methods of random
+sampling. In each form of random sampling, each member of a population
+initially has an equal chance of being selected for the sample. Each
+method has pros and cons. The easiest method to describe is called a
+simple random sample. Any group of n individuals is equally likely to be
+chosen as any other group of n individuals if the simple random sampling
+technique is used. In other words, each sample of the same size has an
+equal chance of being selected.
+
+Besides simple random sampling, there are other forms of sampling that
+involve a chance process for getting the sample. Other well-known random
+sampling methods are the stratified sample, the cluster sample, and the
+systematic sample.
+
+To choose a stratified sample, divide the population into groups called
+strata and then take a proportionate number from each stratum. For
+example, you could stratify (group) your college population by
+department and then choose a proportionate simple random sample from
+each stratum (each department) to get a stratified random sample. To
+choose a simple random sample from each department, number each member
+of the first department, number each member of the second department,
+and do the same for the remaining departments. Then use simple random
+sampling to choose proportionate numbers from the first department and
+do the same for each of the remaining departments. Those numbers picked
+from the first department, picked from the second department, and so on
+represent the members who make up the stratified sample.
+
+To choose a cluster sample, divide the population into clusters (groups)
+and then randomly select some of the clusters. All the members from
+these clusters are in the cluster sample. For example, if you randomly
+sample four departments from your college population, the four
+departments make up the cluster sample. Divide your college faculty by
+department. The departments are the clusters. Number each department,
+and then choose four different numbers using simple random sampling. All
+members of the four departments with those numbers are the cluster
+sample.
+
+To choose a systematic sample, randomly select a starting point and take
+every nth piece of data from a listing of the population. For example,
+suppose you have to do a phone survey. Your phone book contains 20,000
+residence listings. You must choose 400 names for the sample. Number the
+population 1--20,000 and then use a simple random sample to pick a
+number that represents the first name in the sample. Then choose every
+fiftieth name thereafter until you have a total of 400 names (you might
+have to go back to the beginning of your phone list). Systematic
+sampling is frequently chosen because it is a simple method.
+
+A type of sampling that is non-random is convenience sampling.
+Convenience sampling involves using results that are readily available.
+For example, a computer software store conducts a marketing study by
+interviewing potential customers who happen to be in the store browsing
+through the available software. The results of convenience sampling may
+be very good in some cases and highly biased (favor certain outcomes) in
+others.
+
+Sampling data should be done very carefully. Collecting data carelessly
+can have devastating results. Surveys mailed to households and then
+returned may be very biased (they may favor a certain group). It is
+better for the person conducting the survey to select the sample
+respondents.
+
+True random sampling is done with replacement. That is, once a member is
+picked, that member goes back into the population and thus may be chosen
+more than once. However for practical reasons, in most populations,
+simple random sampling is done without replacement. Surveys are
+typically done without replacement. That is, a member of the population
+may be chosen only once. Most samples are taken from large populations
+and the sample tends to be small in comparison to the population. Since
+this is the case, sampling without replacement is approximately the same
+as sampling with replacement because the chance of picking the same
+individual more than once with replacement is very low.
+
+Sampling without replacement instead of sampling with replacement
+becomes a mathematical issue only when the population is small.
+
+When you analyze data, it is important to be aware of sampling errors
+and nonsampling errors. The actual process of sampling causes sampling
+errors. For example, the sample may not be large enough. Factors not
+related to the sampling process cause nonsampling errors. A defective
+counting device can cause a nonsampling error.
+
+In reality, a sample will never be exactly representative of the
+population so there will always be some sampling error. As a rule, the
+larger the sample, the smaller the sampling error.
+
+In statistics, a sampling bias is created when a sample is collected
+from a population and some members of the population are not as likely
+to be chosen as others (remember, each member of the population should
+have an equally likely chance of being chosen). When a sampling bias
+happens, there can be incorrect conclusions drawn about the population
+that is being studied.
+
+Critical Evaluation We need to evaluate the statistical studies we read
+about critically and analyze them before accepting the results of the
+studies. Common problems to be aware of include:
+
+\begin{verbatim}
+Problems with samples: A sample must be representative of the population. A sample that is not representative of the population is biased. Biased samples that are not representative of the population give results that are inaccurate and not valid.
+Self-selected samples: Responses only by people who choose to respond, such as call-in surveys, are often unreliable.
+Sample size issues: Samples that are too small may be unreliable. Larger samples are better, if possible. In some situations, having small samples is unavoidable and can still be used to draw conclusions. Examples: crash testing cars or medical testing for rare conditions
+Undue influence: collecting data or asking questions in a way that influences the response
+Non-response or refusal of subject to participate: The collected responses may no longer be representative of the population. Often, people with strong positive or negative opinions may answer surveys, which can affect the results.
+Causality: A relationship between two variables does not mean that one causes the other to occur. They may be related (correlated) because of their relationship through a different variable.
+Self-funded or self-interest studies: A study performed by a person or organization in order to support their claim. Is the study impartial? Read the study carefully to evaluate the work. Do not automatically assume that the study is good, but do not automatically assume the study is bad either. Evaluate it on its merits and the work done.
+Misleading use of data: improperly displayed graphs, incomplete data, or lack of context
+Confounding: When the effects of multiple factors on a response cannot be separated. Confounding makes it difficult or impossible to draw valid conclusions about the effect of each factor.
+\end{verbatim}
+
+Variation in Data
+
+Variation is present in any set of data. For example, 16-ounce cans of
+beverage may contain more or less than 16 ounces of liquid. In one
+study, eight 16 ounce cans were measured and produced the following
+amount (in ounces) of beverage:
+
+15.8; 16.1; 15.2; 14.8; 15.8; 15.9; 16.0; 15.5
+
+Measurements of the amount of beverage in a 16-ounce can may vary
+because different people make the measurements or because the exact
+amount, 16 ounces of liquid, was not put into the cans. Manufacturers
+regularly run tests to determine if the amount of beverage in a 16-ounce
+can falls within the desired range.
+
+Be aware that as you take data, your data may vary somewhat from the
+data someone else is taking for the same purpose. This is completely
+natural. However, if two or more of you are taking the same data and get
+very different results, it is time for you and the others to reevaluate
+your data-taking methods and your accuracy.
+
+Variation in Samples It was mentioned previously that two or more
+samples from the same population, taken randomly, and having close to
+the same characteristics of the population will likely be different from
+each other. Suppose Doreen and Jung both decide to study the average
+amount of time students at their college sleep each night. Doreen and
+Jung each take samples of 500 students. Doreen uses systematic sampling
+and Jung uses cluster sampling. Doreen's sample will be different from
+Jung's sample. Even if Doreen and Jung used the same sampling method, in
+all likelihood their samples would be different. Neither would be wrong,
+however.
+
+Think about what contributes to making Doreen's and Jung's samples
+different.
+
+If Doreen and Jung took larger samples (i.e.~the number of data values
+is increased), their sample results (the average amount of time a
+student sleeps) might be closer to the actual population average. But
+still, their samples would be, in all likelihood, different from each
+other. This variability in samples cannot be stressed enough.
+
+Size of a Sample The size of a sample (often called the number of
+observations, usually given the symbol n) is important. The examples you
+have seen in this book so far have been small. Samples of only a few
+hundred observations, or even smaller, are sufficient for many purposes.
+In polling, samples that are from 1,200 to 1,500 observations are
+considered large enough and good enough if the survey is random and is
+well done. Later we will find that even much smaller sample sizes will
+give very good results. You will learn why when you study confidence
+intervals.
+
+Be aware that many large samples are biased. For example, call-in
+surveys are invariably biased, because people choose to respond or not.
+
+\bookmarksetup{startatroot}
+
+\chapter{Summary}\label{summary}
+
+In summary, this book has no content whatsoever.
+
+\bookmarksetup{startatroot}
+
+\chapter*{References}\label{references}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{0}{1}
+\end{CSLReferences}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{part}{Appendices}
+\appendix
+
+\chapter{Syllabus}\label{syllabus}
+
+Guillaume Gilles (guillaume.gilles@essca.eu)
+
+\subsection{Course Description}\label{course-description}
+
+\subsection{Course Learning Outcomes,
+Objectives}\label{course-learning-outcomes-objectives}
+
+\subsection{Course Calendar}\label{course-calendar}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0482}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7229}}
+  >{\centering\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2289}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+Date
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Topic
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Textbook's Chapters
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\#1 & Sets and Combinatorial Analysis & \\
+\#2 & Calculation of probabilities & \\
+\#3 & Discrete random variable & \\
+\#4 & Continuous random variable & \\
+\#5 & Lab on Excel & \\
+\#6 & Review of descriptive statistics & \\
+\#7 & Estimation & \\
+\#8 & Hypothesis Testing - Test of conformity to a reference value & \\
+\#9 & Hypothesis testing - Comparison test & \\
+\#10 & Lab on Excel & \\
+\#11 & Test ANOVA & \\
+\#12 & Chi-Square Test & \\
+\#13 & Linear correlation coefficient Test & \\
+\#14 & Lab on Excel & \\
+\end{longtable}
+
+\subsection{Course Grades:}\label{course-grades}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Midterm Exam: MCQ for 35\% of your grade
+\item
+  Final Exam: 65\% of your grade
+\end{enumerate}
+
+\subsection{Course goals \& objectives}\label{course-goals-objectives}
+
+\subsection{Class meetings}\label{class-meetings}
+
+This class is taught for students PGE programm during the spring
+semester at Bordeaux
+
+\subsection{Required materials}\label{required-materials}
+
+\subsection{Class meetings}\label{class-meetings-1}
+
+\subsection{Exams}\label{exams}
+
+\subsection{Work load}\label{work-load}
+
+You are expected to put in about 4-6 hours of work / week outside of
+class. Some of you will do well with less time than this, and some of
+you will need more
+
+
+
+\end{document}
