@@ -1,0 +1,367 @@
+---
+title: Discrete random variable
+# Foam graph
+tags: [Github-page]
+---
+
+After performing a random experiment, we are often interested in the function of the result obtained. For example, when we roll two balanced dice (fair dice) with two different colors, we may want to know the sum of the two numbers from the experiment. These magnitudes (or functions) of interest are values called random variables.
+
+A **random variable** $X$ is a function defined from the set of possible results of a random experiment $\Omega$ and with values in $\mathbb{R}$ or a part of $\mathbb{R}$.
+
+$$\begin{align}
+X : \Omega &\to \mathbb{R} \\
+    \omega &\to X(\omega)
+\end{align}$$ 
+
+It must be possible to determine the probability that it takes a given value or a given set of values. We denote by $X( \Omega)$ the set of all the values that $X$ can take.
+
+{{< video https://www.youtube.com/watch?v=3v9w79NhsfI >}}
+
+### Discrete or continuous random variable 
+
+Discrete random variables can only take on a finite number of values. In another words, a **random variable** $X$ is called **discrete** if $X(\Omega)$ is a finite or countable set. For example:
+
+- number of _heads_ appearing after ten throws of a coin,
+- number of vehicles passing an intersection in a day,
+- number of customers entering a store on Saturday.
+
+Continuous random variables, on the other hand, can take on any value in a given interval. For example, the mass of an animal would be a continuous random variable, as it could theoretically be any non-negative number.
+
+Let $X$ be a discrete random variable. The law, also called _distribution_ of $X$ is the list of probabilities attributed to each of its possible values. Explicitly, for any $x \in X(\Omega)$, we associate a value between $0$ and $1$ corresponding to the probability that the event $X = x$ is realized and noted $P(X = x)$.
+
+Remark: Suppose $X(\Omega) = \{x_1, x_2, ..., x_n\}$. Therefore:
+
+$$P( X = x_1) + ... + P(X = x_n) =  \sum_{\substack{x \in X(\Omega)}} P(X = x) = 1$$
+
+{{< video https://www.youtube.com/watch?v=dOr0NKyD31Q >}}
+
+### Expected value (mean) of a discrete random variable
+
+We can calculate the expected value (or mean) of a discrete random variable as the weighted average of all the outcomes of that random variable based on their probabilities. We interpret expected value as the predicted average outcome if we looked at that random variable over an infinite number of trials. In mathematicals writing, we can say:
+
+Let $X$ be a discrete random variable. Suppose that $X(\Omega) = \{x_1, x_2, ..., x_n\}$. We denote $p_i = P(X = x_i)$, for all $i \in \{1, ..., n\}$.
+
+The expectation of $X$ is defined by: 
+
+$$E(X) = \frac{x_1 \times P(X = x_1) + ... + x_n \times P(X = x_n)}{P(X = x_1) + ... + P(X = x_n)}$$
+
+$$E(X) = \frac{\sum_{i = 1}^n x_i \times p_i}{\sum_{i = 1}^n p_i} = \frac{\sum_{i = 1}^n x_i \times p_i}{1} = \sum_{i = 1}^n x_i \times p_i$$
+
+The expectation $E(X)$ is also called the first-order moment of $X$. 
+
+{{< video https://www.youtube.com/watch?v=qafPcWNUiM8 >}}
+
+### Variance and standard deviation
+
+The variance of a discrete random variable is defined by:
+
+$$V(X) = E(X^2) - (E(X))^2$$
+
+Standard deviation measures the dispersion of a distribution around the expectation. In a way, the standard deviation evaluates the "average width" of the distribution, so it is expressed in the same unit as the variable. A low value of the standard deviation, implies that the distribution is homogeneous around the expectation. In other words, a smaller value of the standard deviation, implies the distribution values are close to each other and to the expectation. On the other hand, a larger value of the standard deviation, implies that the distribution is spread out: the distribution values are distant from each other and from the expectation. The standard deviation is the square root of the variance:
+
+$$\sigma(X) = \sqrt{V(X)}$$
+
+𝜎(𝑋) = √(𝕍(𝑋) )⟺𝕍(𝑋) = (𝜎(𝑋))^2
+
+::: {.callout-tip}
+## Example
+Example of samples from two populations with the same mean but different variances. The red population has mean 100 and variance 100 (Standard Deviation = 10) while the blue population has mean 100 and variance 2500 (Standard Deviation = 50).
+:::
+
+![Source: Wikipedia](/img/comparison_standard_deviations.svg){fig-alt="A comparison of two standard deviations"}
+
+{{< video https://www.youtube.com/watch?v=2egl_5c8i-g >}}
+
+### Coefficiant of variation
+
+- https://en.wikipedia.org/wiki/Coefficient_of_variation
+
+The coefficient of variation of a random variable is defined by 
+
+$$CV(X) = \frac{\sigma(X)}{E(X)} \times 100$$
+
+This percentage is also an indicator of the dispersion around the expectation. By convention, we have:
+
+- $CV(X) < 15\%$ implies that the distribution is homogeneous around the expectation,
+- $CV(X) \geq 15\%$ implies that the distribution is heterogeneous around the expectation.
+
+### Cumulative Distribution Function (CDF)
+
+The cumulative distribution function is a function defined on $\R$ and with values in $[0,1]$, denoted by $F_X$. For all $x \in \R$.
+
+$$F_X(x) = P(X \leq x) = \sum \limits_{j \in X(\Omega), \text{ such that } j \leq x} P(X = j)$$
+
+Remarks:
+
+- The cumulative distribution function is increasing,
+- The cumulative distribution function is a step function,
+- The set of points of discontinuity is $X(\Omega)$
+
+### Special class of random variable
+
+---
+
+Bernouilli Trial
+Bernoulli's test 
+Bernoulli's test is any test with only two possible outcomes: Success and Failure. 
+If 𝑋 is a real random variable counting the number of successes in a Bernoulli's test, then we have the following two cases: 
+[𝑋 = 1] is the event which correspond to Success : with a associated probability 
+0 ≤ 𝑝 ≤ 1 
+[𝑋 = 0] is the event which correspond to Failure : with a associated probability 
+𝑞 = 1 − 𝑝. 
+We say that 𝑋 follows a law of Bernoulli with parameter 𝑝 that we denote 𝑋 ∼ ℬ(𝑝). 
+We have 𝑋(Ω)={0, 1}. 
+Moreover, 𝔼(𝑋)=𝑝 and 𝕍(𝑋)=𝑝𝑞 where 𝑞=1−𝑝. 
+=> faire une expérience en classe pour démontrer : https://en.wikipedia.org/wiki/Bernoulli_trial
+---
+
+The Binomial law 
+The random variable 𝑋= "total number of successes" after 𝑛 independent repetitions of a Bernoulli test, is called a Binomial random variable of parameters (𝑛, 𝑝) and is denoted :
+ 𝑋∼ℬ(𝑛, 𝑝). 
+
+By definition,  𝑋 (Ω) = {0, 1, . . . , 𝑛}.  The expression of the ℬ(𝑛, 𝑝) law is given by :
+𝑝_𝑘  =ℙ(𝑋=𝑘)=𝐶_𝑛^𝑘 𝑝^𝑘 (1−𝑝)^(𝑛−𝑘),  ∀ 𝑘∈𝑋(Ω), 
+with 𝐶_𝑛^𝑘=  𝑛!/(𝑘!(𝑛−𝑘)!)
+By definition, 𝑋 = ∑2_(𝑖=1)^𝑛▒𝑋_𝑖   , where the 𝑋_𝑖 follow a Bernoulli ditribution with parameter 𝑝. 
+The expectation of the Binomial distribution equals  𝔼(𝑋) = 𝑛𝑝 and its variance is equal to 𝕍(𝑋) = 𝑛𝑝𝑞, where 𝑞=1−𝑝 
+
+---
+
+The Poisson law 
+Let 𝜆>0 be a fixed parameter. We say that the random variable 𝑋 with values in ℕ follows a Poisson law of parameter 𝜆 (denoted by 𝑋∼𝒫𝑜(𝜆)), if 
+𝑝_𝑘  =ℙ(𝑋=𝑘)=𝑒^(−𝜆)  𝜆^𝑘/𝑘!,  ∀ 𝑘∈ℕ, 
+Note that :
+𝔼(𝑋) =𝕍(𝑋) = 𝜆. 
+
+The Poisson law can be seen as an approximation of the Binomial law when 𝑛 is "large" and 𝑝 is "small" (rare success). 
+
+---
+
+Geometric law
+The random variable 𝑋 which gives the rank of the first success (following the independent repetition of a Bernoulli's test, having as probability of success 𝑝) is called Geometric random variable of parameter 𝑝 (denoted 𝑋 ~ 𝐺(𝑝)). By definition, 𝑋(Ω) =ℕ∖{0}. The expression of the 𝐺(𝑝) law is given by 
+𝑝_𝑘  =ℙ(𝑋=𝑘)=𝑝(1−𝑝)^(𝑘−1),  ∀ 𝑘∈𝑋(Ω), 
+We have :
+𝔼(𝑋)=1/𝑝
+𝕍(𝑋)=(1−𝑝)/𝑝^2   
+𝐹_𝑋 (𝑘)=ℙ(𝑋 ≤𝑘)=1−(1−𝑝)^𝑘  
+
+The geometric law is often interpreted as being the lifetime or the date of death (discrete) 
+
+---
+
+Linear transformation 
+Let 𝑋 be a discrete random variable. Let 𝑎 and 𝑏 be two real values. 
+We set 𝑌 = 𝑎𝑋+𝑏. 
+We have :
+ 𝔼 (𝑌 ) = 𝑎 (𝔼(𝑋)) + 𝑏.
+ 𝕍 (𝑌 ) = 𝑎^2  (𝕍(𝑋)).
+ If 𝑎 > 0, then 𝜎(𝑌 ) = 𝑎𝜎(𝑋)
+ If 𝑎 < 0, then 𝜎(𝑌 ) = (−𝑎)𝜎(𝑋) 
+
+---
+
+Binomial - Poisson Approximation : 
+
+Let 𝑋 ~ ℬ(𝑛, 𝑝) 
+
+If 𝑛 is large enough (≥ 30) and 𝑝 is low (≤ 0.1) such that 𝑛𝑝 < 15, then we can approach the Binomial law by the Poisson law of parameter 𝜆 = 𝑛𝑝, i.e. 
+ℙ(𝑋=𝑘)≈𝑒^(−𝜆)  𝜆^𝑘/𝑘! 
+
+--- detailed examples
+
+Let the binomial law : 𝑋 ~ ℬ(100, 0.09)
+	𝑛=100 et 𝑝=0,09
+What is the value of the probability  ℙ (𝑋 ≤ 5) ?
+What is the estimate obtained for this probability using the Poisson distribution approximation?
+
+---
+
+Let the binomial law : 𝑋 ~ ℬ(100, 0.09)
+	𝑛=100 et 𝑝=0,09
+We have: ℙ (𝑋 ≤ 5)= 0.1045
+ℙ (X ≤ 5)=" " ∑2_(𝑘=0)^4▒〖𝐶_𝑛^𝑘 𝑝^𝑘 (1−𝑝)^(𝑛−𝑘) 〗
+= ℙ(X=0)+ ℙ(X=1) + ℙ(X=2) + ℙ(X=3) + ℙ (X=4) + ℙ (X=5) 
+= 0,000080193512+ 0,000793122644 + 0,003882814701 + 0,012544478265 + 0,030086070125 + 0,057130471622 = 0.1045
+Approximation by the poisson law (with parameter 𝜆 = 𝑛𝑝=100×0,09) that is 
+ 	 𝑌 ~ 𝒫𝑜(9)"  hence  " ℙ(𝑋≤5)≈ℙ(𝑌≤5)= 0.1157
+ℙ (Y ≤ 5)=∑2_(𝑘=0)^4▒〖𝑒^(−𝜆)  𝜆^𝑘/𝑘!〗 = 0,000123409804+ 0,001110688237+ 0,004998097066+ 0,014994291197+ 0,033737155192+ 0,060726879346 = 0.1157
+
+--- Application exercices
+
+A game of chance involves rolling a balanced 6-sided dice. The thrower gains the double of the result obtained if it is even, otherwise, he loses the double of the result obtained. Let 𝑋 be the random variable that represents a player's winnings. 
+
+1  Determine the law of 𝑋 
+2  Calculate 𝔼(𝑋), 𝕍(𝑋) and 𝜎_𝑋 
+3  Plot the cumulative distribution function of 𝑋 
+
+---
+
+𝔼(𝑋)=∑_(𝑥∈𝑋(Ω))▒〖(𝑥 ×ℙ(𝑋 =𝑥))=1〗
+
+𝕍(𝑋)=∑_(𝑥∈𝑋(Ω))▒〖(𝑥^2  ×ℙ(𝑋 =𝑥))−(𝔼(𝑋))^2= 364/6〗−1^2=358/6
+
+𝜎_𝑋  = √(𝕍(𝑋) ) = √(358/6)=7.72442
+
+---
+
+Cumulative distribution function 𝐹_𝑋 :
+if 𝑥<−10, then 𝐹_𝑋 (𝑥)=0 ; 
+if −10≤𝑥<−6, then 𝐹_𝑋 (𝑥)=ℙ(𝑋=−10)=1/6  ; 
+if −6≤𝑥<−2, then 𝐹_𝑋 (𝑥)=ℙ(𝑋=−10)+ℙ(𝑋=−6)=2/6; 
+if −2≤𝑥<4, then 𝐹_𝑋 (𝑥)=ℙ(𝑋 =−10)+ℙ(𝑋 =−6)+ℙ(𝑋 =−2)=  3/6; 
+if 4≤𝑥<8, then 𝐹_𝑋 (𝑥) =ℙ(𝑋 = −10)+ℙ(𝑋 = −6)+ℙ(𝑋 = −2)+ℙ(𝑋 = 4) =4/6; 
+if 8≤𝑥<12, then〖 𝐹〗_𝑋 (𝑥)=ℙ(𝑋=−10)+ℙ(𝑋=−6)+ℙ(𝑋= −2)+ℙ(𝑋=4)+ℙ(𝑋=8)=5/6  ; 
+if 𝑥≥12, 
+then〖 𝐹〗_𝑋 (𝑥)=ℙ(𝑋=−10)+ℙ(𝑋=−6)+ℙ(𝑋= −2)+ℙ(𝑋 =4)+ℙ(𝑋 =8)+ℙ(𝑋 =12)=  6/6  =1. 
+
+### exercice
+
+Question
+
+A transistor factory knows that due to disruption, there are currently a two
+out of 100 chances that a part produced will be defective.
+Every 2 hours, 50 parts are randomly selected (with replacement) from the
+transistors produced.
+The number of defective parts found is a random variable 𝑋.
+a) Determine the distribution of 𝑋. Calculate 𝐸(𝑋) and 𝑉(𝑋).
+b) The following quality control rule is adopted: production will be
+stopped if our sample contains at least 3 defective parts. What is the
+probability that the production will be stopped?
+c) What other law can be used to approach the distribution of 𝑋?
+Let 𝑌 be the random variable with the approximation law above.
+d) Calculate 𝑃 (𝑌 ≥ 3).
+Let 𝑍 = −2𝑌 + 5.
+e) Calculate 𝐸(𝑍) et 𝑉(𝑍).
+Let 𝑇 be the random variable that corresponds to the number of tests
+before getting the first defective part.
+f) Determine the distribution of 𝑇
+g) Calculate 𝑃 (𝑇 ≤ 2).
+h) Calculate 𝐸(𝑇) and 𝑉(𝑇)
+
+Réponse
+
+- 𝑋 is the random variable that represents the number of defective parts among 50 parts drawn randomly. By definition, 𝑋 follows a Binomial law with parameters 𝑛 = 50 and 𝑝 = 0.02 (the probability that a part is defective). Therefore, we have  : 
+
+𝐸(𝑋) = 𝑛 𝑝 = 1 and 𝑉(𝑋) = 𝑛 𝑝 (1 −𝑝) = 0.98
+
+- The production will be stopped if:
+
+	 𝑃(𝑋≥3)=1−𝑃(𝑋≤2)=1−(𝑃(𝑋=0)+𝑃(𝑋=1)+𝑃(𝑋=2)) = 0.07842775
+
+Th- e conditions for approximation of the Binomial distribution by a Poisson law are satisfied, and its parameter is 𝜆 = 𝐸(𝑋) = 1,.  
+
+- Now suppose that 𝑌 follows a Poisson distribution with parameter 𝜆=1. 
+We have: 𝑃(𝑌≥3)=1−𝑃(𝑌≤2)=1−(𝑃(𝑌=0)+𝑃(𝑌=1)+𝑃(𝑌=2)) = 0.0803014
+Remark : 𝑃(𝑋≥3)  ≈ 𝑃 (𝑌 ≥ 3)
+
+- Let 𝑍=−2𝑌+5. Hence, we have : 𝐸(𝑍)=−2 𝐸(𝑌)+5=3 and 𝑉(𝑍) = 4 𝑉(𝑌) = 4.
+
+- Let us define 𝑇 as the random variable which corresponds to the number of trials before obtaining the first defective part. We notice that : 𝑇(Ω) =ℕ (the set of natural numbers). Note that 𝑊 = 𝑇 + 1 corresponds to the rank of first appearance of the defective part. By definition, 𝑊 follows a geometric law with parameter 𝑝 = 0.02 (the probability that a part is defective)
+
+- So, for all 𝑘 ∈ 𝑁, we have :
+𝑃 (𝑇 = 𝑘) = 𝑃 (𝑊 − 1 = 𝑘) = 𝑃 (𝑊 = 𝑘 + 1) = 𝑝 〖(1 − 𝑝)〗^((𝑘 + 1) − 1)  = 𝑝 〖(1 − 𝑝)〗^(𝑘 ) 
+𝑃 (𝑇 ≤ 2)= 𝑃 (𝑊 − 1 ≤ 2)= 𝑃 (𝑊 ≤ 3)= 1 − (1 − 𝑝)^3
+
+- and we have:
+𝐸(𝑇)= 𝐸(𝑊 − 1)= 𝐸(𝑊)− 1 =  1/𝑝  − 1 =  (1 − 𝑝)/𝑝
+V(T) = V (W − 1) = V(W) =  (1 − 𝑝)/𝑝^2 
+
+### moodle
+
+1/
+70 people are about to pass through the airport security gate. We assume that for each person the
+probability that the gate does not ring is equal to 0.99.
+Let X be the random variable giving the number of people ringing the gate, among the 70 people.
+X follows the Binomial law :
+• ℬ(70; 0,01)
+• ℬ(70; 0,02)
+• ℬ(70; 0,03)
+• ℬ(70; 0,04)
+Feedback: n=70 repetitions of a Bernoulli test of parameter p = 1-0.99 = 0.01
+
+2/
+70 people are about to pass through the airport security gate. We assume that for each person the probability
+that the gate does not ring is equal to 0.99.
+Let X be the random variable giving the number of people ringing the gate, among the 70 people.
+The expectation 𝔼(𝑋) is :
+• 0,5
+• 0,6
+• 0,7
+• 0,8
+Feedback: The expectation of the binomial distribution with parameters n=70 and p=0.01 is np = 70 x 0.01 =
+0.7
+
+3/
+70 people are about to pass through the airport security gate. We assume that for each person the
+probability that the gate does not ring is equal to 0.99.
+Let X be the random variable giving the number of people ringing the gate, among the 70 people.
+The variance 𝕍(𝑋) is :
+• 0,593
+• 0,693
+• 0,793
+• 0,893
+Feedback: The variance of the binomial law with parameters n=70 and p=0.01 is
+npq=np(1-p)=70x0.01x0.99
+
+4/
+70 people are about to pass through the airport security gate. We assume that for each person the
+probability that the gate does not ring is equal to 0.99.
+Let X be the random variable giving the number of people ringing the gate, among the 70 people.
+The probability that at least one person in the group rings the gate is :
+• 1 − 0,99 70
+• 1 − 0,01 70
+• 0,99 70
+• 0,01 70
+Feedback: The probability that no one will ring the gate is 0.99 70 . The probability of the
+complement (at least one person rings the gate) is therefore 1 − 0.99 70
+
+5/
+70 people are about to pass through the airport security gate. We assume that for each person the probability that the gate does not ring is equal to 0.99.
+Let X be the random variable giving the number of people ringing the gate, among the 70 people.
+The probability that exactly 3 people in the group will ring the gate is approximately:
+0,0279
+0,0379
+0,0479
+0,0579
+
+Feedback: We use for the binomial distribution the probability ℙ(𝑋=𝑘)=𝐶_𝑛^𝑘 𝑝^𝑘 (1−𝑝)^(𝑛−𝑘) with n=70, p = 0.01 and k=3
+
+
+6/
+70 people are about to pass through the airport security gate. We assume that for each person the probability that the gate does not ring is equal to 0.99.
+Let X be the random variable giving the number of people ringing the gate, among the 70 people.
+We can approximate the distribution of X, by a Poisson distribution with parameter 𝜆 equal to:
+0,5
+0,6
+0,7
+0,8
+
+Feedback: We check that the criteria of the approximation of the Binomial law ℬ(70; 0.01) by a Poisson law applies, and then we use 𝜆=nxp
+
+
+7/ 
+70 people are about to pass through the airport security gate. We assume that for each person the probability that the gate does not ring is equal to 0.99.
+Let X be the random variable giving the number of people ringing the gate, among the 70 people.
+The probability that at least two people in the group will ring the gate is approximately :
+0,055
+0,155
+0,255
+0,355
+
+Feedback: We use for the binomial distribution the probability ℙ(𝑋≥2)=〖1 −ℙ(𝑋<2)=1−𝑃(𝑋=0)−𝑃(𝑋=1)  𝑘𝑛𝑜𝑤𝑖𝑛𝑔 𝑡ℎ𝑎𝑡 𝑃(𝑋=𝑘)= 𝐶〗_𝑛^𝑘 𝑝^𝑘 (1−𝑝)^(𝑛−𝑘)
+
+70 people are about to pass through the airport security gate. We assume that for each person the probability that the gate does not ring is equal to 0.99.
+Let X be the random variable giving the number of people ringing the gate, among the 70 people.
+
+The probability that no one in the group will ring the gate is approximately :
+0,2948
+0,3948
+0,4948
+0,5948
+
+Feedback : The probability is  〖0,99〗^70
+
+
+<p align="center">
+🏁🏁
+</p>

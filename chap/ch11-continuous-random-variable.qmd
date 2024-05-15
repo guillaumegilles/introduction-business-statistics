@@ -1,0 +1,362 @@
+---
+title: Continuous random variable
+# Foam graph
+tags: [Github-page]
+---
+
+- [ ] normal distribution real life examples
+- [ ] galton board simulation in python, R
+
+Définition
+A random variable 𝑋 is called continuous if 𝑋(Ω) is an interval of ℝ, i.e 𝑋(Ω) has one of the following forms: 
+]−∞,𝑎] , ]−∞,𝑎[ , ]𝑎,+∞[, [𝑎,+∞[ , 
+]−∞,+∞[ ,]𝑎,𝑏[ ,[𝑎,𝑏[ ,]𝑎,𝑏],[𝑎,𝑏]où 𝑎<𝑏. 
+Some examples :
+ Time interval between 2 trains
+ Hair length
+ Lifetime in seconds of a mechanical part
+
+Let  𝑋 be a continuous random variable and 𝑋(Ω) be the set of its possible values. 
+
+Density function: 𝑓 : ℝ →ℝ is a density if it satisfies the following conditions: 
+ For all 𝑥∈ℝ, 𝑓(𝑥) ≥ 0 
+  ∫_(−∞)^(+∞)▒〖𝑓 (𝑥)𝑑𝑥〗= 1
+
+Note that :
+ For all 𝑥 ∈ℝ, ℙ(𝑋 = 𝑥) = 0 
+ For all 𝑎, 𝑏 ∈ℝ with 𝑎 < 𝑏, 
+ℙ (𝑎≤𝑋≤𝑏)=ℙ(𝑋 ∈[𝑎,𝑏])= ∫_𝑎^𝑏▒〖𝑓 (𝑥)𝑑𝑥〗
+
+Expectation :  𝔼(𝑋)=∫_(−∞)^(+∞)▒〖𝑥𝑓 (𝑥)𝑑𝑥〗
+Variance : 𝕍(𝑋)=∫_(−∞)^(+∞)▒〖𝑥^2 𝑓 (𝑥)𝑑𝑥〗−(𝔼(𝑋))^2  
+Standard deviation : a real positive value, denoted  𝜎_𝑋   defined by :
+  𝜎_𝑋  = √(𝕍(𝑋) )  
+Coefficient of variation : 𝐶𝑉 (𝑋) =  𝜎_𝑋/𝔼(𝑋) × 100 
+
+Cumulative distribution function : denoted by  𝐹_𝑋, defined on ℝ and with values in [0,1]. 
+For all 𝑥 ∈ ℝ 
+𝐹_𝑋 (𝑥)=ℙ(𝑋 ≤𝑥)= ∫_(−∞)^𝑥▒〖𝑓 (𝑡)𝑑𝑡〗
+Remarks 
+ The cumulative distribution function is increasing 
+ The cumulative distribution is a continuous function 
+
+Linear transformation 
+Let 𝑋 be a discrete random variable. Let 𝑎 and 𝑏 be two real values. 
+We set 𝑌 = 𝑎𝑋+𝑏. 
+We have :
+ 𝔼 (𝑌 ) = 𝑎 (𝔼(𝑋)) + 𝑏.
+ 𝕍 (𝑌 ) = 𝑎^2  (𝕍(𝑋)).
+ If 𝑎 > 0, then 𝜎(𝑌 ) = 𝑎𝜎(𝑋)
+ If 𝑎 < 0, then 𝜎(𝑌 ) = (−𝑎)𝜎(𝑋) 
+
+Standard normal distribution  
+One can say that a random variable 𝑋 follows a standard normal distribution, denoted by 𝒩(0, 1), if its density is defined by : 
+
+𝑓(𝑥)=1/√2𝜋 𝑒^(−𝑥^2/2)
+
+Standard normal distribution  
+[[image normal distribution]]
+By definition, the total area equals  1
+
+Standard normal distribution  
+ Shape of a bell. 
+ 𝑋(Ω)=ℝ, 𝔼(𝑋)=0 and 𝕍(𝑋) =1. 
+ For all 𝑥∈ℝ, we have 𝑓(𝑥)=𝑓(−𝑥) (𝑓 is even). 
+	Which implies that 𝑓 is a symetric function with respect to 𝑥 = 0. 
+
+[[image normal distribution]]
+Remark 1 
+"Area" of the green part equals 1 - "Area" of the red part. 
+
+[[image normal distribution]]
+Remark 2
+Based on the symmetric property of 𝑓(𝑥), "Area" of the left part (in yellow) is equal to the "Area" of the right part (in red). 
+
+[[image normal distribution]]
+Remark 3
+"Area" of the blue part = "Area" of the grey part + "Area" of the blue part - "Area" of the grey part.
+
+ "Area" of the green part in the first graph is equal to
+𝐹_𝑋 (𝑢) =ℙ(𝑋 ≤ 𝑢) the cumulative distribution function of 𝑋 at 𝑢. 
+ "Area" of the yellow part in the second graph is equal to 
+𝐹_𝑋  (−𝑢)=ℙ(𝑋≤−𝑢) the cumulative distribution function of 𝑋 at −𝑢. 
+ "Area" of the red part in the second graph is equal to ℙ(X > u). 
+ One can deduce that 𝐹_𝑋 (𝑢) = 1 − 𝐹_𝑋 (−𝑢). 
+  "Area"  of the blue part in the third graph is equal to
+		 ℙ (𝑢 ≤ 𝑋 ≤ 𝑣) = 𝐹_𝑋  (𝑣) − 𝐹_𝑋  (𝑢) 
+ It is difficult to calculate the values 𝐹_𝑋  (𝑢)=ℙ(𝑋 ≤ 𝑢) for any 𝑢. Thoses values are provided by a table.
+
+[[tableau de la loi normale]] x2
+
+Examples : Let 𝑋 a random variable which follows a standard Normal distribution. Use the table to calculate :
+ℙ(𝑋 ≤ 2.12) = 0.983
+ℙ(𝑋 ≤ −1.41) = 1 −ℙ(𝑋 ≤ 1.41) = 1 − 0.92073 ≃ 0.08 
+Search the table for values closest to 95%, 99%, 97.5% and 99.5% and give each time the value of 𝑢 that corresponds. 
+	Answers :
+95% ← 𝑢 = 1.65 
+99% ← 𝑢 = 2.33 
+97.5% ← 𝑢 = 1.96 
+99.5% ← 𝑢 = 2.58 
+
+Normal distribution
+Let 𝑚∈ℝ  and 𝜎>0. One can say that a random variable 𝑋 follows a normal distribution, denoted by 𝑋 ∼𝒩(𝑚, 𝜎), if its density is defined by :
+
+𝑓(𝑥)=1/(𝜎√2𝜋) 𝑒^(−1/2 ((𝑥−𝑚)/𝜎)^2 )
+ Shape of a bell.
+ 𝑋(Ω)=ℝ, 𝔼(𝑋)=𝑚 and 𝕍(𝑋) = 𝜎^2. 
+ For 𝑚=0 and 𝜎=1, one can say that 𝑋 follows a standard Normal distribution. 
+ If 𝑋∼𝒩(𝑚, 𝜎), then 𝑌=(𝑋−𝑚)/𝜎  follows a standard Normal distribution. 
+
+Binomial – Normal approximation  : 
+Let 𝑋 ~ℬ(𝑛, 𝑝). If 𝑛 is large (≥ 30) and 𝑝 is neither close to 0 nor to 1, such that 𝑛𝑝 > 10 and 𝑛(1 − 𝑝) > 10, then the binomial distribution can be approximated by a Normal distribution with parameters 
+𝑚 = 𝑛𝑝 and 𝜎 = √(𝑛𝑝(1 − 𝑝)) 
+that is : 
+ℙ(𝑎≤𝑋≤𝑏)≈ℙ(𝑎≤𝑌 ≤𝑏)=𝐹_𝑌 (𝑏)−𝐹_𝑌 (𝑎) 
+and : 
+ℙ(𝑋 = 𝑎) =ℙ(𝑋 ≤ 𝑎) −ℙ(𝑋 ≤ 𝑎 − 1) ≈ 𝐹_𝑌  (𝑎) − 𝐹_𝑌  (𝑎 − 1) 
+where 𝐹_𝑌 is the cumulative distribution function of 𝑌 ~ 𝒩(𝑛𝑝,√(𝑛𝑝(1 − 𝑝))). 
+
+Poisson – Normal approximation  : 
+Let 𝑋 ~ 𝒫𝑜(𝜆). If 𝜆 is large (> 20), then the Poisson distribution can be 
+approximated by a Normal distribution with parameters 
+ 𝑚 = 𝜆 and 𝜎 = √𝜆, 
+that is :
+ ℙ(𝑎≤𝑋≤𝑏)≈ℙ(𝑎≤𝑌 ≤𝑏)=𝐹_𝑌 (𝑏)−𝐹_𝑌 (𝑎) 
+and : 
+ℙ(𝑋 = 𝑎) =ℙ(𝑋 ≤ 𝑎) −ℙ(𝑋 ≤ 𝑎 − 1)≈ 𝐹_𝑌  (𝑎) − 𝐹_𝑌  (𝑎 − 1) 
+where 𝐹_𝑌 is the cumulative distribution function 𝑌 ~𝒩(𝜆,√𝜆). 
+
+
+detailed examples
+Let 𝑋 ~ ℬ(100, 0.3)
+We have:
+ ℙ (30 ≤ 𝑋 ≤ 40) = 0.4384 
+ ℙ(𝑋 > 40) =0.01250
+
+ What are the estimates obtained for these probabilities using the Normal distribution approximation?
+
+
+ Soit 𝑋 ~ ℬ(100, 0.3) : 
+ ℙ (30 ≤ 𝑋 ≤ 40) = 0.4384 
+ Approximation by : 𝑌 ~𝒩(30, 4.583) 
+ℙ (30 ≤ 𝑌 ≤ 40)= ℙ((30 −30)/4.583≤(𝑌 −30)/4.583≤ (40 −30)/4.583)
+= ℙ(0≤(𝑌 −30)/4.583≤2.182  )  
+= 0.9855 − 0.5 
+= 0.4855 
+
+
+ℙ(𝑋 > 40) =0.01250
+ Approximation by : 𝑌 ~ 𝒩(30, 4.583) 
+ℙ(𝑌 > 40)=1− ℙ(𝑌≤40)=1− ℙ((𝑌 −30)/4.583≤ (40 −30)/4.583)
+=1−ℙ((𝑌 −30)/4.583≤2.182  )  
+=1−0.9855 
+=0.0145 
+
+
+applocation exercice
+In 1955, Wechler proposed to measure the IQ (Intellectual Quotient) of adults with two scales for measuring verbal skills and non-verbal skills. The overall score of the person tested is compared with the distribution of scores obtained by a representative sample of the population of a given age, whose performances follow a Normal distribution with average 100 and standard deviation 15. 
+
+ What is the percentage of people whose IQ is less than 80 ? 
+ What is the probability of getting 
+An IQ between 90 and 100 ? 
+An IQ between 100 and 110 ? 
+An IQ more than 110 ? 
+
+
+Answers : 
+Let 𝑋 be the random variable associated with the performance.  We know that 𝑋 ∼𝒩(100, 15). Therefore, 𝑌 =  (𝑋 − 100)/15  follows a standard Normal distribution
+   ℙ(𝑋 ≤ 80) =ℙ(𝑌 ≤  (80 − 100)/15)
+=ℙ(𝑌 ≤ −1.333) = 1 −ℙ(𝑌 ≤ 1.333) 
+=  1 − 𝐹_𝑌  (1.333) = 1 − 0.9088 = 0.09121 
+
+
+ℙ(90≤𝑋 ≤100) =ℙ((90 − 100)/15≤𝑌 ≤ (100 − 100)/15)
+=ℙ(−0.6667 ≤ 𝑌 ≤ 0)=ℙ(𝑌 ≤ 0)− 𝑃(𝑌 ≤ −0.6667)
+= 〖𝐹_𝑌  (0)−(1−𝐹〗_𝑌  (0.6667))=0.5−(1−0.7475) = 0.2475
+ ℙ(100≤𝑋 ≤110) =ℙ((100 − 100)/15≤𝑌 ≤ (110 − 100)/15)
+= ℙ (0 ≤ 𝑌 ≤0.6667)  =ℙ(𝑌 ≤0.6667)−ℙ(𝑌 ≤ 0)
+= 𝐹_𝑌  (0.6667)− 𝐹_𝑌  (0)= 0.7475 − 0.5 = 0.2475 
+ ℙ(𝑋 ≥110) =ℙ(𝑌 ≥ (110 − 100)/15)  =1−ℙ(𝑌 ≤  (110 − 100)/15)
+=  1 − 𝐹_𝑌  (0.6667)= 1 − 0.7475 =0.2525
+
+### Exercice with solution
+
+Exercice 1
+
+According to a study conducted by an insurance company: the distance in km before having the first accident follows a normal distribution of average 35000 and standard deviation 5000.
+
+What is the percentage of drivers who have the first accident before 25000 km? 
+What is the percentage of drivers who have the first accident between 25000 and 40000 km? 
+What is the percentage of drivers who have the first accident beyond 45000 km? 
+Calculate 𝑥, such that 𝑃 (𝑋 ≤ 𝑥) = 0.75.
+
+Solution
+
+Let 𝑋 be the random variable corresponding to the distance before the first crash. By assumption, we have 𝑋 ~ 𝑁 (35000, 5000) . We set 𝑌 =  (𝑋 − 35000)/5000. Thanks to this change of variable, we obtain that 𝑌 follows a reduced centered normal law.
+ 
+ 𝑃 (𝑋 ≤ 25000) = 1 − 𝑃 (𝑌 ≤ 2) = 0.02275
+ 𝑃 (25000 ≤ 𝑋 ≤ 40000) = 𝑃 (𝑌 ≤ 1) − (1 − 𝑃 (𝑌 ≤ 2)) = 0.81859
+ 𝑃 (𝑋 ≥ 45000) = 1 − 𝑃 (𝑌 ≤ 2) = 0.02275
+We seek to calculate 𝑥 such that 𝑃 (𝑋 ≤ 𝑥) = 𝑃 (𝑌 ≤ (𝑥 − 35000)/5000)  = 0.75
+	According to the table of the reduced centered normal law, it can be deduced that  :
+
+(𝑥 − 35000)/5000  = 0.68 → 𝑥 = 38400
+
+Exercice 2
+
+The results of an evaluation test (scored out of 250) have an average of 200. These results follow a normal distribution whose variance is unknown. We know that the proportion of candidates who obtained a mark between 160 and 240 is equal to 95.44%. 
+Calculate the variance of the results.
+
+Solution
+
+Let 𝑋 be the random variable corresponding to the test results. By assumption, we have that 𝑋 ~ 𝑁 (200, 𝜎). 
+Let’s set 𝑌 =  (𝑋 − 200)/𝜎. Thanks to this change of variable, we obtain that 𝑌 follows a standard normal law. 
+Moreover, we have :
+𝑃 (160 ≤ 𝑋 ≤ 240) = 2 𝑃 (𝑌 ≤  40/𝜎) − 1 = 0.9544
+
+This implies that 𝑃 (𝑌 ≤  40/𝜎) =0.9772. 
+
+From the standard normal distribution table, we can deduce that
+
+40/𝜎  ≈ 2 ⟹ 𝜎 ≈ 20⟹ 𝜎^2  ≈400
+
+Exercice 3
+
+Mr. Smith is elected with 51.3% of the votes. A survey is carried out at the exit of the meeting room where an investigator questions 1000 people chosen at random. Let 𝑋 be the random variable: “number of people who voted for Mr. Smith among the 1000 people questioned”.
+ Determine the law of 𝑋.
+ Calculate 𝐸(𝑋) and 𝜎(𝑋)
+ Using an approximation that will be justified, calculate the probabilities of the following events:
+𝑃 (𝑋 ≤ 500)
+𝑃 (500 ≤ 𝑋 ≤ 520) 
+
+Solution
+
+Let 𝑋 be the random variable that represents the number of people who voted for Mr. Smith among the 1000 respondents (the number of successes among 1000 tries, with a probability of success 𝑝 = 0.513)
+
+By definition, 𝑋 follows a binomial distribution with parameters 𝑛 = 1000 and 𝑝 = 0.513.
+Thus, we have
+
+𝐸(𝑋) = 𝑛 𝑝 =513 and 𝜎 (𝑋) = √(𝑉 (𝑋)) = √(𝑛 𝑝 (1 − 𝑝)) = 15.80604 ≈ 15.8
+
+The conditions for approximation of the binomial law by a normal law (with parameters 𝑚=513 and 𝜎=15.8) are satisfied. Let  Y ~ 𝑁 (𝑚, 𝜎). We set 𝑍 =  (𝑋 − 𝑚)/𝜎.  Thanks to this change of variable, we obtain that 𝑍 follows a standard normal law.
+
+So we get: 
+𝑃 (𝑋 ≤ 500) ≈ 𝑃 (𝑌 ≤ 500) = 𝑃 (𝑍 ≤ −0.82) = 0.2061081
+𝑃(500≤𝑋≤520)≈𝑃(500≤𝑌≤520)
+                  =𝑃(−0.82≤𝑍≤1.44)=0.46
+
+Exercice 4
+
+What is the probability of getting 2 at least 1050 times in 6000 rolls of a (balanced) dice? 
+
+Solution
+
+Let 𝑋 be the random variable representing the number of twos one gets, among the 6000 die rolls (the number of successes among 6000 tries, with a probability of success p = 1/6)
+ 
+By definition, 𝑋 follows a binomial distribution with parameters 𝑛 = 6000 and p = 1/6.
+Thus, we have  :
+ 
+𝐸(𝑋) = 𝑛 𝑝 =1000 and 𝜎 (𝑋) = √(𝑉 (𝑋)) = √(𝑛 𝑝 (1 − 𝑝)) = 28.86751 ≈ 28.87
+ 
+The conditions for approximation of the binomial distribution by a normal distribution (with parameters 𝑚 = 175 and 𝜎 = 12.87) are satisfied. Let Y ~ 𝑁 (𝑚, 𝜎) . We set 𝑍 =  (𝑋 − 𝑚)/𝜎. Thanks to this change of variable, we obtain that 𝑍 follows a reduced centered normal law. 
+
+Therefore : 
+𝑃 (𝑋 ≥ 1050) ≈ 𝑃 (𝑌 ≥ 1050) = 1 − 𝑃 (𝑍 ≤ 1.73) ≈ 0.04181514
+
+### moodle test
+
+Question 1
+
+Let the variable X follow the normal law 𝒩(100, 30) 
+
+The probability ℙ(𝑋 ≤150)  is:
+0.3522
+0.5522
+0.7522
+0.9522
+
+Feedback: Use a change of variable to obtain a standard normal distribution. Then use the table of that law to determine the probability.
+
+Question 2
+
+Let the variable X follow the normal law 𝒩(150, 40) 
+
+The probability ℙ(𝑋≥160) is:
+0.3013
+0.4013
+0.5013
+0.6013
+
+Feedback: Use a change of variable to obtain a standard normal distribution. Then use the table of that law to determine the probability.
+
+Question 3
+
+Let the variable X follow the normal law 𝒩(50, 10) 
+
+The probability ℙ(𝑋 ≤40)  is :
+0.1587
+0.2587
+0.3587
+0.4587
+
+Feedback: Use a change of variable to obtain a standard normal distribution. Then use the table of that law to determine the probability.
+
+Question 4
+
+Let the variable X follow the normal law 𝒩(350, 100)
+
+The probability ℙ(𝑋≥400) is :
+0.1085
+0.2085
+0.3085
+0.4085
+
+Feedback: Use a change of variable to obtain a standard normal distribution. Then use the table of that law to determine the probability.
+
+Question 5
+
+Let the variable X follow the normal law 𝒩(500, 300)
+
+The probability ℙ(300≤𝑋≤600) is :
+0.3781
+0.4781
+0.5781
+0.6781
+
+Feedback: Use a change of variable to obtain a standard normal distribution. Then use the table of that law to determine the probability.
+
+Question 6
+
+Let the variable X follow the binomial law 𝔅(625;0.2) 
+
+The approximation by a normal distribution is given by :
+𝒩(100, 15)
+𝒩(100, 10)
+𝒩(125, 10)
+𝒩(125, 15)
+
+Feedback: We check that the criteria of the approximation of the Binomial law 𝔅(625;0.2) by a normal distribution apply, then we use 𝑚=𝑛𝑝 and 𝜎 = √(𝑛𝑝(1 − 𝑝))
+
+Question 7
+
+Let the variable X follow the binomial law 𝒩(100;𝜎) such that ℙ(𝑋 ≤110)=0.6915
+
+Then  𝜎 is approximately : 
+10
+20
+30
+40
+
+Feedback: Use a change of variable to obtain a standard normal distribution. Then use the table of that law to determine u corresponding to the probability. Deduce 𝜎 knowing that (110−100)/𝜎  ≈𝑢 
+
+Question 8
+
+Let the variable X follow the binomial law 𝒩(100;𝜎) such that ℙ(𝑋 ≤120)=0.7475
+
+Then  𝜎 is approximately : 
+10
+20
+30
+40
+
+Feedback: Use a change of variable to obtain a standard normal distribution. Then use the table of that law to determine u corresponding to the probability. Deduce 𝜎 knowing that (120−100)/𝜎  ≈𝑢

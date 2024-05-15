@@ -1,0 +1,307 @@
+---
+title: Sets and Combinatorial Analysis
+# Foam graph
+tags: [Github-page]
+---
+
+
+- [wikipedia page](https://en.wikipedia.org/wiki/Set_(mathematics)#cite_ref-Cantor_1-0)
+- [Basic set operations](https://www.khanacademy.org/math/statistics-probability/probability-library/basic-set-ops/v/intersection-and-union-of-sets)
+- [Unit 8: Counting, permutations, and combinations](https://www.khanacademy.org/math/statistics-probability/counting-permutations-and-combinations)
+- [Venn Diagram](https://r-graph-gallery.com/venn-diagram.html)
+
+### Definition
+
+A set is the mathematical model for a collection of different and distinct **things** / **objects** ; a set contains elements or members, which can be mathematical objects of any kind: numbers, symbols, points in space, lines, other geometrical shapes, variables, or even other sets. The set with no elements is the empty set; a set with a single element is a singleton. A set may have a finite number of elements or be an infinite set.
+
+Definitions : 
+A set 𝐸 is a collection of objects, called its elements, considered **without order** or **possible repetition** (parce que ce sont des objets). 
+If " 𝑥 is an element of the set 𝐸 ", then one can say that "𝑥 belongs to 𝐸 " and we denote 𝑥 ∈ 𝐸 
+A set without element is called empty set: notation: ∅ 
+A single-element set is called a singleton 
+A two-element set, is called a pair 
+A subset is a part of the set 
+
+### How to represent a set
+
+Representation of a set :
+By extension: give an exhaustive list of all its elements. 
+By understanding: give a characteristic property of its elements.
+For example : 
+𝐴 = {𝑥 ∈ℕ ┤|  x is an even number}  by extension : 𝐴 = {0, 2, 4, 6, 8,…}
+𝐵 = {𝑥 ∈ℤ | −2 ≤ 𝑥 ≤ 5}   by extension : 𝐵 = {−2,−1, 0, 1, 2, 3, 4, 5}
+
+## Set
+
+Definitions : 
+A set 𝐸 is a collection of objects, called its elements, considered without order or possible repetition. 
+If " 𝑥 is an element of the set 𝐸 ", then one can say that "𝑥 belongs to 𝐸 " and we denote 𝑥 ∈ 𝐸 
+A set without element is called empty set: notation: ∅ 
+A single-element set is called a singleton 
+A two-element set, is called a pair 
+A subset is a part of the set 
+
+Usual sets in mathematics :
+ℕ" = {0, 1, 2, 3, 4, . . .}  "the set of nonnegative integers
+ℤ" = {..., −2, −1, 0, 1, 2, ...}"  the set of integers 
+ℚ={ 𝑎/𝑏, 𝑎∈ℤ, 𝑏∈ℤ, and 𝑏≠0} the set of rational numbers (the fractions)
+ℝ "= ]−∞, +∞[ " the set of real numbers
+ℝ "\ "{𝑎} the set of all the real numbers in ℝ except 𝑎
+ℝ^+ "= [0, +∞["  the set of positif real numbers
+ℝ^− "= ]−∞, 0]" the set of negatif real numbers 
+
+Representation of a set :
+By extension: give an exhaustive list of all its elements. 
+By understanding: give a characteristic property of its elements.
+For example : 
+𝐴 = {𝑥 ∈ℕ ┤|  x is an even number}  by extension : 𝐴 = {0, 2, 4, 6, 8,…}
+𝐵 = {𝑥 ∈ℤ | −2 ≤ 𝑥 ≤ 5}   by extension : 𝐵 = {−2,−1, 0, 1, 2, 3, 4, 5}
+
+Operations on Sets : 
+ Inclusion : 𝐴 ⊂ 𝐵 : 
+∀ 𝑥∈𝐴 ⇒ 𝑥∈𝐵 
+
+ Equality  : 𝐴 = 𝐵 
+∀ 𝑥∈𝐴 ⟺𝑥∈𝐵
+
+Note that 𝐴 ⊆ 𝐵 implies  " 𝐴 is included in 𝐵 or equal to 𝐵 ". 
+
+Recall that :	   𝐴=𝐵 ⟺ 𝐴⊆𝐵  and  𝐵⊆𝐴. 
+
+Intersection : 𝐴 ∩ 𝐵
+∀ 𝑥 ∈ 𝐴 ∩ 𝐵⟺𝑥 ∈ 𝐴  and  𝑥 ∈ 𝐵. 
+
+Recall that :
+if 𝐴∩𝐵=∅, then one can say that  𝐴 and 𝐵 are disjoint 
+𝐴∩𝐵 = 𝐵∩𝐴
+𝐴∩∅ = ∅
+𝐴∩(𝐵∩𝐶) = (𝐴∩𝐵)∩𝐶 
+
+Union : 𝐴∪𝐵
+∀ 𝑥 ∈𝐴∪𝐵⟺𝑥 ∈ 𝐴   or  𝑥 ∈ 𝐵. 
+
+	Recall that :
+𝐴⊆(𝐴∪𝐵),𝐵⊆(𝐴∪𝐵),and 𝐴∩𝐵⊆(𝐴∪𝐵) 
+𝐴∪𝐵=𝐵∪𝐴
+𝐴∪∅=𝐴
+𝐴∪(𝐵∪𝐶)=(𝐴∪𝐵)∪𝐶
+𝐴∩(𝐵∪𝐶)=(𝐴∩𝐵)∪(𝐴∩𝐶)
+
+Complementarity : Let 𝐴, 𝐵 and 𝐶 be three sets, such that 𝐴 ⊂ 𝐵 and  𝐶⊂ 𝐵. The complement of 𝐴 in 𝐵 is the set of elements of 𝐵 not belonging to 𝐴.
+	Notation :  𝐴 ̅  (or 𝐴^𝑐, or 𝐵∖𝐴). 
+
+Recall that :
+A ∩ 𝐴 ̅ = ∅
+A ∪ 𝐴 ̅ = B
+((𝐴 ̅)) ̅ = A 
+((𝐴∩𝐶)) ̅  = 𝐴 ̅ ∪ 𝐶 ̅  and  ((𝐴 ∪ 𝐶) ) ̅ = 𝐴 ̅  ∩ 𝐶 ̅
+
+Partition :A partition of a set 𝐸 is a set of non-empty subsets of 𝐸 (called the components of the partition) which are disjoint such that their union is equal to 𝐸. 
+ 
+Example : Suppose that 𝐸={1, 2, 3, 4, 5, 6, 7}. Then  :
+𝐸={{1, 2, 3}, {4, 5, 6, 7}}  is a partition of  𝐸 ;
+𝐸={{1, 2}, {3, 4}, {5, 6, 7}}  is a partition of  𝐸 ;
+𝐸={{1}, {2}, {3}, {4}, {5}, {6}, {7}}  is a partition of  𝐸 ;
+... 
+
+Set of the parts:We call the set of the parts of 𝐴, the set of all the possible subsets of 𝐴. 
+It is denoted  𝒫(𝐴). 
+
+Exemple : Suppose that 𝐴 = {1, 2, 3}. Then, we have:
+𝒫(𝐴) = {∅, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}} 
+
+Cardinal of a set :The cardinal is the size of a set. The cardinal of a finite set is the number of elements of the  set. In particular, the cardinal of the empty set is zero. 
+	Notation : |𝐸| (or #(𝐸), or Card(𝐸)) is the cardinal of the set 𝐸
+
+Recall that 
+if 𝐴⊆𝐵, then  |𝐴|≤|𝐵|;
+if 𝐴⊆𝐵, then  |𝐵\A|=|𝐵|−|𝐴|;
+if 𝐴∩𝐵=∅, then  |𝐴∪𝐵|=|𝐴|+|𝐵|; 
+ |𝐴∪𝐵|=|𝐴|+|𝐵|−|𝐴∩𝐵|;
+if |𝐴|=𝑛, then  |𝒫(𝐴)|=2^𝑛. 
+
+### Combinatorial analysis
+
+The purpose of combinatorial analysis (counting techniques) is to learn how to count the number of elements in a finite set. 
+
+Three techniques will be addressed: 
+Permutations 
+Arrangements 
+Combinations 
+
+These techniques depend on an operation: the factorial of a nonnegative integer.
+
+The factorial :Let 𝑛 ∈ 𝑁. Its factorial is defined by : 
+
+𝑛! = 1 × 2 × . . . × (𝑛 − 1) × 𝑛 
+
+By convention, we have 0! = 1. 
+Main Property: Let 𝑘 be a nonnegative and non null integer (𝑘 ≥ 1) and let 𝑛 be a nonnegative and non null integer such that (𝑛−𝑘)≥0. 
+
+We have :
+𝑛! = (𝑛 − 𝑘)! × (𝑛 − 𝑘 + 1) × . . . × (𝑛 − 1) × 𝑛. 
+
+Permutations :Given a set 𝐸 of 𝑛 objects, a permutations is an ordered rearrangement, without repetition of these 𝑛 distinct objects. The number of permutations of 𝑛 objects equals 𝑛! 
+
+Arrangements :
+Given a set 𝐸 of 𝑛 objects (elements), we call arrangements of  𝑝 (1 ≤ 𝑝 ≤ 𝑛) objects, all ordered sequences of 𝑝 objects taken from the 𝑛 objects.
+
+There are two cases:  
+
+Arrangements without repetition : When each object can only be seen once in an arrangement, the number of non-repeating arrangements of 𝑝 objects taken from 𝑛 is: 
+𝐴_𝑛^𝑝=  𝑛!/((𝑛−𝑝)!)    where  1≤𝑝≤𝑛. 
+
+Arrangements with repetition : When an object can be observed several times in an arrangement, the number of arrangements with repetition of 𝑝 (1 ≤ 𝑝 ≤ 𝑛) objects taken from 𝑛 is equal to  𝑛^𝑝. 
+
+Remark :
+The permutation of 𝑛 objects is a particular case of a non-repeating arrangement of 𝑝 objects taken from 𝑛 objects, when 𝑝 = 𝑛. 
+
+Thus, the number of permutations of 𝑛 objects equals : 
+
+𝐴_𝑛^𝑛=  𝑛!/((𝑛−𝑛)!)=𝑛!/0!=𝑛!   
+
+Combinations :
+Given a set 𝐸 of 𝑛 objects, we call combinations of 𝑝 (1 ≤ 𝑝 ≤ 𝑛) objects any set of 𝑝 objects taken  without replacement among the 𝑛 objects. In this case, the notion of order of objects is no longer taken into account. The number of combinations of 𝑝 objects taken from 𝑛 is 
+
+𝐶_𝑛^𝑝=  𝑛!/(𝑝! × (𝑛−𝑝)!)=(𝐴_𝑛^𝑝)/𝑝!
+
+### exemple détaillé
+
+How many 10-letter words can be formed with the 26 letters of the alphabet if the letters can be reused ?
+
+At each position (1 to 10) one can chose among 26 different letters. Therefore the number of possibilities will be :
+ 26 × 26 × 26 × 26 × 26 × 26 × 26 × 26 × 26 × 26= 2610.
+
+How many 10-letter words can be formed with the 26 letters of the alphabet if each letter is used only once ?
+
+The number of arrangements without repetition of 10 objects taken among 26  is equal to 𝐴_26^10   = 26!/((26 − 10)!)  = 26 × 25 × 24 × 23 × 22 × 21 × 20 × 19 × 18 × 17
+=19 275 223 968 000 words. 
+
+How many different numbers of 6 digits are there 
+
+If there are no restrictions?
+If the numbers have to be divisible by 5 ? 
+If the repetition of digits is excluded?
+
+The first digit cannot be 0 otherwise the number would have 5 digits
+
+Without any restriction 
+	One gets 9 × 10 ×10 ×10 ×10 × 10 = 900 000 possible numbers
+
+If the number ends by 0 or 5 (divisible by 5)
+	 One gets 9 × 10 × 10 × 10 × 10 × 2 = 180 000 possible numbers
+
+If a chosen digit cannot be re-used 
+	 One gets 9 × 9 × 8 × 7 × 6 × 5 = 136 080 possible numbers.
+
+### Exercice
+
+ A padlock has three wheels, each with the digits 0 to 9.
+	How many secrets "numbers" are there?
+
+ From a set of 52 cards, two cards are drawn simultaneously (without replacement). 
+	In how many different ways is this possible?
+
+ The code on your laptop is made up of 4 numbers (ranging from 0 to 9 each). A criminal has observed you doing the code. He managed to see only one number (but he doesn't remember its position). What is the (maximum) number of tries for the criminal to unlock your laptop?
+
+The number of possibilities is equal to 10 × 10 × 10 = 103 = 1000
+
+It corresponds to the number of different ways you can choose a pair of cards from a deck of 52 cards, that is  𝐶_52^2 =1326
+
+First, the number of possible ways one can place the known digit is equal to  𝐶_4^1 =4 
+And then, the number of possibilities for the remaining three digits is equal to  10 × 10 × 10 = 103 = 1000. 
+Thus the (maximum) number of tries is equal to 4 × 1000 = 4000.
+
+### Moodle extension
+
+#### 1
+
+A code has five elements: three digits and two letters 
+If the digits of the code are distinct, then the total number of possible codes is equal to : 
+20 x 10 x 9 x 8 x 26 x 26 
+10 x 10 x 9 x 8 x 26 x 26 
+10 x 10 x 9 x 8 x 26 x 25 
+10 x 9 x 8 x 7 x 26 x 26 
+
+Feedback: We multiply the number of possibilities to place the 2 letters (therefore the 3 digits) among 5 positions: 𝐶_5^2 (= 𝐶_5^3 )=10 , by the number of arrangements without repetition of 3 (distinct) digits 10x9x8 by the number of arrangements with repetition of 2 letters 26x26
+
+#### 2
+
+A code has five elements: three digits and two letters 
+If the code begins with the digit 0, then the total number of possible codes is equal to :
+26 x 26 x 10 x 10
+10 x 26 x 25 x 10 x 9
+6 x 26 x 26 x 10 x 10
+10 x 26 x 25 x 10 x 9
+
+Feedback: If the code starts with 0, there are 2 numbers and 2 letters left to place. We multiply the number of possibilities to place the 2 letters (therefore the 2 digits) among 4 positions: 𝐶_4^2=6 , by the number of arrangements with repetition of 2 digits 10x10 by the number of arrangements with repetition of 2 letters 26x26
+
+#### 3
+
+A code has five elements: three digits and two letters 
+If the code begins with the letter A, then the total number of possible codes is equal to : 
+26 x 10 x 10 x 10
+26 x 26 x 10 x 10
+4 x 26 x 10 x 10 x 10
+26 x 10 x 9 x 8
+
+Feedback: If the code begins with A, there are 1 letter and 3 numbers left to place. We multiply the number of possibilities to place the letter (therefore the 3 digits) among 4 positions: 𝐶_4^1=(𝐶_4^3 )=4 , by the number of possible letters 26 by the number of arrangements with repetition of 3 digits 10x10x10
+
+#### 4
+
+A code has five elements: three digits and two letters 
+If the code begins with two letters, then the total number of possible codes is equal to : 
+26 x 25 x 10 x 9 x 8
+26 x 25 x 10 x 10 x 10   
+26 x 26 x 10 x 10 x 10   
+26 x 26 x 10 x 9 x 8   
+
+Feedback: If the code begins with 2 letters, the positions of the 2 letters and the 3 digits are imposed. We just multiply the number of arrangements with repetition of 2 letters 26x26 by the number of arrangements with repetition of 3 digits 10x10x10
+
+#### 5
+
+A code is made up of two digits and two letters of the alphabet in all possible orders.
+Thus, we can deduce that if the digits of the code are distinct, then the total number of possible codes is equal to:
+10 x 9 x 26 x 26 
+6 x 10 x 9 x 26 x 26 
+12 x 10 x 9 x 26 x 26 
+4 x 10 x 9 x 26 x 26 
+
+Feedback: We multiply the number of possibilities to place the 2 letters (therefore the 2 digits) among 4 positions: 𝐶_4^2=6 , by the number of arrangements without repetition of 2 (distinct) digits 10x9 by the number of arrangements with repetition of 2 letters 26x26
+
+#### 6
+
+A code is made up of two digits and two letters of the alphabet in all possible orders.
+Thus, we can deduce that if the code begins with the number 0, then the total number of possible codes is equal to:
+10 x 26 x 26
+2 x 10 x 26 x 26
+3 x 10 x 26 x 26
+4 x 10 x 26 x 26
+
+Feedback: If the code starts with 0, there are 1 digits and 2 letters left to place. We multiply the number of possibilities to place the digit (therefore the 2 letters) among 3 positions: 𝐶_3^1 (𝐶_3^2 )=3 , by the number of possible digits: 10 by the number of arrangements with repetition of 2 letters : 26x26
+
+#### 7
+
+A code is made up of two digits and two letters of the alphabet in all possible orders.
+Thus, we can deduce that if the code begins with the letter A, then the total number of possible codes is equal to : 
+26 x 10 x 10 x 2
+26 x 10 x 10 x 3
+26 x 10 x 10 x 4
+26 x 10 x 10 x 6
+
+Feedback: If the code begins with A, there are 1 letter and 2 numbers left to place. We multiply the number of possibilities to place the letter (therefore the 2 digits) among 3 positions: 𝐶_3^1=(𝐶_3^2 )=3 , by the number of possible letters 26 by the number of arrangements with repetition of 2 digits 10x10
+
+#### 8
+
+A code is made up of two digits and two letters of the alphabet in all possible orders.
+Thus, we can deduce that if the code starts with two letters, then the total number of possible codes is equal to : 
+26 x 25 x 10 x 10   
+26 x 26 x 10 x 10   
+26 x 25 x 10 x 9   
+26 x 26 x 10 x 9 
+
+Feedback: If the code starts with 2 letters, the positions of the 2 letters and the 2 digits are imposed. We just multiply the number of arrangements with repetition of 2 letters 26x26 by the number of arrangements with repetition of 2 digits 10x10
+
+<p align="center">
+🏁🏁
+</p>
