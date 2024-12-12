@@ -1,7 +1,5 @@
 ---
 title: Data, Sampling, and Variation in Data and Sampling Data
-# Foam graph
-tags: [Github-page]
 ---
 
 Data may come from a population or from a sample. Lowercase letters like $x$ or
@@ -92,9 +90,6 @@ students complete each semester. The data collected are summarized in the
 histogram. The class boundaries are 10 to less than 13, 13 to less than 16, 16
 to less than 19, 19 to less than 22, and 22 to less than 25.
 
-```R
-ggplot()
-```
 
 What type of data does this graph show?
 :::
@@ -123,7 +118,7 @@ is compared to De Anza College.
 | Part-time| 13,296| 59.1%| Part-time | 10,124 | 71.4% |
 |Total| 22,496 | 100% | Total | 14,183 | 100% |
 
-```{python}
+<!-- ```{python}
 import pandas as pd
 data = {"product_name":["Keyboard","Mouse", "Monitor", "CPU","CPU", "Speakers", pd.NaT],
         "Unit_Price":[500,200, 5000.235, 10000.550, 10000.550, 250.50,None],
@@ -134,7 +129,7 @@ data = {"product_name":["Keyboard","Mouse", "Monitor", "CPU","CPU", "Speakers", 
 df = pd.DataFrame(data)
 df = df.astype({"Unit_Price": float})
 df
-```
+``` -->
 
 Tables are a good way of organizing and displaying data. But graphs can be even
 more helpful in understanding the data. There are no strict rules concerning

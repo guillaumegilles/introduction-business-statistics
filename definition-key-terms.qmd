@@ -1,8 +1,5 @@
----
-title: Definitions of Statistics, Probability, and Key Terms
-# Foam graph
-tags: [Github-page]
----
+# Definitions of Statistics, Probability, and Key Terms {.unnumbered}
+
 
 ## Statistics
 
@@ -19,30 +16,18 @@ tags: [Github-page]
 ::: {.callout-note}
 ## Problem
 
-Determine what the key terms refer to in the following study. We want to know
-the average (mean) amount of money first year college students spend at ABC
-College on school supplies that do not include books. We randomly surveyed 100
-first year students at the college. Three of those students spent $150, $200,
-and $225, respectively.
+Determine what the key terms refer to in the following study. We want to know the average (mean) amount of money first year college students spend at ABC College on school supplies that do not include books. We randomly surveyed 100 first year students at the college. Three of those students spent $150, $200, and $225, respectively.
 :::
 
 ::: {.callout-tip collapse="true"}
 ## Solution
 
 - The **population** is all first year students attending ABC College this term.
-- The **sample** could be all students enrolled in one section of a beginning
-statistics course at ABC College (although this sample may not represent the
-entire population).
-- The **parameter** is the average (mean) amount of money spent (excluding
-books) by first year college students at ABC College this term: the population
-mean.
-- The **statistic** is the average (mean) amount of money spent (excluding
-books) by first year college students in the sample.
-- The **variable** could be the amount of money spent (excluding books) by one
-first year student. Let X = the amount of money spent (excluding books) by one
-first year student attending ABC College.
-- The **data** are the dollar amounts spent by the first year students. Examples
-of the data are $150, $200, and $225.
+- The **sample** could be all students enrolled in one section of a beginning statistics course at ABC College (although this sample may not represent the entire population).
+- The **parameter** is the average (mean) amount of money spent (excluding books) by first year college students at ABC College this term: the population mean.
+- The **statistic** is the average (mean) amount of money spent (excluding books) by first year college students in the sample.
+- The **variable** could be the amount of money spent (excluding books) by one first year student. Let X = the amount of money spent (excluding books) by one first year student attending ABC College.
+- The **data** are the dollar amounts spent by the first year students. Examples of the data are $150, $200, and $225.
 :::
 
 ### Example 2
