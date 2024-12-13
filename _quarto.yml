@@ -6,13 +6,17 @@ book:
   title: Statistical Learning with R
   author: "Guillaume Gilles"
   date: "12/11/2024"
+  
   chapters:
     - index.qmd
     - preface.qmd
+  
     - part: DESCRIPTIVE STATISTICS
       chapters:
-        - definition-key-terms.qmd
-        - data-sampling-variation.qmd
+        - descriptive-part/definition-key-terms.qmd
+        - descriptive/data-sampling-variation.qmd
+        - descriptive/variance.qmd
+  
     - part: INFERENTIAL STATISTICS
       chapters: 
         - sets-combinatorial-analysis.qmd

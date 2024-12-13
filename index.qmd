@@ -1,4 +1,3 @@
-
 # Welcome {.unnumbered}
 
 ::: {layout="[[0.4, 1], [1]]"}
