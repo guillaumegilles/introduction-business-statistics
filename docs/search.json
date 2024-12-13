@@ -8,5 +8,60 @@
     "crumbs": [
       "Welcome"
     ]
+  },
+  {
+    "objectID": "definition-key-terms.html",
+    "href": "definition-key-terms.html",
+    "title": "1  Definitions of Statistics, Probability, and Key Terms",
+    "section": "",
+    "text": "1.1 Statistics",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitions of Statistics, Probability, and Key Terms</span>"
+    ]
+  },
+  {
+    "objectID": "definition-key-terms.html#probability",
+    "href": "definition-key-terms.html#probability",
+    "title": "1  Definitions of Statistics, Probability, and Key Terms",
+    "section": "1.2 Probability",
+    "text": "1.2 Probability",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitions of Statistics, Probability, and Key Terms</span>"
+    ]
+  },
+  {
+    "objectID": "definition-key-terms.html#key-terms",
+    "href": "definition-key-terms.html#key-terms",
+    "title": "1  Definitions of Statistics, Probability, and Key Terms",
+    "section": "1.3 Key Terms",
+    "text": "1.3 Key Terms",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitions of Statistics, Probability, and Key Terms</span>"
+    ]
+  },
+  {
+    "objectID": "definition-key-terms.html#exercices",
+    "href": "definition-key-terms.html#exercices",
+    "title": "1  Definitions of Statistics, Probability, and Key Terms",
+    "section": "1.4 Exercices",
+    "text": "1.4 Exercices\n\n1.4.1 Example 1\n\n\n\n\n\n\nProblem\n\n\n\nDetermine what the key terms refer to in the following study. We want to know the average (mean) amount of money first year college students spend at ABC College on school supplies that do not include books. We randomly surveyed 100 first year students at the college. Three of those students spent $150, $200, and $225, respectively.\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\nThe population is all first year students attending ABC College this term.\nThe sample could be all students enrolled in one section of a beginning statistics course at ABC College (although this sample may not represent the entire population).\nThe parameter is the average (mean) amount of money spent (excluding books) by first year college students at ABC College this term: the population mean.\nThe statistic is the average (mean) amount of money spent (excluding books) by first year college students in the sample.\nThe variable could be the amount of money spent (excluding books) by one first year student. Let X = the amount of money spent (excluding books) by one first year student attending ABC College.\nThe data are the dollar amounts spent by the first year students. Examples of the data are $150, $200, and $225.\n\n\n\n\n\n\n1.4.2 Example 2\n\n\n\n\n\n\nProblem\n\n\n\nDetermine what the key terms refer to in the following study.\nA study was conducted at a local college to analyze the average cumulative GPA’s of students who graduated last year. For each statement below find the appropriate statistical term.\n\nThe cumulative GPA of one student who graduated from the college last year.\n3.65, 2.80, 1.50, 3.90\nA group of students who graduated from the college last year, randomly selected.\nThe average cumulative GPA of students who graduated from the college last year.\nAll students who graduated from the college last year.\nthe average cumulative GPA of students in the study who graduated from the college last year.\n\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\nPopulation: 5\nStatistic: 6\nParameter: 4\nSample: 3\nVariable: 1\nData: 2\n\n\n\n\n\n\n1.4.3 Example 3\n\n\n\n\n\n\nProblem\n\n\n\nDetermine what the key terms refer to in the following study.\nAs part of a study designed to test the safety of electric automobiles, the National Transportation Safety Board collected and reviewed data about the effects of an automobile crash on test dummies. Here is the criterion they used:\n\n\n\nSpeed at which cars crashed\nLocation of “drive” (i.e. dummies)\n\n\n\n\n35 miles/hour\nFront Seat\n\n\n\nCars with dummies in the front seats were crashed into a wall at a speed of 35 miles per hour. We want to know the proportion of dummies in the driver’s seat that would have had head injuries, if they had been actual drivers. We start with a simple random sample of 75 cars.\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\nThe population is all cars containing dummies in the front seat.\nThe sample is the 75 cars, selected by a simple random sample.\nThe parameter is the proportion of driver dummies (if they had been real people) who would have suffered head injuries in the population.\nThe statistic is proportion of driver dummies (if they had been real people) who would have suffered head injuries in the sample.\nThe variable \\(X =\\) whether a dummy (if it had been a real person) would have suffered head injuries.\nThe data are either: yes, had head injury, or no, did not.",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitions of Statistics, Probability, and Key Terms</span>"
+    ]
+  },
+  {
+    "objectID": "definition-key-terms.html#to-recap",
+    "href": "definition-key-terms.html#to-recap",
+    "title": "1  Definitions of Statistics, Probability, and Key Terms",
+    "section": "1.5 To recap",
+    "text": "1.5 To recap\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nflowchart TD;\n    population[Population]==&gt; |a portion (or subset) of the population|sample(Sample);\n    sample --&gt; statistic(Statistic);\n    B --&gt; D;\n    C --&gt; D;",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Definitions of Statistics, Probability, and Key Terms</span>"
+    ]
   }
 ]

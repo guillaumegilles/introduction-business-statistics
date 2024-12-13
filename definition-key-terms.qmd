@@ -1,4 +1,4 @@
-# Definitions of Statistics, Probability, and Key Terms {.unnumbered}
+# Definitions of Statistics, Probability, and Key Terms
 
 
 ## Statistics
