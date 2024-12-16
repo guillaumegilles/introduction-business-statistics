@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Statistical Learning with R - Preface</title>
+<title>Statistical Learning with R - 4&nbsp; Sets and Combinatorial Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./descriptive-part/definition-key-terms.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./appendices/lexicon.html" rel="next">
+<link href="./descriptive-part/variance.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./preface.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sets-combinatorial-analysis.html">INFERENTIAL STATISTICS</a></li><li class="breadcrumb-item"><a href="./sets-combinatorial-analysis.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sets and Combinatorial Analysis</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -119,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./preface.html" class="sidebar-item-text sidebar-link active">
+  <a href="./preface.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -163,8 +163,25 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sets-combinatorial-analysis.html" class="sidebar-item-text sidebar-link">
+  <a href="./sets-combinatorial-analysis.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sets and Combinatorial Analysis</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendices/lexicon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lexicon</span></a>
   </div>
 </li>
       </ul>
@@ -179,17 +196,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#les-faits-données-quon-possède" id="toc-les-faits-données-quon-possède" class="nav-link active" data-scroll-target="#les-faits-données-quon-possède">Les faits : données qu’on possède</a></li>
-  <li><a href="#on-essaye-de-trouver-la-vérité-grâce-à" id="toc-on-essaye-de-trouver-la-vérité-grâce-à" class="nav-link" data-scroll-target="#on-essaye-de-trouver-la-vérité-grâce-à">On essaye de trouver la vérité grâce à</a></li>
+  <li><a href="#definition" id="toc-definition" class="nav-link active" data-scroll-target="#definition"><span class="header-section-number">4.0.1</span> Definition</a></li>
+  <li><a href="#how-to-represent-a-set" id="toc-how-to-represent-a-set" class="nav-link" data-scroll-target="#how-to-represent-a-set"><span class="header-section-number">4.0.2</span> How to represent a set</a></li>
+  <li><a href="#set" id="toc-set" class="nav-link" data-scroll-target="#set"><span class="header-section-number">4.1</span> Set</a>
+  <ul class="collapse">
+  <li><a href="#combinatorial-analysis" id="toc-combinatorial-analysis" class="nav-link" data-scroll-target="#combinatorial-analysis"><span class="header-section-number">4.1.1</span> Combinatorial analysis</a></li>
+  <li><a href="#exemple-détaillé" id="toc-exemple-détaillé" class="nav-link" data-scroll-target="#exemple-détaillé"><span class="header-section-number">4.1.2</span> exemple détaillé</a></li>
+  <li><a href="#exercice" id="toc-exercice" class="nav-link" data-scroll-target="#exercice"><span class="header-section-number">4.1.3</span> Exercice</a></li>
+  <li><a href="#moodle-extension" id="toc-moodle-extension" class="nav-link" data-scroll-target="#moodle-extension"><span class="header-section-number">4.1.4</span> Moodle extension</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sets-combinatorial-analysis.html">INFERENTIAL STATISTICS</a></li><li class="breadcrumb-item"><a href="./sets-combinatorial-analysis.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sets and Combinatorial Analysis</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Preface</h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sets and Combinatorial Analysis</span></h1>
 </div>
 
 
@@ -206,51 +230,139 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<blockquote class="blockquote">
-<p>Statistics is the science of making decisions under uncertainty — 1954 - Leonard J. Savage, <em>The Foundation of Statistics</em></p>
-</blockquote>
-<p>The science of <strong>statistics</strong> deals with the collection, analysis, interpretation, and presentation of data. We see and use data in our everyday lives. The goal of statistics is not to perform numerous calculations using the formulas, but to gain an understanding of your data.</p>
-<p>From the [[satistics.sample]] data, we can calculate a <strong>statistic</strong>. A statistic is a number that represents a property of the sample. For example, if we consider one math class to be a sample of the [[statistics.population]] of all math classes, then the average number of points earned by students in that one math class at the end of the term is an example of a statistic. The statistic is an estimate of a population [[statistics.parameter]], in this case the mean.</p>
-<section id="les-faits-données-quon-possède" class="level2">
-<h2 class="anchored" data-anchor-id="les-faits-données-quon-possède">Les faits : données qu’on possède</h2>
-<ol type="1">
-<li>Échantillon (<em>sample</em>) : sous-ensemble de la population - [[cs.data]]</li>
-<li>Observation : un individu ou objet de l’échantillon</li>
-<li>Statistiques : résultats déduient des données recueillis dans l’échantillon</li>
-</ol>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Set_(mathematics)#cite_ref-Cantor_1-0">wikipedia page</a></li>
+<li><a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-set-ops/v/intersection-and-union-of-sets">Basic set operations</a></li>
+<li><a href="https://www.khanacademy.org/math/statistics-probability/counting-permutations-and-combinations">Unit 8: Counting, permutations, and combinations</a></li>
+<li><a href="https://r-graph-gallery.com/venn-diagram.html">Venn Diagram</a></li>
+</ul>
+<section id="definition" class="level3" data-number="4.0.1">
+<h3 data-number="4.0.1" class="anchored" data-anchor-id="definition"><span class="header-section-number">4.0.1</span> Definition</h3>
+<p>A set is the mathematical model for a collection of different and distinct <strong>things</strong> / <strong>objects</strong> ; a set contains elements or members, which can be mathematical objects of any kind: numbers, symbols, points in space, lines, other geometrical shapes, variables, or even other sets.</p>
+<p>The set with no elements is the empty set; a set with a single element is a singleton. A set may have a finite number of elements or be an infinite set.</p>
+<p>Definitions : A set 𝐸 is a collection of objects, called its elements, considered <strong>without order</strong> or <strong>possible repetition</strong> (parce que ce sont des objets). If ” 𝑥 is an element of the set 𝐸 “, then one can say that”𝑥 belongs to 𝐸 ” and we denote 𝑥 ∈ 𝐸 A set without element is called empty set: notation: ∅ A single-element set is called a singleton A two-element set, is called a pair A subset is a part of the set</p>
 </section>
-<section id="on-essaye-de-trouver-la-vérité-grâce-à" class="level2">
-<h2 class="anchored" data-anchor-id="on-essaye-de-trouver-la-vérité-grâce-à">On essaye de trouver la vérité grâce à</h2>
-<ol type="1">
-<li>Hypothèse : affirmation provisoire décrivant ce que les paramètres pourrait être</li>
-<li>Estimation : processus pour estimer la valeur d’un paramètre de la population</li>
-</ol>
-<p>title: Qualitative Data desc: ’’ updated: 1733775757555 created: 1729068716853 isDir: false id_imported: pcxq3hqvlncj80wqe7zbwdv title_imported: Qualitative Data desc_imported: ’’ updated_imported: 1711442135283 created_imported: 1711441971532</p>
-<hr>
-<p>Une variable non numérique est dite <strong>qualitative</strong>, par exemple, la couleur des yeux, les opinions politiques, etc. Les variables qualitatives peuvent être :</p>
-<ul>
-<li><strong>Ordianle</strong> : les modalités des variables peuvent être dans un certain ordre naturel.</li>
-<li><strong>Nominale</strong> : à l’inverse les valeurs qualitatives nominales ne peuvent être classé par ordre.</li>
-</ul>
-<p>Qualitative data are the result of categorizing or describing attributes of a [[statistics.population]]. Qualitative data are also often called categorical data. Hair color, blood type, ethnic group, the car a person drives, and the street a person lives on are examples of qualitative data. Qualitative data are generally described by words or letters. For instance, hair color might be black, dark brown, light brown, blonde, gray, or red. Blood type might be AB+, O-, or B+. Researchers often prefer to use quantitative data over qualitative data because it lends itself more easily to mathematical analysis. For example, it does not make sense to find an average hair color or blood type.</p>
-<p>[[illowskyintroductorystatistics2e2023]]</p>
-<p>Qualitatives (<em>categorial data</em>) : données labellisées, comme <em>faible</em>, <em>moyen</em>, <em>fort</em>. En modélisation, la prédiction de données qualitatives est un problème de [[ds.ml.sl.class]]</p>
-<p>title: Quantitative Data desc: ’’ updated: 1729068716853 created: 1729068716853 isDir: false id_imported: 31ii7vbpbrtrfe5gmpndrj7 title_imported: Quantitative Data desc_imported: ’’ updated_imported: 1711442316007 created_imported: 1711442250571</p>
-<hr>
-<p>Une variable numérique est appelée <strong>quantitative</strong>, c’est-à-dire qu’elle est mesurable. Les variables quantitatives peuvent être :</p>
-<ul>
-<li><strong>Continue</strong> : elle peuvent prendre toute les valeurs d’intervalle fini ou infini, par exemple, les salaires, la taille du pièce, etc.</li>
-<li><strong>Discrète</strong> ou <strong>discontinue</strong> : la variable discrète ne prend que des valeurs isolées les unes des autres, par exemple, le nombre d’enfants d’une famille ne peut être que 0, ou 1, ou 2, ou 3, etc.</li>
-</ul>
-<p>Quantitative data are always numbers. Quantitative data are the result of counting or measuring attributes of a population. Amount of money, pulse rate, weight, number of people living in your town, and number of students who take statistics are examples of quantitative data. Quantitative data may be either discrete or continuous.</p>
-<p>All data that are the result of counting are called quantitative discrete data. These data take on only certain numerical values. If you count the number of phone calls you receive for each day of the week, you might get values such as zero, one, two, or three.</p>
-<p>Data that are not only made up of counting numbers, but that may include fractions, decimals, or irrational numbers, are called quantitative continuous data. Continuous data are often the results of measurements like lengths, weights, or times. A list of the lengths in minutes for all the phone calls that you make in a week, with numbers like 2.4, 7.5, or 11.0, would be quantitative continuous data.</p>
-<p><span class="citation" data-cites="illowskyIntroductoryStatistics2e2023">(<a href="#ref-illowskyIntroductoryStatistics2e2023" role="doc-biblioref"><strong>illowskyIntroductoryStatistics2e2023?</strong></a>)</span></p>
-<ol type="1">
-<li>Quantitatives (<em>continuous data</em>) : données chiffrées. Les algorithmes [[ds.ml.sl.reg]] permettent de prédire les données quantitatives ;</li>
-</ol>
+<section id="how-to-represent-a-set" class="level3" data-number="4.0.2">
+<h3 data-number="4.0.2" class="anchored" data-anchor-id="how-to-represent-a-set"><span class="header-section-number">4.0.2</span> How to represent a set</h3>
+<p>Representation of a set : By extension: give an exhaustive list of all its elements. By understanding: give a characteristic property of its elements. For example : 𝐴 = {𝑥 ∈ℕ ┤| x is an even number} by extension : 𝐴 = {0, 2, 4, 6, 8,…} 𝐵 = {𝑥 ∈ℤ | −2 ≤ 𝑥 ≤ 5} by extension : 𝐵 = {−2,−1, 0, 1, 2, 3, 4, 5}</p>
+</section>
+<section id="set" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="set"><span class="header-section-number">4.1</span> Set</h2>
+<p>Definitions : A set 𝐸 is a collection of objects, called its elements, considered without order or possible repetition. If ” 𝑥 is an element of the set 𝐸 “, then one can say that”𝑥 belongs to 𝐸 ” and we denote 𝑥 ∈ 𝐸 A set without element is called empty set: notation: ∅ A single-element set is called a singleton A two-element set, is called a pair A subset is a part of the set</p>
+<p>Usual sets in mathematics : ℕ” = {0, 1, 2, 3, 4, . . .} “the set of nonnegative integers ℤ” = {…, −2, −1, 0, 1, 2, …}” the set of integers ℚ={ 𝑎/𝑏, 𝑎∈ℤ, 𝑏∈ℤ, and 𝑏≠0} the set of rational numbers (the fractions) ℝ “= ]−∞, +∞[” the set of real numbers ℝ “&nbsp;”{𝑎} the set of all the real numbers in ℝ except 𝑎 ℝ^+ “= [0, +∞[” the set of positif real numbers ℝ^− ”= ]−∞, 0]” the set of negatif real numbers</p>
+<p>Representation of a set : By extension: give an exhaustive list of all its elements. By understanding: give a characteristic property of its elements. For example : 𝐴 = {𝑥 ∈ℕ ┤| x is an even number} by extension : 𝐴 = {0, 2, 4, 6, 8,…} 𝐵 = {𝑥 ∈ℤ | −2 ≤ 𝑥 ≤ 5} by extension : 𝐵 = {−2,−1, 0, 1, 2, 3, 4, 5}</p>
+<p>Operations on Sets : Inclusion : 𝐴 ⊂ 𝐵 : ∀ 𝑥∈𝐴 ⇒ 𝑥∈𝐵</p>
+<p>Equality : 𝐴 = 𝐵 ∀ 𝑥∈𝐴 ⟺𝑥∈𝐵</p>
+<p>Note that 𝐴 ⊆ 𝐵 implies ” 𝐴 is included in 𝐵 or equal to 𝐵 “.</p>
+<p>Recall that : 𝐴=𝐵 ⟺ 𝐴⊆𝐵 and 𝐵⊆𝐴.</p>
+<p>Intersection : 𝐴 ∩ 𝐵 ∀ 𝑥 ∈ 𝐴 ∩ 𝐵⟺𝑥 ∈ 𝐴 and 𝑥 ∈ 𝐵.</p>
+<p>Recall that : if 𝐴∩𝐵=∅, then one can say that 𝐴 and 𝐵 are disjoint 𝐴∩𝐵 = 𝐵∩𝐴 𝐴∩∅ = ∅ 𝐴∩(𝐵∩𝐶) = (𝐴∩𝐵)∩𝐶</p>
+<p>Union : 𝐴∪𝐵 ∀ 𝑥 ∈𝐴∪𝐵⟺𝑥 ∈ 𝐴 or 𝑥 ∈ 𝐵.</p>
+<pre><code>Recall that :</code></pre>
+<p>𝐴⊆(𝐴∪𝐵),𝐵⊆(𝐴∪𝐵),and 𝐴∩𝐵⊆(𝐴∪𝐵) 𝐴∪𝐵=𝐵∪𝐴 𝐴∪∅=𝐴 𝐴∪(𝐵∪𝐶)=(𝐴∪𝐵)∪𝐶 𝐴∩(𝐵∪𝐶)=(𝐴∩𝐵)∪(𝐴∩𝐶)</p>
+<p>Complementarity : Let 𝐴, 𝐵 and 𝐶 be three sets, such that 𝐴 ⊂ 𝐵 and 𝐶⊂ 𝐵. The complement of 𝐴 in 𝐵 is the set of elements of 𝐵 not belonging to 𝐴. Notation : 𝐴&nbsp;̅ (or 𝐴^𝑐, or 𝐵∖𝐴).</p>
+<p>Recall that : A ∩ 𝐴&nbsp;̅ = ∅ A ∪ 𝐴&nbsp;̅ = B ((𝐴&nbsp;̅))&nbsp;̅ = A ((𝐴∩𝐶))&nbsp;̅ = 𝐴&nbsp;̅ ∪ 𝐶&nbsp;̅ and ((𝐴 ∪ 𝐶) )&nbsp;̅ = 𝐴&nbsp;̅ ∩ 𝐶&nbsp;̅</p>
+<p>Partition :A partition of a set 𝐸 is a set of non-empty subsets of 𝐸 (called the components of the partition) which are disjoint such that their union is equal to 𝐸.</p>
+<p>Example : Suppose that 𝐸={1, 2, 3, 4, 5, 6, 7}. Then : 𝐸={{1, 2, 3}, {4, 5, 6, 7}} is a partition of 𝐸 ; 𝐸={{1, 2}, {3, 4}, {5, 6, 7}} is a partition of 𝐸 ; 𝐸={{1}, {2}, {3}, {4}, {5}, {6}, {7}} is a partition of 𝐸 ; …</p>
+<p>Set of the parts:We call the set of the parts of 𝐴, the set of all the possible subsets of 𝐴. It is denoted 𝒫(𝐴).</p>
+<p>Exemple : Suppose that 𝐴 = {1, 2, 3}. Then, we have: 𝒫(𝐴) = {∅, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}}</p>
+<p>Cardinal of a set :The cardinal is the size of a set. The cardinal of a finite set is the number of elements of the set. In particular, the cardinal of the empty set is zero. Notation : |𝐸| (or #(𝐸), or Card(𝐸)) is the cardinal of the set 𝐸</p>
+<p>Recall that if 𝐴⊆𝐵, then |𝐴|≤|𝐵|; if 𝐴⊆𝐵, then |𝐵|=|𝐵|−|𝐴|; if 𝐴∩𝐵=∅, then |𝐴∪𝐵|=|𝐴|+|𝐵|; |𝐴∪𝐵|=|𝐴|+|𝐵|−|𝐴∩𝐵|; if |𝐴|=𝑛, then |𝒫(𝐴)|=2^𝑛.</p>
+<section id="combinatorial-analysis" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="combinatorial-analysis"><span class="header-section-number">4.1.1</span> Combinatorial analysis</h3>
+<p>The purpose of combinatorial analysis (counting techniques) is to learn how to count the number of elements in a finite set.</p>
+<p>Three techniques will be addressed: Permutations Arrangements Combinations</p>
+<p>These techniques depend on an operation: the factorial of a nonnegative integer.</p>
+<p>The factorial :Let 𝑛 ∈ 𝑁. Its factorial is defined by :</p>
+<p>𝑛! = 1 × 2 × . . . × (𝑛 − 1) × 𝑛</p>
+<p>By convention, we have 0! = 1. Main Property: Let 𝑘 be a nonnegative and non null integer (𝑘 ≥ 1) and let 𝑛 be a nonnegative and non null integer such that (𝑛−𝑘)≥0.</p>
+<p>We have : 𝑛! = (𝑛 − 𝑘)! × (𝑛 − 𝑘 + 1) × . . . × (𝑛 − 1) × 𝑛.</p>
+<p>Permutations :Given a set 𝐸 of 𝑛 objects, a permutations is an ordered rearrangement, without repetition of these 𝑛 distinct objects. The number of permutations of 𝑛 objects equals 𝑛!</p>
+<p>Arrangements : Given a set 𝐸 of 𝑛 objects (elements), we call arrangements of 𝑝 (1 ≤ 𝑝 ≤ 𝑛) objects, all ordered sequences of 𝑝 objects taken from the 𝑛 objects.</p>
+<p>There are two cases:</p>
+<p>Arrangements without repetition : When each object can only be seen once in an arrangement, the number of non-repeating arrangements of 𝑝 objects taken from 𝑛 is: 𝐴_𝑛^𝑝= 𝑛!/((𝑛−𝑝)!) where 1≤𝑝≤𝑛.</p>
+<p>Arrangements with repetition : When an object can be observed several times in an arrangement, the number of arrangements with repetition of 𝑝 (1 ≤ 𝑝 ≤ 𝑛) objects taken from 𝑛 is equal to 𝑛^𝑝.</p>
+<p>Remark : The permutation of 𝑛 objects is a particular case of a non-repeating arrangement of 𝑝 objects taken from 𝑛 objects, when 𝑝 = 𝑛.</p>
+<p>Thus, the number of permutations of 𝑛 objects equals :</p>
+<p>𝐴_𝑛^𝑛= 𝑛!/((𝑛−𝑛)!)=𝑛!/0!=𝑛!</p>
+<p>Combinations : Given a set 𝐸 of 𝑛 objects, we call combinations of 𝑝 (1 ≤ 𝑝 ≤ 𝑛) objects any set of 𝑝 objects taken &nbsp;without replacement among the 𝑛 objects. In this case, the notion of order of objects is no longer taken into account. The number of combinations of 𝑝 objects taken from 𝑛 is</p>
+<p>𝐶_𝑛^𝑝= 𝑛!/(𝑝! × (𝑛−𝑝)!)=(𝐴_𝑛^𝑝)/𝑝!</p>
+</section>
+<section id="exemple-détaillé" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="exemple-détaillé"><span class="header-section-number">4.1.2</span> exemple détaillé</h3>
+<p>How many 10-letter words can be formed with the 26 letters of the alphabet if the letters can be reused ?</p>
+<p>At each position (1 to 10) one can chose among 26 different letters. Therefore the number of possibilities will be : 26 × 26 × 26 × 26 × 26 × 26 × 26 × 26 × 26 × 26= 2610.</p>
+<p>How many 10-letter words can be formed with the 26 letters of the alphabet if each letter is used only once ?</p>
+<p>The number of arrangements without repetition of 10 objects taken among 26 is equal to 𝐴_26^10 = 26!/((26 − 10)!) = 26 × 25 × 24 × 23 × 22 × 21 × 20 × 19 × 18 × 17 =19 275 223 968 000 words.</p>
+<p>How many different numbers of 6 digits are there</p>
+<p>If there are no restrictions? If the numbers have to be divisible by 5 ? If the repetition of digits is excluded?</p>
+<p>The first digit cannot be 0 otherwise the number would have 5 digits</p>
+<p>Without any restriction One gets 9 × 10 ×10 ×10 ×10 × 10 = 900 000 possible numbers</p>
+<p>If the number ends by 0 or 5 (divisible by 5) One gets 9 × 10 × 10 × 10 × 10 × 2 = 180 000 possible numbers</p>
+<p>If a chosen digit cannot be re-used One gets 9 × 9 × 8 × 7 × 6 × 5 = 136 080 possible numbers.</p>
+</section>
+<section id="exercice" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="exercice"><span class="header-section-number">4.1.3</span> Exercice</h3>
+<p>A padlock has three wheels, each with the digits 0 to 9. How many secrets “numbers” are there?</p>
+<p>From a set of 52 cards, two cards are drawn simultaneously (without replacement). In how many different ways is this possible?</p>
+<p>The code on your laptop is made up of 4 numbers (ranging from 0 to 9 each). A criminal has observed you doing the code. He managed to see only one number (but he doesn’t remember its position). What is the (maximum) number of tries for the criminal to unlock your laptop?</p>
+<p>The number of possibilities is equal to 10 × 10 × 10 = 103 = 1000</p>
+<p>It corresponds to the number of different ways you can choose a pair of cards from a deck of 52 cards, that is 𝐶_52^2 =1326</p>
+<p>First, the number of possible ways one can place the known digit is equal to 𝐶_4^1 =4 And then, the number of possibilities for the remaining three digits is equal to 10 × 10 × 10 = 103 = 1000. Thus the (maximum) number of tries is equal to 4 × 1000 = 4000.</p>
+</section>
+<section id="moodle-extension" class="level3" data-number="4.1.4">
+<h3 data-number="4.1.4" class="anchored" data-anchor-id="moodle-extension"><span class="header-section-number">4.1.4</span> Moodle extension</h3>
+<section id="section" class="level4" data-number="4.1.4.1">
+<h4 data-number="4.1.4.1" class="anchored" data-anchor-id="section"><span class="header-section-number">4.1.4.1</span> 1</h4>
+<p>A code has five elements: three digits and two letters If the digits of the code are distinct, then the total number of possible codes is equal to : 20 x 10 x 9 x 8 x 26 x 26 10 x 10 x 9 x 8 x 26 x 26 10 x 10 x 9 x 8 x 26 x 25 10 x 9 x 8 x 7 x 26 x 26</p>
+<p>Feedback: We multiply the number of possibilities to place the 2 letters (therefore the 3 digits) among 5 positions: 𝐶_5^2 (= 𝐶_5^3 )=10 , by the number of arrangements without repetition of 3 (distinct) digits 10x9x8 by the number of arrangements with repetition of 2 letters 26x26</p>
+</section>
+<section id="section-1" class="level4" data-number="4.1.4.2">
+<h4 data-number="4.1.4.2" class="anchored" data-anchor-id="section-1"><span class="header-section-number">4.1.4.2</span> 2</h4>
+<p>A code has five elements: three digits and two letters If the code begins with the digit 0, then the total number of possible codes is equal to : 26 x 26 x 10 x 10 10 x 26 x 25 x 10 x 9 6 x 26 x 26 x 10 x 10 10 x 26 x 25 x 10 x 9</p>
+<p>Feedback: If the code starts with 0, there are 2 numbers and 2 letters left to place. We multiply the number of possibilities to place the 2 letters (therefore the 2 digits) among 4 positions: 𝐶_4^2=6 , by the number of arrangements with repetition of 2 digits 10x10 by the number of arrangements with repetition of 2 letters 26x26</p>
+</section>
+<section id="section-2" class="level4" data-number="4.1.4.3">
+<h4 data-number="4.1.4.3" class="anchored" data-anchor-id="section-2"><span class="header-section-number">4.1.4.3</span> 3</h4>
+<p>A code has five elements: three digits and two letters If the code begins with the letter A, then the total number of possible codes is equal to : 26 x 10 x 10 x 10 26 x 26 x 10 x 10 4 x 26 x 10 x 10 x 10 26 x 10 x 9 x 8</p>
+<p>Feedback: If the code begins with A, there are 1 letter and 3 numbers left to place. We multiply the number of possibilities to place the letter (therefore the 3 digits) among 4 positions: 𝐶_4<sup>1=(𝐶_4</sup>3 )=4 , by the number of possible letters 26 by the number of arrangements with repetition of 3 digits 10x10x10</p>
+</section>
+<section id="section-3" class="level4" data-number="4.1.4.4">
+<h4 data-number="4.1.4.4" class="anchored" data-anchor-id="section-3"><span class="header-section-number">4.1.4.4</span> 4</h4>
+<p>A code has five elements: three digits and two letters If the code begins with two letters, then the total number of possible codes is equal to : 26 x 25 x 10 x 9 x 8 26 x 25 x 10 x 10 x 10<br>
+26 x 26 x 10 x 10 x 10<br>
+26 x 26 x 10 x 9 x 8</p>
+<p>Feedback: If the code begins with 2 letters, the positions of the 2 letters and the 3 digits are imposed. We just multiply the number of arrangements with repetition of 2 letters 26x26 by the number of arrangements with repetition of 3 digits 10x10x10</p>
+</section>
+<section id="section-4" class="level4" data-number="4.1.4.5">
+<h4 data-number="4.1.4.5" class="anchored" data-anchor-id="section-4"><span class="header-section-number">4.1.4.5</span> 5</h4>
+<p>A code is made up of two digits and two letters of the alphabet in all possible orders. Thus, we can deduce that if the digits of the code are distinct, then the total number of possible codes is equal to: 10 x 9 x 26 x 26 6 x 10 x 9 x 26 x 26 12 x 10 x 9 x 26 x 26 4 x 10 x 9 x 26 x 26</p>
+<p>Feedback: We multiply the number of possibilities to place the 2 letters (therefore the 2 digits) among 4 positions: 𝐶_4^2=6 , by the number of arrangements without repetition of 2 (distinct) digits 10x9 by the number of arrangements with repetition of 2 letters 26x26</p>
+</section>
+<section id="section-5" class="level4" data-number="4.1.4.6">
+<h4 data-number="4.1.4.6" class="anchored" data-anchor-id="section-5"><span class="header-section-number">4.1.4.6</span> 6</h4>
+<p>A code is made up of two digits and two letters of the alphabet in all possible orders. Thus, we can deduce that if the code begins with the number 0, then the total number of possible codes is equal to: 10 x 26 x 26 2 x 10 x 26 x 26 3 x 10 x 26 x 26 4 x 10 x 26 x 26</p>
+<p>Feedback: If the code starts with 0, there are 1 digits and 2 letters left to place. We multiply the number of possibilities to place the digit (therefore the 2 letters) among 3 positions: 𝐶_3^1 (𝐶_3^2 )=3 , by the number of possible digits: 10 by the number of arrangements with repetition of 2 letters : 26x26</p>
+</section>
+<section id="section-6" class="level4" data-number="4.1.4.7">
+<h4 data-number="4.1.4.7" class="anchored" data-anchor-id="section-6"><span class="header-section-number">4.1.4.7</span> 7</h4>
+<p>A code is made up of two digits and two letters of the alphabet in all possible orders. Thus, we can deduce that if the code begins with the letter A, then the total number of possible codes is equal to : 26 x 10 x 10 x 2 26 x 10 x 10 x 3 26 x 10 x 10 x 4 26 x 10 x 10 x 6</p>
+<p>Feedback: If the code begins with A, there are 1 letter and 2 numbers left to place. We multiply the number of possibilities to place the letter (therefore the 2 digits) among 3 positions: 𝐶_3<sup>1=(𝐶_3</sup>2 )=3 , by the number of possible letters 26 by the number of arrangements with repetition of 2 digits 10x10</p>
+</section>
+<section id="section-7" class="level4" data-number="4.1.4.8">
+<h4 data-number="4.1.4.8" class="anchored" data-anchor-id="section-7"><span class="header-section-number">4.1.4.8</span> 8</h4>
+<p>A code is made up of two digits and two letters of the alphabet in all possible orders. Thus, we can deduce that if the code starts with two letters, then the total number of possible codes is equal to : 26 x 25 x 10 x 10<br>
+26 x 26 x 10 x 10<br>
+26 x 25 x 10 x 9<br>
+26 x 26 x 10 x 9</p>
+<p>Feedback: If the code starts with 2 letters, the positions of the 2 letters and the 2 digits are imposed. We just multiply the number of arrangements with repetition of 2 letters 26x26 by the number of arrangements with repetition of 2 digits 10x10</p>
+<p align="center">
+🏁🏁
+</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -782,13 +894,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link  aria-label=" welcome"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+      <a href="./descriptive-part/variance.html" class="pagination-link  aria-label=" &lt;span="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variance</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./descriptive-part/definition-key-terms.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>Definitions of Statistics, Probability, and Key Terms</span>">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Definitions of Statistics, Probability, and Key Terms</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./appendices/lexicon.html" class="pagination-link" aria-label="Lexicon">
+        <span class="nav-page-text">Lexicon</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

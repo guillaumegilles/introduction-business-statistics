@@ -14,12 +14,15 @@ book:
     - part: DESCRIPTIVE STATISTICS
       chapters:
         - descriptive-part/definition-key-terms.qmd
-        - descriptive/data-sampling-variation.qmd
-        - descriptive/variance.qmd
+        - descriptive-part/data-sampling-variation.qmd
+        - descriptive-part/variance.qmd
   
     - part: INFERENTIAL STATISTICS
       chapters: 
         - sets-combinatorial-analysis.qmd
+
+  appendices: 
+    - appendices/lexicon.qmd
 
 bibliography: references.bib
 
