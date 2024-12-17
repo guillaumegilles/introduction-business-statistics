@@ -1,2 +1,26 @@
 # Variance
 
+La variance est pour l'inférence (cf. les formules des stats inféretielles) et l'écart type est pour la stat descriptive car on dans la même ordre d'unité que le dataset.
+
+Après les mesures de centre/position (moyenne, mode, médiane), la variance est une mesure de dispoersion (comme l'étendu) permet de mesurer les écart de chaque valeur par rapport à la moyenne.
+
+Si on étudie la population: $N$
+
+$$\sigma^2 = \frac{\sum(x - moyenne)^2}{N}$$
+
+Si on étudie un échantillon: $n$
+
+$$\s^2 = \frac{\sum(x - moyenne)^2}{n-1}$$
+
+Finalement, la variance est une moyenne de carrés.
+
+## comparer des variances entres elles.
+
+Test F de Fisher - Senedecor
+
+F = variance la plus élevé / variance la plus faible
+
+## l'écart-type est la racine carré de la variance
+               Variance     Ecart-type
+population      sigma^2       sigma
+échantillon      s^2           s
