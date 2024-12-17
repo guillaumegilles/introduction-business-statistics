@@ -1,12 +1,5 @@
 ## Materials
 
-1. Descriptive
-   1. center =
-   2. Spread = dispersion
-   3. Shapes = skewness
-3. Inferential
-4. statistical learning
-
 ### R/Stats Books
 
 ## Quelle est la différence entre erreur d’estimation et erreur de prévision ?
@@ -58,13 +51,7 @@ du modèle pendant la phase de test (variance).
 
 - [ ] Embedded shiny app into a webpage pour faire les QCM
 
-# Average or mean ?
 
-The words "[[statistical-mean]]" and "average" are often used interchangeably.
-The substitution of one word for the other is common practice. The technical
-term is `arithmetic mean`, and "average" is technically a center location.
-However, in practice among non-statisticians, "average" is commonly accepted
-for `arithmetic mean`.
 
 ## The purpose of a descriptive model is to describe or illustrate characteristics of some data
 
@@ -74,80 +61,9 @@ some trend or artifact in the data [@978-1492096481kuhnTidyModeling2022].
 
 Organizing and summarizing data is called descriptive [[statistics]]. Two ways to summarize data are by graphing and by using numbers (for example, average) [@illowskyIntroductoryStatistics2e2023].
 
-## Model
-> Models are mathematical tools that can describe a system and capture
-> relationships in the data given to them. [...] The utility of a model
-> hinges on its ability to be reductive, or to reduce complex
-> relationships to simpler terms. The primary influences in the data can
-> be captured mathematically in a useful way, such as in a relationship
-> that can be expressed as an equation.
->
-> [@978-1492096481 - Tidy Modeling with R: A Framework for Modeling in the Tidyverse]
-
-While this list is not exhaustive, most models falls into at least one of
-these  categories:
-
-1. [[math.model.descriptive]]
-2. [[math.model.inferential]]
-3. [[math.model.predictive]]
-
-## Qu'est-ce qu'un modèle
-
-Un modèle est une **version simplifiée d'une partie du monde réel**,
-dans laquelle des calculs exacts sont possibles. Un modèle est donc
-un outil pour nous aider à comprendre le monde qui nous entoure. Il
-permet à nos cerveaux limités d'appréhender des situations réelles de
-la vie, si complexe qu'on ne peut compendre en intégralité. Aussi, les
-modèles présentent une couche d'abstraction permettant d'obtenir une
-version "simplifiée" la réalité [@mathematics:-a-very-short-introduction].
 
 
-## Predictive Models
-desc: >-
-  Sometimes data are modeled to produce the most accurate prediction possible
-  for new data
-updated: 1733779170804
-created: 1733752024603
----
 
-For this type of model, the problem type is one of **estimation** rather
-than inference. For example, the buyer is usually not concerned with a
-question such as “Will I sell more than 100 copies of book X next month?”
-but rather “How many copies of book X will customers purchase next month?”
-[@kuhnTidyModeling2022]
-
-## _Mechanistic Models_
-
-## _empirically driven Models_
-
-_Empirically driven models_ are created with more vague assumptions. These
-models tend to fall into the [[ai.ml]] category. A good example is the
-[[ai.ml.supervised-learning.classification.knn]] model. Given a set o
-reference data, a new sample is predicted by using the values of the $K$
-most similar data in thereference set.
-
-## Inferential Models
-desc: >-
-  The goal of an inferential model is to produce a decision for a research
-  question or to explore a specific hypothesis, similar to how statistical tests
-  are used
-updated: 1733778813696
-created: 1733751450382
----
-
-With help of [[statistics.inferential]], an inferential model starts
-with a predefined conjecture, or idea, about a population and produces
-a statistical conclusion such as an interval estimate or the rejection
-of a hypothesis.
-
-For example, the goal of a clinical trial might be to provide confirmation
-that a new therapy does a better job in prolonging life than an alternative.
-
-Inferential modeling techniques typically produce some type of probabilistic
-output, such as [[statistics.inferential.p-value]], [[statistics.inferential.confidence-interval]],
-or posterior probability [@kuhnTidyModeling2022].
-
-[[statistics]] inference uses [[probability]] to determine how confident we can be that our conclusions are correct. Effective interpretation of data (inference) is based on good procedures for producing data and thoughtful examination of the data.
 
 # Is statistics accurate?
 

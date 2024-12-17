@@ -10,19 +10,26 @@ book:
   chapters:
     - index.qmd
     - preface.qmd
+    - intro.qmd
   
     - part: DESCRIPTIVE STATISTICS
       chapters:
-        - descriptive-part/definition-key-terms.qmd
-        - descriptive-part/data-sampling-variation.qmd
-        - descriptive-part/variance.qmd
+        - descriptive/dataset.qmd
+        - descriptive/central-tendency.qmd
+        - descriptive/variability.qmd
+        - descriptive/data-visualization.qmd
   
     - part: INFERENTIAL STATISTICS
       chapters: 
-        - sets-combinatorial-analysis.qmd
+        - inferential/sets-combinatorial-analysis.qmd
+    
+    - part: STATISTICAL LEARNING
+      chapters:
+        - statistical-learning/tidyverse.qmd
+        - statistical-learning/variance-biais.qmd
 
   appendices: 
-    - appendices/lexicon.qmd
+    - appendices/glossary.qmd
 
 bibliography: references.bib
 
