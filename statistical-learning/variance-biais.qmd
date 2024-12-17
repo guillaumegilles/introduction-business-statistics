@@ -1,0 +1,4 @@
+# Variance - Biais Dilemma
+
+bias = underfitting ou sous-interprétation (on ne colle pas au jeu de donnée, on respecte le modèle)
+varaince = overfitting ou sur-interprétation (on colle trop au jeu de donnée)
