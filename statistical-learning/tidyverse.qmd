@@ -1,0 +1,32 @@
+# Tidyverse
+
+The tidyverse is a set of packages that work in harmony because they share
+common data representations and API design. The tidyverse package is
+designed to make it easy to install and load core packages from the
+tidyverse in a single command.
+
+## Philosohy
+
+1. Design for human
+  - function name
+  - pipe ``%>%` puis `|>` depuis R 4.1 = functionale programing
+2. reuse existing data structure = dataframe ~ tibble
+
+The tidyverse approach is to use function names that are descriptive and
+explicit over those that are short and implicit. There is a focus on
+**verbs** (e.g., `fit`, `arrange`, etc.) for general methods. **Verb-noun**
+pairs are particularly effective; consider `invert_matrix()` as a
+hypothetical function name.
+
+In the context of modeling, it is also important to avoid highly technical
+jargon, such as Greek letters or obscure terms in terms. **Names should be as
+self-documenting as possible**.
+
+### Data Structure
+
+Whenever possible, functions should avoid returning a novel [[r.object]],
+or data structure. This reduces cognitive load, additional syntax or
+methods.
+
+[[r.object.data-frame]], more specifically [[r.object.tibble]], is the
+preferred data structure in the tidyverse and [[t.tidymodels]] packages.
