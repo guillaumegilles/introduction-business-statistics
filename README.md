@@ -1,5 +1,12 @@
 ## Materials
 
+1. Descriptive
+   1. center =
+   2. Spread = dispersion
+   3. Shapes = skewness
+3. Inferential
+4. statistical learning
+
 ### R/Stats Books
 
 ## Quelle est la différence entre erreur d’estimation et erreur de prévision ?
