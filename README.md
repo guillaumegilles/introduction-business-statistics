@@ -1,19 +1,11 @@
+## TODOs
+
+- [ ] Embedded shiny app into a webpage pour faire les QCM
+- [ ] Create a glossary of all term with their appropriate mathematicl notation
+
 ## Materials
 
 ### R/Stats Books
-
-## Quelle est la différence entre erreur d’estimation et erreur de prévision ?
-
-Une **erreur d’estimation** est une erreur lors de la phase d’entraînement
-du modèle. (biais) ; alors que l’**erreur de prévision**, c’est une erreur
-du modèle pendant la phase de test (variance).
-
-## Clustering
-
-> [!NOTE]
-> Faire attention aux ordres de grandeurs des différentes variables. Si
-> les ordres de grandeurs sont différentes, le calcul des distances sera
-> donc **faux**
 
 1. [Tidy Modeling with R](https://www.tmwr.org/)
 2. [R for Data Science](https://r4ds.hadley.nz/intro)
@@ -48,32 +40,31 @@ du modèle pendant la phase de test (variance).
 - [Fundamentals of data visualization](https://clauswilke.com/dataviz/index.html)
 - https://ledaliang.github.io/journalclub/
 
-## TODOs
 
-- [ ] Embedded shiny app into a webpage pour faire les QCM
+---
+Two words that come up often in statistics are mean and proportion.
+If you were to take three exams in your math classes and obtain scores
+of 86, 75, and 92, you would calculate your mean score by adding the
+three exam scores and dividing by three (your mean score would be 84.3
+to one decimal place). If, in your math class, there are 40 students
+and 22 are men and 18 are women, then the proportion of men students is
+22/40 and the proportion of women students is  18/40
+---
+
+## Quelle est la différence entre erreur d’estimation et erreur de prévision ?
+
+Une **erreur d’estimation** est une erreur lors de la phase d’entraînement
+du modèle. (biais) ; alors que l’**erreur de prévision**, c’est une erreur
+du modèle pendant la phase de test (variance).
+
+## Clustering
+
+> [!NOTE]
+> Faire attention aux ordres de grandeurs des différentes variables. Si
+> les ordres de grandeurs sont différentes, le calcul des distances sera
+> donc **faux**
 
 
-
-## The purpose of a descriptive model is to describe or illustrate characteristics of some data
-
-
-The analysis might have no other purpose than to visually emphasize
-some trend or artifact in the data [@978-1492096481kuhnTidyModeling2022].
-
-Organizing and summarizing data is called descriptive [[statistics]]. Two ways to summarize data are by graphing and by using numbers (for example, average) [@illowskyIntroductoryStatistics2e2023].
-
-
-
-
-
-# Is statistics accurate?
-
-One of the main concerns in the field of [[statistics]] is how accurately a
-statistic estimates a [[statistics.parameter]]. The accuracy really depends on
-how well the [[satistics.sample]] represents the [[statistics.population]]. The sample
-must contain the characteristics of the population in order to be a
-representative sample. We are interested in both the sample statistic and the
-population parameter in [[inferential-statistics]].
 
 title: Confidence Interval
 desc: ''
@@ -260,11 +251,6 @@ Both the learning algorithm and the type of model states are specific to each ty
 - https://lms.fun-mooc.fr/courses/course-v1:inria+41026+session03/courseware/ea2a140204de4e7fbc316fd96a163c7f/f5a3613d45224fde86a195e91223961d/
 
 ###################################
-
-# Let's use our model to make some predictions using the same dataset.
-
-```python
-```
 
 title: Stock
 desc: ''

@@ -10,14 +10,12 @@ book:
   chapters:
     - index.qmd
     - preface.qmd
-    - intro.qmd
   
     - part: DESCRIPTIVE STATISTICS
       chapters:
         - data.qmd
-        - central-tendency.qmd
-        - variability.qmd
-        - data-visualization.qmd
+        - qualitative.qmd
+        - quantitative.qmd
   
     - part: INFERENTIAL STATISTICS
       chapters: 
@@ -29,7 +27,8 @@ book:
         - variance-biais.qmd
         - workflow.qmd
 
-  appendices: 
+  appendices:
+    - sampling.qmd
     - glossary.qmd
 
 bibliography: references.bib

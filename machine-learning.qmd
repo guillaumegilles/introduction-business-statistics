@@ -1,0 +1,6 @@
+# Machine learning
+
+
+En modélisation, la prédiction de données qualitatives est un problème de classification
+
+Les algorithmes de regression permettent de prédire les données quantitatives

@@ -1,1 +1,77 @@
 # Preface {.unnumbered}
+
+I have written this website form book in order to fully embrace statistics
+and modeling. This is a personnal project spanning for several months
+(years?). It took me uncountable number of hour of reading materials and
+studying to figure out the chapters arrangement 
+
+I took the opportunity to build this book interactive as possible, using 
+the capabilities that websites provides. Hence, a physical copy of this
+book is, in my opinion, impossible to replicate the same experience.
+
+I hope you find the content useful.
+
+## But wait, I understant statistics... but what is statistical modeling?
+
+A model is a **simplified version of a part of the real world** in which
+precise calculations are possible. A model is therefore a mathematical
+tool to help us understand the world around us. It enables our limited
+brains to grasp real-life situations that are so complex they cannot be
+fully comprehended. Additionally, models introduce a layer of abstraction
+that provides a "simplified" version of reality" [@mathematics:-a-very-short-introduction].
+
+While this list is not exhaustive, most statistical models falls into at
+least one of these 3 categories [@978-1492096481 - Tidy Modeling with R: A Framework for Modeling in the Tidyverse]:
+
+1. Descriptive
+2. Inferential
+3. Predictive
+
+## Descriptive Models
+
+The purpose of a descriptive model is to describe or illustrate
+characteristics of some data. The analysis might have no other purpose
+than to visually emphasize some trend or artifact in the data [@978-1492096481kuhnTidyModeling2022].
+
+Organizing and summarizing data is called descriptive statistics. Two
+ways to summarize data are by graphing and by using numbers (for example,
+average) [@illowskyIntroductoryStatistics2e2023].
+
+## Inferential Models
+
+The goal of an inferential model is to produce a decision for a research
+question or to explore a specific hypothesis, similar to how statistical tests
+are used
+
+An inferential model starts with a predefined conjecture, or idea, about
+a population and produces a statistical conclusion such as an interval
+estimate or the rejection of a hypothesis. For example, the goal of a
+clinical trial might be to provide confirmation that a new therapy does
+a better job in prolonging life than an alternative.
+
+Inferential model uses probability to determine how confident you can be
+that your conclusions are correct. Effective interpretation of data
+(inference) is based on good procedures for producing data and thoughtful
+examination of the data.
+
+## Predictive Models
+
+Sometimes data are modeled to produce the most accurate prediction
+possible for new data.
+
+For this type of model, the problem type is one of **estimation** rather
+than inference. For example, the buyer is usually not concerned with a
+question such as “Will I sell more than 100 copies of book X next month?”
+but rather “How many copies of book X will customers purchase next month?”
+
+[@kuhnTidyModeling2022]
+
+### Mechanistic Models
+
+### Empirically driven Models
+
+Empirically driven models are created with more vague assumptions. These
+models tend to fall into the machine learning category. A good example is
+the _K_-nearest neighbor (KNN) model. Given a set of reference data, a
+new sample is predicted by using the values of the $K$ most similar data
+in thereference set.

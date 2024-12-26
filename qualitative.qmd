@@ -1,0 +1,7 @@
+# Analyzing Qualitative (categorial) Data
+
+## Visualization
+
+bar chart = on discrete (categorial) variable
+
+## Computing

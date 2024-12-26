@@ -1,4 +1,0 @@
-# Data Visualization
-
-bar chart = on discrete (categorial) variable
-histogram = on continuous variable
