@@ -225,5 +225,354 @@
       "INFERENTIAL STATISTICS",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sets and Combinatorial Analysis</span>"
     ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Model\nWhile this list is not exhaustive, most models falls into at least one of these categories:",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#model",
+    "href": "intro.html#model",
+    "title": "Introduction",
+    "section": "",
+    "text": "Models are mathematical tools that can describe a system and capture relationships in the data given to them. […] The utility of a model hinges on its ability to be reductive, or to reduce complex relationships to simpler terms. The primary influences in the data can be captured mathematically in a useful way, such as in a relationship that can be expressed as an equation.\n(978-1492096481? - Tidy Modeling with R: A Framework for Modeling in the Tidyverse)\n\n\n\n[[math.model.descriptive]]\n[[math.model.inferential]]\n[[math.model.predictive]]",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#quest-ce-quun-modèle",
+    "href": "intro.html#quest-ce-quun-modèle",
+    "title": "Introduction",
+    "section": "Qu’est-ce qu’un modèle",
+    "text": "Qu’est-ce qu’un modèle\nUn modèle est une version simplifiée d’une partie du monde réel, dans laquelle des calculs exacts sont possibles. Un modèle est donc un outil pour nous aider à comprendre le monde qui nous entoure. Il permet à nos cerveaux limités d’appréhender des situations réelles de la vie, si complexe qu’on ne peut compendre en intégralité. Aussi, les modèles présentent une couche d’abstraction permettant d’obtenir une version “simplifiée” la réalité (mathematics?-a-very-short-introduction).",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#predictive-models",
+    "href": "intro.html#predictive-models",
+    "title": "Introduction",
+    "section": "Predictive Models",
+    "text": "Predictive Models\ndesc: &gt;- Sometimes data are modeled to produce the most accurate prediction possible for new data updated: 1733779170804 created: 1733752024603\n\nFor this type of model, the problem type is one of estimation rather than inference. For example, the buyer is usually not concerned with a question such as “Will I sell more than 100 copies of book X next month?” but rather “How many copies of book X will customers purchase next month?” (kuhnTidyModeling2022?)",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#mechanistic-models",
+    "href": "intro.html#mechanistic-models",
+    "title": "Introduction",
+    "section": "Mechanistic Models",
+    "text": "Mechanistic Models",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#empirically-driven-models",
+    "href": "intro.html#empirically-driven-models",
+    "title": "Introduction",
+    "section": "empirically driven Models",
+    "text": "empirically driven Models\nEmpirically driven models are created with more vague assumptions. These models tend to fall into the [[ai.ml]] category. A good example is the [[ai.ml.supervised-learning.classification.knn]] model. Given a set o reference data, a new sample is predicted by using the values of the \\(K\\) most similar data in thereference set.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#inferential-models",
+    "href": "intro.html#inferential-models",
+    "title": "Introduction",
+    "section": "Inferential Models",
+    "text": "Inferential Models\ndesc: &gt;- The goal of an inferential model is to produce a decision for a research question or to explore a specific hypothesis, similar to how statistical tests are used updated: 1733778813696 created: 1733751450382\n\nWith help of [[statistics.inferential]], an inferential model starts with a predefined conjecture, or idea, about a population and produces a statistical conclusion such as an interval estimate or the rejection of a hypothesis.\nFor example, the goal of a clinical trial might be to provide confirmation that a new therapy does a better job in prolonging life than an alternative.\nInferential modeling techniques typically produce some type of probabilistic output, such as [[statistics.inferential.p-value]], [[statistics.inferential.confidence-interval]], or posterior probability (kuhnTidyModeling2022?).\n[statistics] inference uses [probability] to determine how confident we can be that our conclusions are correct. Effective interpretation of data (inference) is based on good procedures for producing data and thoughtful examination of the data.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#statistics",
+    "href": "intro.html#statistics",
+    "title": "Introduction",
+    "section": "Statistics",
+    "text": "Statistics",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#probability",
+    "href": "intro.html#probability",
+    "title": "Introduction",
+    "section": "Probability",
+    "text": "Probability",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#key-terms",
+    "href": "intro.html#key-terms",
+    "title": "Introduction",
+    "section": "Key Terms",
+    "text": "Key Terms\nindividual = people, things\nIn statistics, we generally want to study a population. You can think of a population as a collection of persons, things, or objects under study. To study the population, we select a sample. The idea of sampling is to select a portion (or subset) of the larger population and study that portion (the sample) to gain information about the population. Data are the result of sampling from a population.\nBecause it takes a lot of time and money to examine an entire population, sampling is a very practical technique. If you wished to compute the overall grade point average at your school, it would make sense to select a sample of students who attend the school. The data collected from the sample would be the students’ grade point averages. In presidential elections, opinion poll samples of 1,000–2,000 people are taken. The opinion poll is supposed to represent the views of the people in the entire country. Manufacturers of canned carbonated drinks take samples to determine if a 16 ounce can contains 16 ounces of carbonated drink.\nFrom the sample data, we can calculate a statistic. A statistic is a number that represents a property of the sample. For example, if we consider one math class to be a sample of the population of all math classes, then the average number of points earned by students in that one math class at the end of the term is an example of a statistic. The statistic is an estimate of a population parameter. A parameter is a numerical characteristic of the whole population that can be estimated by a statistic. Since we considered all math classes to be the population, then the average number of points earned per student over all the math classes is an example of a parameter.\nOne of the main concerns in the field of statistics is how accurately a statistic estimates a parameter. The accuracy really depends on how well the sample represents the population. The sample must contain the characteristics of the population in order to be a representative sample. We are interested in both the sample statistic and the population parameter in inferential statistics. In a later chapter, we will use the sample statistic to test the validity of the established population parameter.\nA variable, usually notated by capital letters such as X and Y, is a characteristic or measurement that can be determined for each member of a population. Variables may be numerical or categorical. Numerical variables take on values with equal units such as weight in pounds and time in hours. Categorical variables place the person or thing into a category. If we let X equal the number of points earned by one math student at the end of a term, then X is a numerical variable. If we let Y be a person’s party affiliation, then some examples of Y include Republican, Democrat, and Independent. Y is a categorical variable. We could do some math with values of X (calculate the average number of points earned, for example), but it makes no sense to do math with values of Y (calculating an average party affiliation makes no sense).\nData are the actual values of the variable. They may be numbers or they may be words. Datum is a single value.\nTwo words that come up often in statistics are mean and proportion. If you were to take three exams in your math classes and obtain scores of 86, 75, and 92, you would calculate your mean score by adding the three exam scores and dividing by three (your mean score would be 84.3 to one decimal place). If, in your math class, there are 40 students and 22 are men and 18 are women, then the proportion of men students is 2240 and the proportion of women students is 1840 . Mean and proportion are discussed in more detail in later chapters.\n\nVariables\nA variable, usually notated by capital letters such as \\(X\\) and \\(Y\\), is a characteristic or measurement that can be determined for each member of a [[statistics.population]]. Variables may be numerical or categorical:\n\nNumerical variables take on values with equal units such as weight in pounds and time in hours.\nCategorical variables place the person or thing into a category.\n\nIf we let \\(X\\) equal the number of points earned by one math student at the end of a term, then \\(X\\) is a numerical variable. If we let \\(Y\\) be a person’s party affiliation, then some examples of \\(Y\\) include Republican, Democrat, and Independent. \\(Y\\) is a categorical variable. We could do some math with values of \\(X\\) (calculate the average number of points earned, for example), but it makes no sense to do math with values of \\(Y\\) (calculating an average party affiliation makes no sense).\n\nParameter\nA parameter is a numerical characteristic of the whole [[statistics.population]] that can be estimated by a [statistics]. Since we considered all math classes to be the population, then the average number of points earned per student over all the math classes is an example of a parameter.\n\n\n\ntitle: Observation\ndesc: ’’ updated: 1729068716853 created: 1729068716853 isDir: false id_imported: yc6x8d3gi8gp5kwe1l4pnns title_imported: Observation desc_imported: ’’ updated_imported: 1711439994897 created_imported: 1711439938863\n\n\nObservation : propriété ou thème que l’on cherche à étudier sur les individus de la [[statistics.population]]. La série de ces observations forme ce qui s’appelle une variable statistique.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#exercices",
+    "href": "intro.html#exercices",
+    "title": "Introduction",
+    "section": "Exercices",
+    "text": "Exercices\n\nExample 1\n\n\n\n\n\n\nProblem\n\n\n\nDetermine what the key terms refer to in the following study. We want to know the average (mean) amount of money first year college students spend at ABC College on school supplies that do not include books. We randomly surveyed 100 first year students at the college. Three of those students spent $150, $200, and $225, respectively.\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\nThe population is all first year students attending ABC College this term.\nThe sample could be all students enrolled in one section of a beginning statistics course at ABC College (although this sample may not represent the entire population).\nThe parameter is the average (mean) amount of money spent (excluding books) by first year college students at ABC College this term: the population mean.\nThe statistic is the average (mean) amount of money spent (excluding books) by first year college students in the sample.\nThe variable could be the amount of money spent (excluding books) by one first year student. Let X = the amount of money spent (excluding books) by one first year student attending ABC College.\nThe data are the dollar amounts spent by the first year students. Examples of the data are $150, $200, and $225.\n\n\n\n\n\n\nExample 2\n\n\n\n\n\n\nProblem\n\n\n\nDetermine what the key terms refer to in the following study.\nA study was conducted at a local college to analyze the average cumulative GPA’s of students who graduated last year. For each statement below find the appropriate statistical term.\n\nThe cumulative GPA of one student who graduated from the college last year.\n3.65, 2.80, 1.50, 3.90\nA group of students who graduated from the college last year, randomly selected.\nThe average cumulative GPA of students who graduated from the college last year.\nAll students who graduated from the college last year.\nthe average cumulative GPA of students in the study who graduated from the college last year.\n\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\nPopulation: 5\nStatistic: 6\nParameter: 4\nSample: 3\nVariable: 1\nData: 2\n\n\n\n\n\n\nExample 3\n\n\n\n\n\n\nProblem\n\n\n\nDetermine what the key terms refer to in the following study.\nAs part of a study designed to test the safety of electric automobiles, the National Transportation Safety Board collected and reviewed data about the effects of an automobile crash on test dummies. Here is the criterion they used:\n\n\n\nSpeed at which cars crashed\nLocation of “drive” (i.e. dummies)\n\n\n\n\n35 miles/hour\nFront Seat\n\n\n\nCars with dummies in the front seats were crashed into a wall at a speed of 35 miles per hour. We want to know the proportion of dummies in the driver’s seat that would have had head injuries, if they had been actual drivers. We start with a simple random sample of 75 cars.\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\nThe population is all cars containing dummies in the front seat.\nThe sample is the 75 cars, selected by a simple random sample.\nThe parameter is the proportion of driver dummies (if they had been real people) who would have suffered head injuries in the population.\nThe statistic is proportion of driver dummies (if they had been real people) who would have suffered head injuries in the sample.\nThe variable \\(X =\\) whether a dummy (if it had been a real person) would have suffered head injuries.\nThe data are either: yes, had head injury, or no, did not.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#to-recap",
+    "href": "intro.html#to-recap",
+    "title": "Introduction",
+    "section": "To recap",
+    "text": "To recap\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nflowchart TD;\n    population[Population]==&gt; |a portion (or subset) of the population|sample(Sample);\n    sample --&gt; statistic(Statistic);\n    B --&gt; D;\n    C --&gt; D;",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#les-faits-données-quon-possède",
+    "href": "intro.html#les-faits-données-quon-possède",
+    "title": "Introduction",
+    "section": "Les faits : données qu’on possède",
+    "text": "Les faits : données qu’on possède\n\nÉchantillon (sample) : sous-ensemble de la population - [[cs.data]]\nObservation : un individu ou objet de l’échantillon\nStatistiques : résultats déduient des données recueillis dans l’échantillon",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "intro.html#on-essaye-de-trouver-la-vérité-grâce-à",
+    "href": "intro.html#on-essaye-de-trouver-la-vérité-grâce-à",
+    "title": "Introduction",
+    "section": "On essaye de trouver la vérité grâce à",
+    "text": "On essaye de trouver la vérité grâce à\n\nHypothèse : affirmation provisoire décrivant ce que les paramètres pourrait être\nEstimation : processus pour estimer la valeur d’un paramètre de la population\n\ntitle: Qualitative Data desc: ’’ updated: 1733775757555 created: 1729068716853 isDir: false id_imported: pcxq3hqvlncj80wqe7zbwdv title_imported: Qualitative Data desc_imported: ’’ updated_imported: 1711442135283 created_imported: 1711441971532\n\nUne variable non numérique est dite qualitative, par exemple, la couleur des yeux, les opinions politiques, etc. Les variables qualitatives peuvent être :\n\nOrdianle : les modalités des variables peuvent être dans un certain ordre naturel.\nNominale : à l’inverse les valeurs qualitatives nominales ne peuvent être classé par ordre.\n\nQualitative data are the result of categorizing or describing attributes of a [[statistics.population]]. Qualitative data are also often called categorical data. Hair color, blood type, ethnic group, the car a person drives, and the street a person lives on are examples of qualitative data. Qualitative data are generally described by words or letters. For instance, hair color might be black, dark brown, light brown, blonde, gray, or red. Blood type might be AB+, O-, or B+. Researchers often prefer to use quantitative data over qualitative data because it lends itself more easily to mathematical analysis. For example, it does not make sense to find an average hair color or blood type.\n[[illowskyintroductorystatistics2e2023]]\nQualitatives (categorial data) : données labellisées, comme faible, moyen, fort. En modélisation, la prédiction de données qualitatives est un problème de [[ds.ml.sl.class]]\ntitle: Quantitative Data desc: ’’ updated: 1729068716853 created: 1729068716853 isDir: false id_imported: 31ii7vbpbrtrfe5gmpndrj7 title_imported: Quantitative Data desc_imported: ’’ updated_imported: 1711442316007 created_imported: 1711442250571\n\nUne variable numérique est appelée quantitative, c’est-à-dire qu’elle est mesurable. Les variables quantitatives peuvent être :\n\nContinue : elle peuvent prendre toute les valeurs d’intervalle fini ou infini, par exemple, les salaires, la taille du pièce, etc.\nDiscrète ou discontinue : la variable discrète ne prend que des valeurs isolées les unes des autres, par exemple, le nombre d’enfants d’une famille ne peut être que 0, ou 1, ou 2, ou 3, etc.\n\nQuantitative data are always numbers. Quantitative data are the result of counting or measuring attributes of a population. Amount of money, pulse rate, weight, number of people living in your town, and number of students who take statistics are examples of quantitative data. Quantitative data may be either discrete or continuous.\nAll data that are the result of counting are called quantitative discrete data. These data take on only certain numerical values. If you count the number of phone calls you receive for each day of the week, you might get values such as zero, one, two, or three.\nData that are not only made up of counting numbers, but that may include fractions, decimals, or irrational numbers, are called quantitative continuous data. Continuous data are often the results of measurements like lengths, weights, or times. A list of the lengths in minutes for all the phone calls that you make in a week, with numbers like 2.4, 7.5, or 11.0, would be quantitative continuous data.\n(illowskyIntroductoryStatistics2e2023?)\n\nQuantitatives (continuous data) : données chiffrées. Les algorithmes [[ds.ml.sl.reg]] permettent de prédire les données quantitatives ;",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "descriptive/dataset.html",
+    "href": "descriptive/dataset.html",
+    "title": "1  Data, Sampling, and Variation in Data and Sampling Data",
+    "section": "",
+    "text": "1.0.1 Solution\nOne possible solution could be:",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data, Sampling, and Variation in Data and Sampling Data</span>"
+    ]
+  },
+  {
+    "objectID": "descriptive/dataset.html#qualitative-data-discussion",
+    "href": "descriptive/dataset.html#qualitative-data-discussion",
+    "title": "1  Data, Sampling, and Variation in Data and Sampling Data",
+    "section": "1.1 Qualitative Data Discussion",
+    "text": "1.1 Qualitative Data Discussion\nBelow are tables comparing the number of part-time and full-time students at De Anza College and Foothill College enrolled for the most recent spring quarter. The tables display counts (frequencies) and percentages or proportions (relative frequencies). The percent columns make comparing the same categories in the colleges easier. Displaying percentages along with the numbers is often helpful, but it is particularly important when comparing sets of data that do not have the same totals, such as the total enrollments for both colleges in this example. Notice how much larger the percentage for part-time students at Foothill College is compared to De Anza College.\nDe Anza College | Foothill College |\n| Number | Percent | | Number | Percent|\n|-|——–|———|-|——–|——–| |Full-time | 9,200 | 40.9% | Full-time | 4,059 | 28.6% | | Part-time| 13,296| 59.1%| Part-time | 10,124 | 71.4% | |Total| 22,496 | 100% | Total | 14,183 | 100% |\n\nTables are a good way of organizing and displaying data. But graphs can be even more helpful in understanding the data. There are no strict rules concerning which graphs to use. Two graphs that are used to display qualitative (categorical) data are pie charts and bar graphs.\n\nIn a pie chart, categories of data are represented by wedges in a circle and are proportional in size to the percent of individuals in each category.\nIn a bar graph, the length of the bar for each category is proportional to the number or percent of individuals in each category. Bars may be vertical or horizontal.\nA Pareto chart consists of bars that are sorted into order by category size (largest to smallest).\n\nggplot()\n\nIt is a good idea to look at a variety of graphs to see which is the most helpful in displaying the data. We might make different choices of what we think is the “best” graph depending on the data and the context. Our choice also depends on what we are using the data for.",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data, Sampling, and Variation in Data and Sampling Data</span>"
+    ]
+  },
+  {
+    "objectID": "descriptive/dataset.html#percentages-that-add-to-more-or-less-than-100",
+    "href": "descriptive/dataset.html#percentages-that-add-to-more-or-less-than-100",
+    "title": "1  Data, Sampling, and Variation in Data and Sampling Data",
+    "section": "1.2 Percentages That Add to More (or Less) Than 100%",
+    "text": "1.2 Percentages That Add to More (or Less) Than 100%\nSometimes percentages add up to be more than 100% (or less than 100%). In the graph, the percentages add to more than 100% because students can be in more than one category. A bar graph is appropriate to compare the relative size of the categories. A pie chart cannot be used. It also could not be used if the percentages added to less than 100%.",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data, Sampling, and Variation in Data and Sampling Data</span>"
+    ]
+  },
+  {
+    "objectID": "descriptive/dataset.html#omitting-categoriesmissing-data",
+    "href": "descriptive/dataset.html#omitting-categoriesmissing-data",
+    "title": "1  Data, Sampling, and Variation in Data and Sampling Data",
+    "section": "1.3 Omitting Categories/Missing Data",
+    "text": "1.3 Omitting Categories/Missing Data\nThe table displays Ethnicity of Students but is missing the “Other/Unknown” category. This category contains people who did not feel they fit into any of the ethnicity categories or declined to respond. Notice that the frequencies do not add up to the total number of students. In this situation, create a bar graph and not a pie chart.",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data, Sampling, and Variation in Data and Sampling Data</span>"
+    ]
+  },
+  {
+    "objectID": "descriptive/dataset.html#sampling",
+    "href": "descriptive/dataset.html#sampling",
+    "title": "1  Data, Sampling, and Variation in Data and Sampling Data",
+    "section": "1.4 Sampling",
+    "text": "1.4 Sampling\n\n1.4.1 Simple Random Sample\nGathering information about an entire population often costs too much or is virtually impossible. Instead, we use a sample of the population. A sample should have the same characteristics as the population it is representing. Most statisticians use various methods of random sampling in an attempt to achieve this goal. This section will describe a few of the most common methods.\nThere are several different methods of random sampling. In each form of random sampling, each member of a population initially has an equal chance of being selected for the sample. Each method has pros and cons. The easiest method to describe is called a simple random sample. Any group of \\(n\\) individuals is equally likely to be chosen as any other group of \\(n\\) individuals if the simple random sampling technique is used. In other words, each sample of the same size has an equal chance of being selected.\nFor example, suppose Lisa wants to form a four-person study group (herself and three other people) from her pre-calculus class, which has 31 members not including Lisa. To choose a simple random sample of size three from the other members of her class, Lisa could put all 31 names in a hat, shake the hat, close her eyes, and pick out three names. A more technological way is for Lisa to first list the last names of the members of her class together with a two-digit number:\n\n\n\nID\nName\nID\nName\nID\nName\n\n\n\n\n00\nAnselmo\n11\nKing\n21\nRoquero\n\n\n\n01 Bautista 12 Legeny 22 Roth 02 Bayani 13 Lundquist 23 Rowell 03 Cheng 14 Macierz 24 Salangsang 04 Cuarismo 15 Motogawa 25 Slade 05 Cuningham 16 Okimoto 26 Stratcher 06 Fontecha 17 Patel 27 Tallai 07 Hong 18 Price 28 Tran 08 Hoobler 19 Quizon 29 Wai 09 Jiao 20 Reyes 30 Wood 10 Khan\nLisa can use a table of random numbers (found in many statistics books and mathematical handbooks), a calculator, or a computer to generate random numbers. The numbers generated are as follows:\n\\[0.94360; 0.99832; 0.14669; 0.51470; 0.40581; 0.73381; 0.04399\\]\nLisa reads two-digit groups until she has chosen three class members (that is, she reads 0.94360 as the groups 94, 43, 36, 60). Each random number may only contribute one class member. If she needed to, Lisa could have generated more random numbers.\nThe random numbers \\(0.94360\\) and \\(0.99832\\) do not contain appropriate two digit numbers. However the third random number, \\(0.14669\\), contains \\(14\\) (the fourth random number also contains \\(14\\)), the fifth random number contains \\(05\\), and the seventh random number contains \\(04\\). The two-digit number \\(14\\) corresponds to Macierz, \\(05\\) corresponds to Cuningham, and \\(04\\) corresponds to Cuarismo. Besides herself, Lisa’s group will consist of Marcierz, Cuningham, and Cuarismo.\nBesides **simple random sampling*, there are other forms of sampling that involve a chance process for getting the sample. Other well-known random sampling methods are the stratified sample, the **cluster sample*, and the systematic sample.\n\n\n1.4.2 Stratified Sample\nTo choose a stratified sample, divide the population into groups called strata and then take a proportionate number from each stratum. For example, you could stratify (group) your college population by department and then choose a proportionate simple random sample from each stratum (each department) to get a stratified random sample. To choose a simple random sample from each department, number each member of the first department, number each member of the second department, and do the same for the remaining departments. Then use simple random sampling to choose proportionate numbers from the first department and do the same for each of the remaining departments. Those numbers picked from the first department, picked from the second department, and so on represent the members who make up the stratified sample.\n\n\n1.4.3 Cluster Sample\nTo choose a cluster sample, divide the population into clusters (groups) and then randomly select some of the clusters. All the members from these clusters are in the cluster sample. For example, if you randomly sample four departments from your college population, the four departments make up the cluster sample. Divide your college faculty by department. The departments are the clusters. Number each department, and then choose four different numbers using simple random sampling. All members of the four departments with those numbers are the cluster sample.\n\n\n1.4.4 Systematic Sample\nTo choose a systematic sample, randomly select a starting point and take every nth piece of data from a listing of the population. For example, suppose you have to do a phone survey. Your phone book contains 20,000 residence listings. You must choose 400 names for the sample. Number the population 1–20,000 and then use a simple random sample to pick a number that represents the first name in the sample. Then choose every fiftieth name thereafter until you have a total of 400 names (you might have to go back to the beginning of your phone list). Systematic sampling is frequently chosen because it is a simple method.\nA type of sampling that is non-random is convenience sampling. Convenience sampling involves using results that are readily available. For example, a computer software store conducts a marketing study by interviewing potential customers who happen to be in the store browsing through the available software. The results of convenience sampling may be very good in some cases and highly biased (favor certain outcomes) in others.\nSampling data should be done very carefully. Collecting data carelessly can have devastating results. Surveys mailed to households and then returned may be very biased (they may favor a certain group). It is better for the person conducting the survey to select the sample respondents.\nTrue random sampling is done with replacement. That is, once a member is picked, that member goes back into the population and thus may be chosen more than once. However for practical reasons, in most populations, simple random sampling is done without replacement. Surveys are typically done without replacement. That is, a member of the population may be chosen only once. Most samples are taken from large populations and the sample tends to be small in comparison to the population. Since this is the case, sampling without replacement is approximately the same as sampling with replacement because the chance of picking the same individual more than once with replacement is very low.\nSampling without replacement instead of sampling with replacement becomes a mathematical issue only when the population is small.\nWhen you analyze data, it is important to be aware of sampling errors and nonsampling errors. The actual process of sampling causes sampling errors. For example, the sample may not be large enough. Factors not related to the sampling process cause nonsampling errors. A defective counting device can cause a nonsampling error.\nIn reality, a sample will never be exactly representative of the population so there will always be some sampling error. As a rule, the larger the sample, the smaller the sampling error.\nIn statistics, a sampling bias is created when a sample is collected from a population and some members of the population are not as likely to be chosen as others (remember, each member of the population should have an equally likely chance of being chosen). When a sampling bias happens, there can be incorrect conclusions drawn about the population that is being studied.\nCritical Evaluation We need to evaluate the statistical studies we read about critically and analyze them before accepting the results of the studies. Common problems to be aware of include:\nProblems with samples: A sample must be representative of the population. A sample that is not representative of the population is biased. Biased samples that are not representative of the population give results that are inaccurate and not valid.\nSelf-selected samples: Responses only by people who choose to respond, such as call-in surveys, are often unreliable.\nSample size issues: Samples that are too small may be unreliable. Larger samples are better, if possible. In some situations, having small samples is unavoidable and can still be used to draw conclusions. Examples: crash testing cars or medical testing for rare conditions\nUndue influence: collecting data or asking questions in a way that influences the response\nNon-response or refusal of subject to participate: The collected responses may no longer be representative of the population. Often, people with strong positive or negative opinions may answer surveys, which can affect the results.\nCausality: A relationship between two variables does not mean that one causes the other to occur. They may be related (correlated) because of their relationship through a different variable.\nSelf-funded or self-interest studies: A study performed by a person or organization in order to support their claim. Is the study impartial? Read the study carefully to evaluate the work. Do not automatically assume that the study is good, but do not automatically assume the study is bad either. Evaluate it on its merits and the work done.\nMisleading use of data: improperly displayed graphs, incomplete data, or lack of context\nConfounding: When the effects of multiple factors on a response cannot be separated. Confounding makes it difficult or impossible to draw valid conclusions about the effect of each factor.\nVariation in Data\nVariation is present in any set of data. For example, 16-ounce cans of beverage may contain more or less than 16 ounces of liquid. In one study, eight 16 ounce cans were measured and produced the following amount (in ounces) of beverage:\n15.8; 16.1; 15.2; 14.8; 15.8; 15.9; 16.0; 15.5\nMeasurements of the amount of beverage in a 16-ounce can may vary because different people make the measurements or because the exact amount, 16 ounces of liquid, was not put into the cans. Manufacturers regularly run tests to determine if the amount of beverage in a 16-ounce can falls within the desired range.\nBe aware that as you take data, your data may vary somewhat from the data someone else is taking for the same purpose. This is completely natural. However, if two or more of you are taking the same data and get very different results, it is time for you and the others to reevaluate your data-taking methods and your accuracy.\n\n\nVariation in Samples It was mentioned previously that two or more samples from the same population, taken randomly, and having close to the same characteristics of the population will likely be different from each other. Suppose Doreen and Jung both decide to study the average amount of time students at their college sleep each night. Doreen and Jung each take samples of 500 students. Doreen uses systematic sampling and Jung uses cluster sampling. Doreen’s sample will be different from Jung’s sample. Even if Doreen and Jung used the same sampling method, in all likelihood their samples would be different. Neither would be wrong, however.\nThink about what contributes to making Doreen’s and Jung’s samples different.\nIf Doreen and Jung took larger samples (i.e. the number of data values is increased), their sample results (the average amount of time a student sleeps) might be closer to the actual population average. But still, their samples would be, in all likelihood, different from each other. This variability in samples cannot be stressed enough.\nSize of a Sample The size of a sample (often called the number of observations, usually given the symbol n) is important. The examples you have seen in this book so far have been small. Samples of only a few hundred observations, or even smaller, are sufficient for many purposes. In polling, samples that are from 1,200 to 1,500 observations are considered large enough and good enough if the survey is random and is well done. Later we will find that even much smaller sample sizes will give very good results. You will learn why when you study confidence intervals.\nBe aware that many large samples are biased. For example, call-in surveys are invariably biased, because people choose to respond or not.",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Data, Sampling, and Variation in Data and Sampling Data</span>"
+    ]
+  },
+  {
+    "objectID": "descriptive/central-tendency.html",
+    "href": "descriptive/central-tendency.html",
+    "title": "2  Measures of the center of the data",
+    "section": "",
+    "text": "2.1 Arithmetic Mean",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measures of the center of the data</span>"
+    ]
+  },
+  {
+    "objectID": "descriptive/central-tendency.html#weighted-mean",
+    "href": "descriptive/central-tendency.html#weighted-mean",
+    "title": "2  Measures of the center of the data",
+    "section": "2.2 Weighted Mean",
+    "text": "2.2 Weighted Mean\nLa moyenne arithmétique est la somme des valeurs divisée par le nombre d’individus :\n\\[\n\\bar{X} = \\frac{1}{n} \\cdot \\sum_{i = 1}^n x_i\n\\]",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measures of the center of the data</span>"
+    ]
+  },
+  {
+    "objectID": "descriptive/central-tendency.html#références",
+    "href": "descriptive/central-tendency.html#références",
+    "title": "2  Measures of the center of the data",
+    "section": "2.3 Références",
+    "text": "2.3 Références\n\nhttps://fr.wikipedia.org/wiki/Statistique_descriptive\n\ntitle: Median desc: ’’ updated: 1729068716853 created: 1729068716853 isDir: false id_imported: rxxilp2zi8bfjr7lyalwjt5 title_imported: Statistical Mediane desc_imported: Médiane updated_imported: 1711442423801 created_imported: 1670271512599\n\nLa médiane, désignée par Me, est la valeur de la variable statistique qui sépare la population ou l’échantillon en deux sous-ensembles égaux. Il y a 50% de la population au-dessus de la médiane et 50% de la population en dessous de la médiane.\nLa médiane est la valeur centrale qui partage l’échantillon en 2 groupes de même effectif : 50 % au-dessus et 50 % en dessous. La médiane peut avoir une valeur différente de la moyenne. En France (et d’ailleurs dans la plupart des pays), le salaire médian est inférieur au salaire moyen : il y a beaucoup de smicards et peu de gros salaires. Cependant, les gros salaires tirent la moyenne vers le haut.\nEn général, une médiane est, dans une série ordonnée, une valeur M telle qu’il y ait autant de valeurs supérieures ou égales à M que de valeur inférieures ou égales à M. exemple : 1 3 5 7 9 la médiane est 5",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measures of the center of the data</span>"
+    ]
+  },
+  {
+    "objectID": "descriptive/central-tendency.html#références-1",
+    "href": "descriptive/central-tendency.html#références-1",
+    "title": "2  Measures of the center of the data",
+    "section": "2.4 Références",
+    "text": "2.4 Références\n\nhttps://fr.wikipedia.org/wiki/Statistique_descriptive\n\ntitle: Mode desc: ’’ updated: 1729068716853 created: 1729068716853 isDir: false id_imported: o4r1kk10jywt83wmm0ez0cf title_imported: Statistical Mode desc_imported: null updated_imported: 1711442374958 created_imported: 1670271557198\n\nLe mode, désigné par Mo, est la valeur de la variable statistique la plus fréquente. Dans le cas d’une variable statistique continue, le mode est appelé classe modale. Le mode, ou classe modale, n’est pas obligatoirement unique. Il peut exister plusieurs valeurs les plus fréquente dans une population ou échantillon.",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Measures of the center of the data</span>"
+    ]
+  },
+  {
+    "objectID": "descriptive/variability.html",
+    "href": "descriptive/variability.html",
+    "title": "3  Measure of Variability",
+    "section": "",
+    "text": "3.1 comparer des variances entres elles.\nTest F de Fisher - Senedecor\nF = variance la plus élevé / variance la plus faible",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Measure of Variability</span>"
+    ]
+  },
+  {
+    "objectID": "descriptive/variability.html#lécart-type-est-la-racine-carré-de-la-variance",
+    "href": "descriptive/variability.html#lécart-type-est-la-racine-carré-de-la-variance",
+    "title": "3  Measure of Variability",
+    "section": "3.2 l’écart-type est la racine carré de la variance",
+    "text": "3.2 l’écart-type est la racine carré de la variance\n           Variance     Ecart-type\npopulation sigma^2 sigma échantillon s^2 s",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Measure of Variability</span>"
+    ]
+  },
+  {
+    "objectID": "descriptive/variability.html#average-or-mean",
+    "href": "descriptive/variability.html#average-or-mean",
+    "title": "3  Measure of Variability",
+    "section": "3.3 Average or mean ?",
+    "text": "3.3 Average or mean ?\nThe words “[[statistical-mean]]” and “average” are often used interchangeably. The substitution of one word for the other is common practice. The technical term is arithmetic mean, and “average” is technically a center location. However, in practice among non-statisticians, “average” is commonly accepted for arithmetic mean.",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Measure of Variability</span>"
+    ]
+  },
+  {
+    "objectID": "descriptive/data-visualization.html",
+    "href": "descriptive/data-visualization.html",
+    "title": "4  Data Visualization",
+    "section": "",
+    "text": "bar chart = on discrete (categorial) variable histogram = on continuous variable",
+    "crumbs": [
+      "DESCRIPTIVE STATISTICS",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Visualization</span>"
+    ]
+  },
+  {
+    "objectID": "inferential/sets-combinatorial-analysis.html",
+    "href": "inferential/sets-combinatorial-analysis.html",
+    "title": "5  Sets and Combinatorial Analysis",
+    "section": "",
+    "text": "5.0.1 Definition\nA set is the mathematical model for a collection of different and distinct things / objects ; a set contains elements or members, which can be mathematical objects of any kind: numbers, symbols, points in space, lines, other geometrical shapes, variables, or even other sets.\nThe set with no elements is the empty set; a set with a single element is a singleton. A set may have a finite number of elements or be an infinite set.\nDefinitions : A set 𝐸 is a collection of objects, called its elements, considered without order or possible repetition (parce que ce sont des objets). If ” 𝑥 is an element of the set 𝐸 “, then one can say that”𝑥 belongs to 𝐸 ” and we denote 𝑥 ∈ 𝐸 A set without element is called empty set: notation: ∅ A single-element set is called a singleton A two-element set, is called a pair A subset is a part of the set",
+    "crumbs": [
+      "INFERENTIAL STATISTICS",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Sets and Combinatorial Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "inferential/sets-combinatorial-analysis.html#set",
+    "href": "inferential/sets-combinatorial-analysis.html#set",
+    "title": "5  Sets and Combinatorial Analysis",
+    "section": "5.1 Set",
+    "text": "5.1 Set\nDefinitions : A set 𝐸 is a collection of objects, called its elements, considered without order or possible repetition. If ” 𝑥 is an element of the set 𝐸 “, then one can say that”𝑥 belongs to 𝐸 ” and we denote 𝑥 ∈ 𝐸 A set without element is called empty set: notation: ∅ A single-element set is called a singleton A two-element set, is called a pair A subset is a part of the set\nUsual sets in mathematics : ℕ” = {0, 1, 2, 3, 4, . . .} “the set of nonnegative integers ℤ” = {…, −2, −1, 0, 1, 2, …}” the set of integers ℚ={ 𝑎/𝑏, 𝑎∈ℤ, 𝑏∈ℤ, and 𝑏≠0} the set of rational numbers (the fractions) ℝ “= ]−∞, +∞[” the set of real numbers ℝ “ ”{𝑎} the set of all the real numbers in ℝ except 𝑎 ℝ^+ “= [0, +∞[” the set of positif real numbers ℝ^− ”= ]−∞, 0]” the set of negatif real numbers\nRepresentation of a set : By extension: give an exhaustive list of all its elements. By understanding: give a characteristic property of its elements. For example : 𝐴 = {𝑥 ∈ℕ ┤| x is an even number} by extension : 𝐴 = {0, 2, 4, 6, 8,…} 𝐵 = {𝑥 ∈ℤ | −2 ≤ 𝑥 ≤ 5} by extension : 𝐵 = {−2,−1, 0, 1, 2, 3, 4, 5}\nOperations on Sets : Inclusion : 𝐴 ⊂ 𝐵 : ∀ 𝑥∈𝐴 ⇒ 𝑥∈𝐵\nEquality : 𝐴 = 𝐵 ∀ 𝑥∈𝐴 ⟺𝑥∈𝐵\nNote that 𝐴 ⊆ 𝐵 implies ” 𝐴 is included in 𝐵 or equal to 𝐵 “.\nRecall that : 𝐴=𝐵 ⟺ 𝐴⊆𝐵 and 𝐵⊆𝐴.\nIntersection : 𝐴 ∩ 𝐵 ∀ 𝑥 ∈ 𝐴 ∩ 𝐵⟺𝑥 ∈ 𝐴 and 𝑥 ∈ 𝐵.\nRecall that : if 𝐴∩𝐵=∅, then one can say that 𝐴 and 𝐵 are disjoint 𝐴∩𝐵 = 𝐵∩𝐴 𝐴∩∅ = ∅ 𝐴∩(𝐵∩𝐶) = (𝐴∩𝐵)∩𝐶\nUnion : 𝐴∪𝐵 ∀ 𝑥 ∈𝐴∪𝐵⟺𝑥 ∈ 𝐴 or 𝑥 ∈ 𝐵.\nRecall that :\n𝐴⊆(𝐴∪𝐵),𝐵⊆(𝐴∪𝐵),and 𝐴∩𝐵⊆(𝐴∪𝐵) 𝐴∪𝐵=𝐵∪𝐴 𝐴∪∅=𝐴 𝐴∪(𝐵∪𝐶)=(𝐴∪𝐵)∪𝐶 𝐴∩(𝐵∪𝐶)=(𝐴∩𝐵)∪(𝐴∩𝐶)\nComplementarity : Let 𝐴, 𝐵 and 𝐶 be three sets, such that 𝐴 ⊂ 𝐵 and 𝐶⊂ 𝐵. The complement of 𝐴 in 𝐵 is the set of elements of 𝐵 not belonging to 𝐴. Notation : 𝐴 ̅ (or 𝐴^𝑐, or 𝐵∖𝐴).\nRecall that : A ∩ 𝐴 ̅ = ∅ A ∪ 𝐴 ̅ = B ((𝐴 ̅)) ̅ = A ((𝐴∩𝐶)) ̅ = 𝐴 ̅ ∪ 𝐶 ̅ and ((𝐴 ∪ 𝐶) ) ̅ = 𝐴 ̅ ∩ 𝐶 ̅\nPartition :A partition of a set 𝐸 is a set of non-empty subsets of 𝐸 (called the components of the partition) which are disjoint such that their union is equal to 𝐸.\nExample : Suppose that 𝐸={1, 2, 3, 4, 5, 6, 7}. Then : 𝐸={{1, 2, 3}, {4, 5, 6, 7}} is a partition of 𝐸 ; 𝐸={{1, 2}, {3, 4}, {5, 6, 7}} is a partition of 𝐸 ; 𝐸={{1}, {2}, {3}, {4}, {5}, {6}, {7}} is a partition of 𝐸 ; …\nSet of the parts:We call the set of the parts of 𝐴, the set of all the possible subsets of 𝐴. It is denoted 𝒫(𝐴).\nExemple : Suppose that 𝐴 = {1, 2, 3}. Then, we have: 𝒫(𝐴) = {∅, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}}\nCardinal of a set :The cardinal is the size of a set. The cardinal of a finite set is the number of elements of the set. In particular, the cardinal of the empty set is zero. Notation : |𝐸| (or #(𝐸), or Card(𝐸)) is the cardinal of the set 𝐸\nRecall that if 𝐴⊆𝐵, then |𝐴|≤|𝐵|; if 𝐴⊆𝐵, then |𝐵|=|𝐵|−|𝐴|; if 𝐴∩𝐵=∅, then |𝐴∪𝐵|=|𝐴|+|𝐵|; |𝐴∪𝐵|=|𝐴|+|𝐵|−|𝐴∩𝐵|; if |𝐴|=𝑛, then |𝒫(𝐴)|=2^𝑛.\n\n5.1.1 Combinatorial analysis\nThe purpose of combinatorial analysis (counting techniques) is to learn how to count the number of elements in a finite set.\nThree techniques will be addressed: Permutations Arrangements Combinations\nThese techniques depend on an operation: the factorial of a nonnegative integer.\nThe factorial :Let 𝑛 ∈ 𝑁. Its factorial is defined by :\n𝑛! = 1 × 2 × . . . × (𝑛 − 1) × 𝑛\nBy convention, we have 0! = 1. Main Property: Let 𝑘 be a nonnegative and non null integer (𝑘 ≥ 1) and let 𝑛 be a nonnegative and non null integer such that (𝑛−𝑘)≥0.\nWe have : 𝑛! = (𝑛 − 𝑘)! × (𝑛 − 𝑘 + 1) × . . . × (𝑛 − 1) × 𝑛.\nPermutations :Given a set 𝐸 of 𝑛 objects, a permutations is an ordered rearrangement, without repetition of these 𝑛 distinct objects. The number of permutations of 𝑛 objects equals 𝑛!\nArrangements : Given a set 𝐸 of 𝑛 objects (elements), we call arrangements of 𝑝 (1 ≤ 𝑝 ≤ 𝑛) objects, all ordered sequences of 𝑝 objects taken from the 𝑛 objects.\nThere are two cases:\nArrangements without repetition : When each object can only be seen once in an arrangement, the number of non-repeating arrangements of 𝑝 objects taken from 𝑛 is: 𝐴_𝑛^𝑝= 𝑛!/((𝑛−𝑝)!) where 1≤𝑝≤𝑛.\nArrangements with repetition : When an object can be observed several times in an arrangement, the number of arrangements with repetition of 𝑝 (1 ≤ 𝑝 ≤ 𝑛) objects taken from 𝑛 is equal to 𝑛^𝑝.\nRemark : The permutation of 𝑛 objects is a particular case of a non-repeating arrangement of 𝑝 objects taken from 𝑛 objects, when 𝑝 = 𝑛.\nThus, the number of permutations of 𝑛 objects equals :\n𝐴_𝑛^𝑛= 𝑛!/((𝑛−𝑛)!)=𝑛!/0!=𝑛!\nCombinations : Given a set 𝐸 of 𝑛 objects, we call combinations of 𝑝 (1 ≤ 𝑝 ≤ 𝑛) objects any set of 𝑝 objects taken  without replacement among the 𝑛 objects. In this case, the notion of order of objects is no longer taken into account. The number of combinations of 𝑝 objects taken from 𝑛 is\n𝐶_𝑛^𝑝= 𝑛!/(𝑝! × (𝑛−𝑝)!)=(𝐴_𝑛^𝑝)/𝑝!\n\n\n5.1.2 exemple détaillé\nHow many 10-letter words can be formed with the 26 letters of the alphabet if the letters can be reused ?\nAt each position (1 to 10) one can chose among 26 different letters. Therefore the number of possibilities will be : 26 × 26 × 26 × 26 × 26 × 26 × 26 × 26 × 26 × 26= 2610.\nHow many 10-letter words can be formed with the 26 letters of the alphabet if each letter is used only once ?\nThe number of arrangements without repetition of 10 objects taken among 26 is equal to 𝐴_26^10 = 26!/((26 − 10)!) = 26 × 25 × 24 × 23 × 22 × 21 × 20 × 19 × 18 × 17 =19 275 223 968 000 words.\nHow many different numbers of 6 digits are there\nIf there are no restrictions? If the numbers have to be divisible by 5 ? If the repetition of digits is excluded?\nThe first digit cannot be 0 otherwise the number would have 5 digits\nWithout any restriction One gets 9 × 10 ×10 ×10 ×10 × 10 = 900 000 possible numbers\nIf the number ends by 0 or 5 (divisible by 5) One gets 9 × 10 × 10 × 10 × 10 × 2 = 180 000 possible numbers\nIf a chosen digit cannot be re-used One gets 9 × 9 × 8 × 7 × 6 × 5 = 136 080 possible numbers.\n\n\n5.1.3 Exercice\nA padlock has three wheels, each with the digits 0 to 9. How many secrets “numbers” are there?\nFrom a set of 52 cards, two cards are drawn simultaneously (without replacement). In how many different ways is this possible?\nThe code on your laptop is made up of 4 numbers (ranging from 0 to 9 each). A criminal has observed you doing the code. He managed to see only one number (but he doesn’t remember its position). What is the (maximum) number of tries for the criminal to unlock your laptop?\nThe number of possibilities is equal to 10 × 10 × 10 = 103 = 1000\nIt corresponds to the number of different ways you can choose a pair of cards from a deck of 52 cards, that is 𝐶_52^2 =1326\nFirst, the number of possible ways one can place the known digit is equal to 𝐶_4^1 =4 And then, the number of possibilities for the remaining three digits is equal to 10 × 10 × 10 = 103 = 1000. Thus the (maximum) number of tries is equal to 4 × 1000 = 4000.\n\n\n5.1.4 Moodle extension\n\n5.1.4.1 1\nA code has five elements: three digits and two letters If the digits of the code are distinct, then the total number of possible codes is equal to : 20 x 10 x 9 x 8 x 26 x 26 10 x 10 x 9 x 8 x 26 x 26 10 x 10 x 9 x 8 x 26 x 25 10 x 9 x 8 x 7 x 26 x 26\nFeedback: We multiply the number of possibilities to place the 2 letters (therefore the 3 digits) among 5 positions: 𝐶_5^2 (= 𝐶_5^3 )=10 , by the number of arrangements without repetition of 3 (distinct) digits 10x9x8 by the number of arrangements with repetition of 2 letters 26x26\n\n\n5.1.4.2 2\nA code has five elements: three digits and two letters If the code begins with the digit 0, then the total number of possible codes is equal to : 26 x 26 x 10 x 10 10 x 26 x 25 x 10 x 9 6 x 26 x 26 x 10 x 10 10 x 26 x 25 x 10 x 9\nFeedback: If the code starts with 0, there are 2 numbers and 2 letters left to place. We multiply the number of possibilities to place the 2 letters (therefore the 2 digits) among 4 positions: 𝐶_4^2=6 , by the number of arrangements with repetition of 2 digits 10x10 by the number of arrangements with repetition of 2 letters 26x26\n\n\n5.1.4.3 3\nA code has five elements: three digits and two letters If the code begins with the letter A, then the total number of possible codes is equal to : 26 x 10 x 10 x 10 26 x 26 x 10 x 10 4 x 26 x 10 x 10 x 10 26 x 10 x 9 x 8\nFeedback: If the code begins with A, there are 1 letter and 3 numbers left to place. We multiply the number of possibilities to place the letter (therefore the 3 digits) among 4 positions: 𝐶_41=(𝐶_43 )=4 , by the number of possible letters 26 by the number of arrangements with repetition of 3 digits 10x10x10\n\n\n5.1.4.4 4\nA code has five elements: three digits and two letters If the code begins with two letters, then the total number of possible codes is equal to : 26 x 25 x 10 x 9 x 8 26 x 25 x 10 x 10 x 10\n26 x 26 x 10 x 10 x 10\n26 x 26 x 10 x 9 x 8\nFeedback: If the code begins with 2 letters, the positions of the 2 letters and the 3 digits are imposed. We just multiply the number of arrangements with repetition of 2 letters 26x26 by the number of arrangements with repetition of 3 digits 10x10x10\n\n\n5.1.4.5 5\nA code is made up of two digits and two letters of the alphabet in all possible orders. Thus, we can deduce that if the digits of the code are distinct, then the total number of possible codes is equal to: 10 x 9 x 26 x 26 6 x 10 x 9 x 26 x 26 12 x 10 x 9 x 26 x 26 4 x 10 x 9 x 26 x 26\nFeedback: We multiply the number of possibilities to place the 2 letters (therefore the 2 digits) among 4 positions: 𝐶_4^2=6 , by the number of arrangements without repetition of 2 (distinct) digits 10x9 by the number of arrangements with repetition of 2 letters 26x26\n\n\n5.1.4.6 6\nA code is made up of two digits and two letters of the alphabet in all possible orders. Thus, we can deduce that if the code begins with the number 0, then the total number of possible codes is equal to: 10 x 26 x 26 2 x 10 x 26 x 26 3 x 10 x 26 x 26 4 x 10 x 26 x 26\nFeedback: If the code starts with 0, there are 1 digits and 2 letters left to place. We multiply the number of possibilities to place the digit (therefore the 2 letters) among 3 positions: 𝐶_3^1 (𝐶_3^2 )=3 , by the number of possible digits: 10 by the number of arrangements with repetition of 2 letters : 26x26\n\n\n5.1.4.7 7\nA code is made up of two digits and two letters of the alphabet in all possible orders. Thus, we can deduce that if the code begins with the letter A, then the total number of possible codes is equal to : 26 x 10 x 10 x 2 26 x 10 x 10 x 3 26 x 10 x 10 x 4 26 x 10 x 10 x 6\nFeedback: If the code begins with A, there are 1 letter and 2 numbers left to place. We multiply the number of possibilities to place the letter (therefore the 2 digits) among 3 positions: 𝐶_31=(𝐶_32 )=3 , by the number of possible letters 26 by the number of arrangements with repetition of 2 digits 10x10\n\n\n5.1.4.8 8\nA code is made up of two digits and two letters of the alphabet in all possible orders. Thus, we can deduce that if the code starts with two letters, then the total number of possible codes is equal to : 26 x 25 x 10 x 10\n26 x 26 x 10 x 10\n26 x 25 x 10 x 9\n26 x 26 x 10 x 9\nFeedback: If the code starts with 2 letters, the positions of the 2 letters and the 2 digits are imposed. We just multiply the number of arrangements with repetition of 2 letters 26x26 by the number of arrangements with repetition of 2 digits 10x10\n\n🏁🏁",
+    "crumbs": [
+      "INFERENTIAL STATISTICS",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Sets and Combinatorial Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "statistical-learning/tidyverse.html",
+    "href": "statistical-learning/tidyverse.html",
+    "title": "6  Tidyverse",
+    "section": "",
+    "text": "6.1 Philosohy\nThe tidyverse approach is to use function names that are descriptive and explicit over those that are short and implicit. There is a focus on verbs (e.g., fit, arrange, etc.) for general methods. Verb-noun pairs are particularly effective; consider invert_matrix() as a hypothetical function name.\nIn the context of modeling, it is also important to avoid highly technical jargon, such as Greek letters or obscure terms in terms. Names should be as self-documenting as possible.",
+    "crumbs": [
+      "STATISTICAL LEARNING",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Tidyverse</span>"
+    ]
+  },
+  {
+    "objectID": "statistical-learning/tidyverse.html#philosohy",
+    "href": "statistical-learning/tidyverse.html#philosohy",
+    "title": "6  Tidyverse",
+    "section": "",
+    "text": "Design for human\n\n\nfunction name\npipe `%&gt;% puis |&gt; depuis R 4.1 = functionale programing\n\n\nreuse existing data structure = dataframe ~ tibble\n\n\n\n\n6.1.1 Data Structure\nWhenever possible, functions should avoid returning a novel [[r.object]], or data structure. This reduces cognitive load, additional syntax or methods.\n[[r.object.data-frame]], more specifically [[r.object.tibble]], is the preferred data structure in the tidyverse and [[t.tidymodels]] packages.",
+    "crumbs": [
+      "STATISTICAL LEARNING",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Tidyverse</span>"
+    ]
+  },
+  {
+    "objectID": "statistical-learning/variance-biais.html",
+    "href": "statistical-learning/variance-biais.html",
+    "title": "7  Variance - Biais Dilemma",
+    "section": "",
+    "text": "bias = underfitting ou sous-interprétation (on ne colle pas au jeu de donnée, on respecte le modèle) varaince = overfitting ou sur-interprétation (on colle trop au jeu de donnée)",
+    "crumbs": [
+      "STATISTICAL LEARNING",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Variance - Biais Dilemma</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/glossary.html",
+    "href": "appendices/glossary.html",
+    "title": "Glossary",
+    "section": "",
+    "text": "Population (population):\nSample (échantillon)",
+    "crumbs": [
+      "Appendices",
+      "Glossary"
+    ]
   }
 ]

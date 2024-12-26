@@ -14,22 +14,23 @@ book:
   
     - part: DESCRIPTIVE STATISTICS
       chapters:
-        - descriptive/dataset.qmd
-        - descriptive/central-tendency.qmd
-        - descriptive/variability.qmd
-        - descriptive/data-visualization.qmd
+        - data.qmd
+        - central-tendency.qmd
+        - variability.qmd
+        - data-visualization.qmd
   
     - part: INFERENTIAL STATISTICS
       chapters: 
-        - inferential/sets-combinatorial-analysis.qmd
+        - sets-combinatorial-analysis.qmd
     
     - part: STATISTICAL LEARNING
       chapters:
-        - statistical-learning/tidyverse.qmd
-        - statistical-learning/variance-biais.qmd
+        - tidyverse.qmd
+        - variance-biais.qmd
+        - workflow.qmd
 
   appendices: 
-    - appendices/glossary.qmd
+    - glossary.qmd
 
 bibliography: references.bib
 

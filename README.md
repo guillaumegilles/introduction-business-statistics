@@ -28,6 +28,7 @@ du modèle pendant la phase de test (variance).
 9. [Mastering Shiny](https://mastering-shiny.org/index.html)
 10. [R Packages](https://r-pkgs.org/)
 
+- [Statistical Inference via Data Science](https://moderndive.com/v2/)
 - Kuhn, M, and K Johnson. 2013. Applied Predictive Modeling. Springer.
 - ———. 2020. Feature Engineering and Selection: A Practical Approach for Predictive Models. CRC Press.
 - [ ] [Maîtrisez les bases des probabilités](https://openclassrooms.com/fr/courses/4525296-maitrisez-les-bases-des-probabilites)

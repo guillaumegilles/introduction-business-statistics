@@ -31,6 +31,7 @@ methods.
 [[r.object.data-frame]], more specifically [[r.object.tibble]], is the
 preferred data structure in the tidyverse and [[t.tidymodels]] packages.
 
+<<<<<<< HEAD:statistical-learning/tidyverse.qmd
 ## Tidymodels
 
 ### Functions conflicts
@@ -54,4 +55,36 @@ An other option is to use the conflicted pacakage where you specify which functi
 ```{r}
 library(conflicted)
 conflict_prefer("filter", winner = "dplyr")
+=======
+### rsample
+
+## [`initial_split()`](https://rsample.tidymodels.org/reference/initial_split.html)
+
+`initial_split` creates a single binary split of the data into a training
+set and testing set. By default, it holds $3/4$ of the data for training
+and the rest for testing. That can be changed by passing the `prop`
+argument. This function generates an `rplit` object, not a data frame.
+The printed output shows the row count for testing, training, and total.
+
+```r
+iris_split <- initial_split(iris, prop = 0.6)
+iris_split
+## <90/60/150>
+```
+
+To access the observations reserved for training, use the `training()`
+function. Similarly, use `testing()` to access the testing data.
+
+```r
+iris_split %>%
+  training() %>%
+  glimpse()
+## Observations: 90
+## Variables: 5
+## $ Sepal.Length <dbl> 5.1, 4.9, 4.7, 4.6, 5.0, 5.4, 4.6, 5.0, 4.9, 5.4, 4…
+## $ Sepal.Width  <dbl> 3.5, 3.0, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 3.1, 3.7, 3…
+## $ Petal.Length <dbl> 1.4, 1.4, 1.3, 1.5, 1.4, 1.7, 1.4, 1.5, 1.5, 1.5, 1…
+## $ Petal.Width  <dbl> 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.1, 0.2, 0…
+## $ Species      <fct> setosa, setosa, setosa, setosa, setosa, setosa, set…
+>>>>>>> c3d38c4 (Modifying files architecture):tidymodels.qmd
 ```
