@@ -1,9 +1,5 @@
 # Introduction {.unnumbered}
 
-
-
-
-
 From the [[satistics.sample]] data, we can calculate a **statistic**. A statistic is a
 number that represents a property of the sample. For example, if we consider
 one math class to be a sample of the [[statistics.population]] of all math
@@ -12,6 +8,7 @@ class at the end of the term is an example of a statistic. The statistic is an
 estimate of a population [[statistics.parameter]], in this case the mean.
 
 ## Model
+
 > Models are mathematical tools that can describe a system and capture
 > relationships in the data given to them. [...] The utility of a model
 > hinges on its ability to be reductive, or to reduce complex

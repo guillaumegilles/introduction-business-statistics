@@ -1,5 +1,14 @@
 # Welcome {.unnumbered}
 
+> Statistics is the science of making decisions under uncertainty
+> --- 1954 - Leonard J. Savage, _The Foundation of Statistics_
+
+The science of **statistics** deals with the collection, analysis,
+interpretation, and presentation of data. We see and use data in our
+everyday lives. The goal of statistics is not to perform numerous
+calculations using the formulas, but to gain an understanding of your
+data.
+
 ::: {layout="[[0.4, 1], [1]]"}
 ![iPhone Weather App](assets/iphone-weather-app.gif)
 
