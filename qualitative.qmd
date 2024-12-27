@@ -2,6 +2,16 @@
 
 ## Visualization
 
-bar chart = on discrete (categorial) variable
+### Frequency tables
+
+#### Relative frequency tables
+
+Two-way relative frequency tables show us percentages rather than counts. They are good for seeing if there is an association between two variables.
+
+### Pie Chart
+
+pie chart no good (https://www.data-to-viz.com/caveat/pie.html) so go for bar chart
+
+### bar chart = on discrete (categorial) variable
 
 ## Computing
