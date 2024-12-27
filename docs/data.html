@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Statistical Learning with R - Introduction</title>
+<title>Statistical Learning with R - 1&nbsp; Data, Sampling, and Variation in Data and Sampling Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -64,7 +30,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./descriptive/dataset.html" rel="next">
+<link href="./qualitative.html" rel="next">
 <link href="./preface.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -146,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html">Introduction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data.html">DESCRIPTIVE STATISTICS</a></li><li class="breadcrumb-item"><a href="./data.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Data, Sampling, and Variation in Data and Sampling Data</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -186,12 +152,6 @@ window.Quarto = {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Introduction</span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
@@ -203,26 +163,20 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./descriptive/dataset.html" class="sidebar-item-text sidebar-link">
+  <a href="./data.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Data, Sampling, and Variation in Data and Sampling Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./descriptive/central-tendency.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Measures of the center of the data</span></span></a>
+  <a href="./qualitative.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Analyzing Qualitative (categorial) Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./descriptive/variability.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Measure of Variability</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./descriptive/data-visualization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Visualization</span></span></a>
+  <a href="./quantitative.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Analyzing Quantitative Data</span></span></a>
   </div>
 </li>
       </ul>
@@ -238,8 +192,8 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inferential/sets-combinatorial-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Sets and Combinatorial Analysis</span></span></a>
+  <a href="./sets-combinatorial-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sets and Combinatorial Analysis</span></span></a>
   </div>
 </li>
       </ul>
@@ -255,14 +209,20 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./statistical-learning/tidyverse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tidyverse</span></span></a>
+  <a href="./tidyverse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Tidyverse</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./statistical-learning/variance-biais.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Variance - Biais Dilemma</span></span></a>
+  <a href="./variance-biais.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Variance - Biais Dilemma</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workflow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Modeling Workflow</span></span></a>
   </div>
 </li>
       </ul>
@@ -278,7 +238,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./appendices/glossary.html" class="sidebar-item-text sidebar-link">
+  <a href="./sampling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Sampmling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Glossary</span></a>
   </div>
 </li>
@@ -294,30 +260,24 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#model" id="toc-model" class="nav-link active" data-scroll-target="#model">Model</a></li>
-  <li><a href="#quest-ce-quun-modèle" id="toc-quest-ce-quun-modèle" class="nav-link" data-scroll-target="#quest-ce-quun-modèle">Qu’est-ce qu’un modèle</a></li>
-  <li><a href="#predictive-models" id="toc-predictive-models" class="nav-link" data-scroll-target="#predictive-models">Predictive Models</a></li>
-  <li><a href="#mechanistic-models" id="toc-mechanistic-models" class="nav-link" data-scroll-target="#mechanistic-models"><em>Mechanistic Models</em></a></li>
-  <li><a href="#empirically-driven-models" id="toc-empirically-driven-models" class="nav-link" data-scroll-target="#empirically-driven-models"><em>empirically driven Models</em></a></li>
-  <li><a href="#inferential-models" id="toc-inferential-models" class="nav-link" data-scroll-target="#inferential-models">Inferential Models</a></li>
-  <li><a href="#statistics" id="toc-statistics" class="nav-link" data-scroll-target="#statistics">Statistics</a></li>
-  <li><a href="#probability" id="toc-probability" class="nav-link" data-scroll-target="#probability">Probability</a></li>
-  <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms">Key Terms</a>
+  <li><a href="#quantitative-data" id="toc-quantitative-data" class="nav-link active" data-scroll-target="#quantitative-data"><span class="header-section-number">1.1</span> Quantitative data</a>
   <ul class="collapse">
-  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables">Variables</a></li>
-  <li><a href="#title-observation" id="toc-title-observation" class="nav-link" data-scroll-target="#title-observation">title: Observation</a></li>
+  <li><a href="#quantitative-discrete-data" id="toc-quantitative-discrete-data" class="nav-link" data-scroll-target="#quantitative-discrete-data"><span class="header-section-number">1.1.1</span> Quantitative discrete data</a></li>
+  <li><a href="#quantitative-continuous-data" id="toc-quantitative-continuous-data" class="nav-link" data-scroll-target="#quantitative-continuous-data"><span class="header-section-number">1.1.2</span> Quantitative continuous data</a></li>
   </ul></li>
-  <li><a href="#population" id="toc-population" class="nav-link" data-scroll-target="#population">Population</a>
+  <li><a href="#qualitative-data" id="toc-qualitative-data" class="nav-link" data-scroll-target="#qualitative-data"><span class="header-section-number">1.2</span> Qualitative data</a></li>
+  <li><a href="#where-does-data-comes-from" id="toc-where-does-data-comes-from" class="nav-link" data-scroll-target="#where-does-data-comes-from"><span class="header-section-number">1.3</span> Where does data comes from?</a>
   <ul class="collapse">
-  <li><a href="#exercices" id="toc-exercices" class="nav-link" data-scroll-target="#exercices">Exercices</a>
-  <ul class="collapse">
-  <li><a href="#example-1" id="toc-example-1" class="nav-link" data-scroll-target="#example-1">Example 1</a></li>
-  <li><a href="#example-2" id="toc-example-2" class="nav-link" data-scroll-target="#example-2">Example 2</a></li>
-  <li><a href="#example-3" id="toc-example-3" class="nav-link" data-scroll-target="#example-3">Example 3</a></li>
+  <li><a href="#population-and-sample" id="toc-population-and-sample" class="nav-link" data-scroll-target="#population-and-sample"><span class="header-section-number">1.3.1</span> Population and Sample</a></li>
+  <li><a href="#statistic-and-parameter" id="toc-statistic-and-parameter" class="nav-link" data-scroll-target="#statistic-and-parameter"><span class="header-section-number">1.3.2</span> Statistic and Parameter</a></li>
   </ul></li>
-  <li><a href="#to-recap" id="toc-to-recap" class="nav-link" data-scroll-target="#to-recap">To recap</a></li>
-  <li><a href="#les-faits-données-quon-possède" id="toc-les-faits-données-quon-possède" class="nav-link" data-scroll-target="#les-faits-données-quon-possède">Les faits : données qu’on possède</a></li>
-  <li><a href="#on-essaye-de-trouver-la-vérité-grâce-à" id="toc-on-essaye-de-trouver-la-vérité-grâce-à" class="nav-link" data-scroll-target="#on-essaye-de-trouver-la-vérité-grâce-à">On essaye de trouver la vérité grâce à</a></li>
+  <li><a href="#is-statistics-accurate-then" id="toc-is-statistics-accurate-then" class="nav-link" data-scroll-target="#is-statistics-accurate-then"><span class="header-section-number">1.4</span> Is statistics accurate then?</a></li>
+  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables"><span class="header-section-number">1.5</span> Variables</a></li>
+  <li><a href="#exercices" id="toc-exercices" class="nav-link" data-scroll-target="#exercices"><span class="header-section-number">1.6</span> Exercices</a>
+  <ul class="collapse">
+  <li><a href="#example-1" id="toc-example-1" class="nav-link" data-scroll-target="#example-1"><span class="header-section-number">1.6.1</span> Example 1</a></li>
+  <li><a href="#example-2" id="toc-example-2" class="nav-link" data-scroll-target="#example-2"><span class="header-section-number">1.6.2</span> Example 2</a></li>
+  <li><a href="#example-3" id="toc-example-3" class="nav-link" data-scroll-target="#example-3"><span class="header-section-number">1.6.3</span> Example 3</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -325,9 +285,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data.html">DESCRIPTIVE STATISTICS</a></li><li class="breadcrumb-item"><a href="./data.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Data, Sampling, and Variation in Data and Sampling Data</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Data, Sampling, and Variation in Data and Sampling Data</span></h1>
 </div>
 
 
@@ -344,110 +304,65 @@ window.Quarto = {
 </header>
 
 
-<blockquote class="blockquote">
-<p>Statistics is the science of making decisions under uncertainty — 1954 - Leonard J. Savage, <em>The Foundation of Statistics</em></p>
-</blockquote>
-<p>The science of <strong>statistics</strong> deals with the collection, analysis, interpretation, and presentation of data. We see and use data in our everyday lives. The goal of statistics is not to perform numerous calculations using the formulas, but to gain an understanding of your data.</p>
-<p>From the [[satistics.sample]] data, we can calculate a <strong>statistic</strong>. A statistic is a number that represents a property of the sample. For example, if we consider one math class to be a sample of the [[statistics.population]] of all math classes, then the average number of points earned by students in that one math class at the end of the term is an example of a statistic. The statistic is an estimate of a population [[statistics.parameter]], in this case the mean.</p>
-<section id="model" class="level2">
-<h2 class="anchored" data-anchor-id="model">Model</h2>
-<blockquote class="blockquote">
-<p>Models are mathematical tools that can describe a system and capture relationships in the data given to them. […] The utility of a model hinges on its ability to be reductive, or to reduce complex relationships to simpler terms. The primary influences in the data can be captured mathematically in a useful way, such as in a relationship that can be expressed as an equation.</p>
-<p><span class="citation" data-cites="978-1492096481">(<a href="#ref-978-1492096481" role="doc-biblioref"><strong>978-1492096481?</strong></a> - Tidy Modeling with R: A Framework for Modeling in the Tidyverse)</span></p>
-</blockquote>
-<p>While this list is not exhaustive, most models falls into at least one of these categories:</p>
-<ol type="1">
-<li>[[math.model.descriptive]]</li>
-<li>[[math.model.inferential]]</li>
-<li>[[math.model.predictive]]</li>
-</ol>
+<p>Before anything else, statistical modeling requires raw materials such as <strong>data</strong>. It is the building blocs of all models. In this chapter you’ll learn to recognize different types of data.</p>
+<p>Data comes in two flavors: <strong>quantitative</strong> and <strong>qualitative</strong>.</p>
+<section id="quantitative-data" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="quantitative-data"><span class="header-section-number">1.1</span> Quantitative data</h2>
+<p>Quantitative data are the result of counting or measuring attributes of a population. Amount of money, pulse rate, weight, number of people living in your town, and number of students who take statistics are examples of quantitative data. Quantitative data may be either <strong>discrete</strong> or <strong>continuous</strong>.</p>
+<section id="quantitative-discrete-data" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="quantitative-discrete-data"><span class="header-section-number">1.1.1</span> Quantitative discrete data</h3>
+<p>All data that are the result of counting are called quantitative discrete data. These data take on only certain numerical values. If you count the number of phone calls you receive for each day of the week, you might get values such as zero, one, two, or three.</p>
 </section>
-<section id="quest-ce-quun-modèle" class="level2">
-<h2 class="anchored" data-anchor-id="quest-ce-quun-modèle">Qu’est-ce qu’un modèle</h2>
-<p>Un modèle est une <strong>version simplifiée d’une partie du monde réel</strong>, dans laquelle des calculs exacts sont possibles. Un modèle est donc un outil pour nous aider à comprendre le monde qui nous entoure. Il permet à nos cerveaux limités d’appréhender des situations réelles de la vie, si complexe qu’on ne peut compendre en intégralité. Aussi, les modèles présentent une couche d’abstraction permettant d’obtenir une version “simplifiée” la réalité <span class="citation" data-cites="mathematics">(<a href="#ref-mathematics" role="doc-biblioref"><strong>mathematics?</strong></a>-a-very-short-introduction)</span>.</p>
+<section id="quantitative-continuous-data" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="quantitative-continuous-data"><span class="header-section-number">1.1.2</span> Quantitative continuous data</h3>
+<p>Data that are not only made up of counting numbers, but that may include fractions, decimals, or irrational numbers, are called quantitative continuous data. Continuous data are often the results of measurements like lengths, weights, or times. A list of the lengths in minutes for all the phone calls that you make in a week, with numbers like <span class="math inline">\(2.4\)</span>, <span class="math inline">\(7.5\)</span>, or <span class="math inline">\(11.0\)</span>, would be quantitative continuous data.</p>
 </section>
-<section id="predictive-models" class="level2">
-<h2 class="anchored" data-anchor-id="predictive-models">Predictive Models</h2>
-<p>desc: &gt;- Sometimes data are modeled to produce the most accurate prediction possible for new data updated: 1733779170804 created: 1733752024603</p>
-<hr>
-<p>For this type of model, the problem type is one of <strong>estimation</strong> rather than inference. For example, the buyer is usually not concerned with a question such as “Will I sell more than 100 copies of book X next month?” but rather “How many copies of book X will customers purchase next month?” <span class="citation" data-cites="kuhnTidyModeling2022">(<a href="#ref-kuhnTidyModeling2022" role="doc-biblioref"><strong>kuhnTidyModeling2022?</strong></a>)</span></p>
 </section>
-<section id="mechanistic-models" class="level2">
-<h2 class="anchored" data-anchor-id="mechanistic-models"><em>Mechanistic Models</em></h2>
+<section id="qualitative-data" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="qualitative-data"><span class="header-section-number">1.2</span> Qualitative data</h2>
+<p>Qualitative data are the result of categorizing or describing attributes of a population. Qualitative data are also often called <strong>categorical data</strong>. Hair color, blood type, ethnic group, the car a person drives, and the street a person lives on are examples of qualitative (categorical) data.</p>
+<p>Qualitative (categorical) data are generally described by words or letters. For instance, hair color might be black, dark brown, light brown, blonde, gray, or red. Blood type might be AB+, O-, or B+. Researchers often prefer to use quantitative data over qualitative (categorical) data because it lends itself more easily to mathematical analysis. For example, it does not make sense to find an average hair color or blood type.</p>
+<p>Qualitative data also comes in 2 flavors:</p>
+<ul>
+<li><strong>Ordinal</strong>: The categories of the variable can be arranged in a natural order, like school grades.<br>
+</li>
+<li><strong>Nominal</strong>: Conversely, nominal qualitative values cannot be ranked in order, like hair color.</li>
+</ul>
 </section>
-<section id="empirically-driven-models" class="level2">
-<h2 class="anchored" data-anchor-id="empirically-driven-models"><em>empirically driven Models</em></h2>
-<p><em>Empirically driven models</em> are created with more vague assumptions. These models tend to fall into the [[ai.ml]] category. A good example is the [[ai.ml.supervised-learning.classification.knn]] model. Given a set o reference data, a new sample is predicted by using the values of the <span class="math inline">\(K\)</span> most similar data in thereference set.</p>
-</section>
-<section id="inferential-models" class="level2">
-<h2 class="anchored" data-anchor-id="inferential-models">Inferential Models</h2>
-<p>desc: &gt;- The goal of an inferential model is to produce a decision for a research question or to explore a specific hypothesis, similar to how statistical tests are used updated: 1733778813696 created: 1733751450382</p>
-<hr>
-<p>With help of [[statistics.inferential]], an inferential model starts with a predefined conjecture, or idea, about a population and produces a statistical conclusion such as an interval estimate or the rejection of a hypothesis.</p>
-<p>For example, the goal of a clinical trial might be to provide confirmation that a new therapy does a better job in prolonging life than an alternative.</p>
-<p>Inferential modeling techniques typically produce some type of probabilistic output, such as [[statistics.inferential.p-value]], [[statistics.inferential.confidence-interval]], or posterior probability <span class="citation" data-cites="kuhnTidyModeling2022">(<a href="#ref-kuhnTidyModeling2022" role="doc-biblioref"><strong>kuhnTidyModeling2022?</strong></a>)</span>.</p>
-<p>[<a href="#statistics">statistics</a>] inference uses [<a href="#probability">probability</a>] to determine how confident we can be that our conclusions are correct. Effective interpretation of data (inference) is based on good procedures for producing data and thoughtful examination of the data.</p>
-</section>
-<section id="statistics" class="level2">
-<h2 class="anchored" data-anchor-id="statistics">Statistics</h2>
-</section>
-<section id="probability" class="level2">
-<h2 class="anchored" data-anchor-id="probability">Probability</h2>
-</section>
-<section id="key-terms" class="level2">
-<h2 class="anchored" data-anchor-id="key-terms">Key Terms</h2>
-<p>individual = people, things</p>
-<p>In statistics, we generally want to study a population. You can think of a population as a collection of persons, things, or objects under study. To study the population, we select a sample. The idea of sampling is to select a portion (or subset) of the larger population and study that portion (the sample) to gain information about the population. Data are the result of sampling from a population.</p>
+<section id="where-does-data-comes-from" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="where-does-data-comes-from"><span class="header-section-number">1.3</span> Where does data comes from?</h2>
+<section id="population-and-sample" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="population-and-sample"><span class="header-section-number">1.3.1</span> Population and Sample</h3>
+<p>In statistics, we generally want to study a population. You can think of a population as a collection of persons, things, or objects under study. To study the population, we select a sample.</p>
 <p>Because it takes a lot of time and money to examine an entire population, sampling is a very practical technique. If you wished to compute the overall grade point average at your school, it would make sense to select a sample of students who attend the school. The data collected from the sample would be the students’ grade point averages. In presidential elections, opinion poll samples of 1,000–2,000 people are taken. The opinion poll is supposed to represent the views of the people in the entire country. Manufacturers of canned carbonated drinks take samples to determine if a 16 ounce can contains 16 ounces of carbonated drink.</p>
-<p>From the sample data, we can calculate a statistic. A statistic is a number that represents a property of the sample. For example, if we consider one math class to be a sample of the population of all math classes, then the average number of points earned by students in that one math class at the end of the term is an example of a statistic. The statistic is an estimate of a population parameter. A parameter is a numerical characteristic of the whole population that can be estimated by a statistic. Since we considered all math classes to be the population, then the average number of points earned per student over all the math classes is an example of a parameter.</p>
-<p>One of the main concerns in the field of statistics is how accurately a statistic estimates a parameter. The accuracy really depends on how well the sample represents the population. The sample must contain the characteristics of the population in order to be a representative sample. We are interested in both the sample statistic and the population parameter in inferential statistics. In a later chapter, we will use the sample statistic to test the validity of the established population parameter.</p>
-<p>A variable, usually notated by capital letters such as X and Y, is a characteristic or measurement that can be determined for each member of a population. Variables may be numerical or categorical. Numerical variables take on values with equal units such as weight in pounds and time in hours. Categorical variables place the person or thing into a category. If we let X equal the number of points earned by one math student at the end of a term, then X is a numerical variable. If we let Y be a person’s party affiliation, then some examples of Y include Republican, Democrat, and Independent. Y is a categorical variable. We could do some math with values of X (calculate the average number of points earned, for example), but it makes no sense to do math with values of Y (calculating an average party affiliation makes no sense).</p>
-<p>Data are the actual values of the variable. They may be numbers or they may be words. Datum is a single value.</p>
-<p>Two words that come up often in statistics are mean and proportion. If you were to take three exams in your math classes and obtain scores of 86, 75, and 92, you would calculate your mean score by adding the three exam scores and dividing by three (your mean score would be 84.3 to one decimal place). If, in your math class, there are 40 students and 22 are men and 18 are women, then the proportion of men students is 2240 and the proportion of women students is 1840 . Mean and proportion are discussed in more detail in later chapters.</p>
-<section id="variables" class="level3">
-<h3 class="anchored" data-anchor-id="variables">Variables</h3>
-<p>A <strong>variable</strong>, usually notated by capital letters such as <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, is a characteristic or measurement that can be determined for each member of a [[statistics.population]]. Variables may be <strong>numerical</strong> or <strong>categorical</strong>:</p>
-<ul>
-<li>Numerical variables take on values with equal units such as weight in pounds and time in hours.</li>
-<li>Categorical variables place the person or thing into a category.</li>
-</ul>
-<p>If we let <span class="math inline">\(X\)</span> equal the number of points earned by one math student at the end of a term, then <span class="math inline">\(X\)</span> is a numerical variable. If we let <span class="math inline">\(Y\)</span> be a person’s party affiliation, then some examples of <span class="math inline">\(Y\)</span> include Republican, Democrat, and Independent. <span class="math inline">\(Y\)</span> is a categorical variable. We could do some math with values of <span class="math inline">\(X\)</span> (calculate the average number of points earned, for example), but it makes no sense to do math with values of <span class="math inline">\(Y\)</span> (calculating an average party affiliation makes no sense).</p>
-<section id="parameter" class="level4">
-<h4 class="anchored" data-anchor-id="parameter">Parameter</h4>
-<p>A parameter is a numerical characteristic of the whole [[statistics.population]] that can be estimated by a [<a href="#statistics">statistics</a>]. Since we considered all math classes to be the population, then the average number of points earned per student over all the math classes is an example of a parameter.</p>
+<p>The idea of sampling is to select a portion (or subset) of the larger population and study that portion (the sample) to gain information about the population.</p>
+<blockquote class="blockquote">
+<p>Data are the result of sampling from a population. You can find more information in the <a href="./sampling.html"></a> section of the appendices.</p>
+</blockquote>
+</section>
+<section id="statistic-and-parameter" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="statistic-and-parameter"><span class="header-section-number">1.3.2</span> Statistic and Parameter</h3>
+<p>From the sample data, we can calculate a <strong>statistic</strong>. A statistic is a number that represents a property of the sample. For example, if we consider one math class to be a sample of the population of all math classes, then the average number of points earned by students in that one math class at the end of the term is an example of a statistic. The statistic is an estimate of a population <strong>parameter</strong>.</p>
+<p>A parameter is a numerical characteristic of the whole population that can be estimated by a statistic. Since we considered all math classes to be the population, then the average number of points earned per student over all the math classes is an example of a parameter.</p>
 </section>
 </section>
-<section id="title-observation" class="level3">
-<h3 class="anchored" data-anchor-id="title-observation">title: Observation</h3>
-<p>desc: ’’ updated: 1729068716853 created: 1729068716853 isDir: false id_imported: yc6x8d3gi8gp5kwe1l4pnns title_imported: Observation desc_imported: ’’ updated_imported: 1711439994897 created_imported: 1711439938863</p>
-<hr>
-<ul>
-<li>Observation : propriété ou thème que l’on cherche à étudier sur les individus de la [[statistics.population]]. La série de ces observations forme ce qui s’appelle une <strong>variable statistique</strong>.</li>
-</ul>
+<section id="is-statistics-accurate-then" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="is-statistics-accurate-then"><span class="header-section-number">1.4</span> Is statistics accurate then?</h2>
+<p>One of the main concerns in the field of statistics is how accurately a statistic estimates a population’s parameter. The accuracy really depends on how well the sample represents the population. The sample must contain the characteristics of the population in order to be arepresentative sample.</p>
 </section>
+<section id="variables" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="variables"><span class="header-section-number">1.5</span> Variables</h2>
+<p>A <strong>variable</strong>, usually notated by capital letters such as <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, is a characteristic or measurement that can be determined for each member of a population. Variables may be quantitative or qualitative (categorical).</p>
+<p>for example, if <span class="math inline">\(X\)</span> equal the number of points earned by one math student at the end of a term, then <span class="math inline">\(X\)</span> is a quantitative variable. If <span class="math inline">\(Y\)</span> be a person’s party affiliation, then some examples of <span class="math inline">\(Y\)</span> include Republican, Democrat, and Independent. <span class="math inline">\(Y\)</span> is a qualitative (categorical) variable. We could do some math with values of <span class="math inline">\(X\)</span> (calculate the average number of points earned, for example), but it makes no sense to do math with values of <span class="math inline">\(Y\)</span> (calculating an average party affiliation makes no sense).</p>
+<p>Data are the actual values of the variable. They may be numbers or they may be words. Lowercase letters like <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span> generally are used to represent data values.</p>
 </section>
-<section id="population" class="level1">
-<h1>Population</h1>
-<p>In [<a href="#statistics">statistics</a>], we generally want to study a population. You can think of a population as a collection of persons, things, or objects under study. To study the population, we select a [[satistics.sample]]. <span class="citation" data-cites="illowskyIntroductoryStatistics2e2023">(<a href="#ref-illowskyIntroductoryStatistics2e2023" role="doc-biblioref"><strong>illowskyIntroductoryStatistics2e2023?</strong></a>)</span></p>
-<section id="exercices" class="level2">
-<h2 class="anchored" data-anchor-id="exercices">Exercices</h2>
-<section id="example-1" class="level3">
-<h3 class="anchored" data-anchor-id="example-1">Example 1</h3>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problem
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<section id="exercices" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="exercices"><span class="header-section-number">1.6</span> Exercices</h2>
+<section id="example-1" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1" class="anchored" data-anchor-id="example-1"><span class="header-section-number">1.6.1</span> Example 1</h3>
 <p>Determine what the key terms refer to in the following study. We want to know the average (mean) amount of money first year college students spend at ABC College on school supplies that do not include books. We randomly surveyed 100 first year students at the college. Three of those students spent $150, $200, and $225, respectively.</p>
-</div>
-</div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -456,7 +371,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>The <strong>population</strong> is all first year students attending ABC College this term.</li>
@@ -470,32 +385,20 @@ Solution
 </div>
 </div>
 </section>
-<section id="example-2" class="level3">
-<h3 class="anchored" data-anchor-id="example-2">Example 2</h3>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problem
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<section id="example-2" class="level3" data-number="1.6.2">
+<h3 data-number="1.6.2" class="anchored" data-anchor-id="example-2"><span class="header-section-number">1.6.2</span> Example 2</h3>
 <p>Determine what the key terms refer to in the following study.</p>
 <p>A study was conducted at a local college to analyze the average cumulative GPA’s of students who graduated last year. For each statement below find the appropriate statistical term.</p>
 <ol type="1">
 <li>The cumulative GPA of one student who graduated from the college last year.</li>
-<li>3.65, 2.80, 1.50, 3.90</li>
+<li><span class="math inline">\(3.65\)</span>, <span class="math inline">\(2.80\)</span>, <span class="math inline">\(1.50\)</span>, <span class="math inline">\(3.90\)</span></li>
 <li>A group of students who graduated from the college last year, randomly selected.</li>
 <li>The average cumulative GPA of students who graduated from the college last year.</li>
 <li>All students who graduated from the college last year.</li>
 <li>the average cumulative GPA of students in the study who graduated from the college last year.</li>
 </ol>
-</div>
-</div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -504,7 +407,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li>Population: <strong>5</strong></li>
@@ -518,18 +421,8 @@ Solution
 </div>
 </div>
 </section>
-<section id="example-3" class="level3">
-<h3 class="anchored" data-anchor-id="example-3">Example 3</h3>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problem
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<section id="example-3" class="level3" data-number="1.6.3">
+<h3 data-number="1.6.3" class="anchored" data-anchor-id="example-3"><span class="header-section-number">1.6.3</span> Example 3</h3>
 <p>Determine what the key terms refer to in the following study.</p>
 <p>As part of a study designed to test the safety of electric automobiles, the National Transportation Safety Board collected and reviewed data about the effects of an automobile crash on test dummies. Here is the criterion they used:</p>
 <table class="table">
@@ -547,10 +440,8 @@ Problem
 </tbody>
 </table>
 <p>Cars with dummies in the front seats were crashed into a wall at a speed of 35 miles per hour. We want to know the proportion of dummies in the driver’s seat that would have had head injuries, if they had been actual drivers. We start with a simple random sample of 75 cars.</p>
-</div>
-</div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -559,7 +450,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>The <strong>population</strong> is all cars containing dummies in the front seat.</li>
@@ -572,69 +463,6 @@ Solution
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="to-recap" class="level2">
-<h2 class="anchored" data-anchor-id="to-recap">To recap</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.1     ✔ tibble    3.2.1
-✔ lubridate 1.9.3     ✔ tidyr     1.3.1
-✔ purrr     1.0.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-</div>
-<pre class="mermaid"><code>flowchart TD;
-    population[Population]==&gt; |a portion (or subset) of the population|sample(Sample);
-    sample --&gt; statistic(Statistic);
-    B --&gt; D;
-    C --&gt; D;</code></pre>
-</section>
-<section id="les-faits-données-quon-possède" class="level2">
-<h2 class="anchored" data-anchor-id="les-faits-données-quon-possède">Les faits : données qu’on possède</h2>
-<ol type="1">
-<li>Échantillon (<em>sample</em>) : sous-ensemble de la population - [[cs.data]]</li>
-<li>Observation : un individu ou objet de l’échantillon</li>
-<li>Statistiques : résultats déduient des données recueillis dans l’échantillon</li>
-</ol>
-</section>
-<section id="on-essaye-de-trouver-la-vérité-grâce-à" class="level2">
-<h2 class="anchored" data-anchor-id="on-essaye-de-trouver-la-vérité-grâce-à">On essaye de trouver la vérité grâce à</h2>
-<ol type="1">
-<li>Hypothèse : affirmation provisoire décrivant ce que les paramètres pourrait être</li>
-<li>Estimation : processus pour estimer la valeur d’un paramètre de la population</li>
-</ol>
-<p>title: Qualitative Data desc: ’’ updated: 1733775757555 created: 1729068716853 isDir: false id_imported: pcxq3hqvlncj80wqe7zbwdv title_imported: Qualitative Data desc_imported: ’’ updated_imported: 1711442135283 created_imported: 1711441971532</p>
-<hr>
-<p>Une variable non numérique est dite <strong>qualitative</strong>, par exemple, la couleur des yeux, les opinions politiques, etc. Les variables qualitatives peuvent être :</p>
-<ul>
-<li><strong>Ordianle</strong> : les modalités des variables peuvent être dans un certain ordre naturel.</li>
-<li><strong>Nominale</strong> : à l’inverse les valeurs qualitatives nominales ne peuvent être classé par ordre.</li>
-</ul>
-<p>Qualitative data are the result of categorizing or describing attributes of a [[statistics.population]]. Qualitative data are also often called categorical data. Hair color, blood type, ethnic group, the car a person drives, and the street a person lives on are examples of qualitative data. Qualitative data are generally described by words or letters. For instance, hair color might be black, dark brown, light brown, blonde, gray, or red. Blood type might be AB+, O-, or B+. Researchers often prefer to use quantitative data over qualitative data because it lends itself more easily to mathematical analysis. For example, it does not make sense to find an average hair color or blood type.</p>
-<p>[[illowskyintroductorystatistics2e2023]]</p>
-<p>Qualitatives (<em>categorial data</em>) : données labellisées, comme <em>faible</em>, <em>moyen</em>, <em>fort</em>. En modélisation, la prédiction de données qualitatives est un problème de [[ds.ml.sl.class]]</p>
-<p>title: Quantitative Data desc: ’’ updated: 1729068716853 created: 1729068716853 isDir: false id_imported: 31ii7vbpbrtrfe5gmpndrj7 title_imported: Quantitative Data desc_imported: ’’ updated_imported: 1711442316007 created_imported: 1711442250571</p>
-<hr>
-<p>Une variable numérique est appelée <strong>quantitative</strong>, c’est-à-dire qu’elle est mesurable. Les variables quantitatives peuvent être :</p>
-<ul>
-<li><strong>Continue</strong> : elle peuvent prendre toute les valeurs d’intervalle fini ou infini, par exemple, les salaires, la taille du pièce, etc.</li>
-<li><strong>Discrète</strong> ou <strong>discontinue</strong> : la variable discrète ne prend que des valeurs isolées les unes des autres, par exemple, le nombre d’enfants d’une famille ne peut être que 0, ou 1, ou 2, ou 3, etc.</li>
-</ul>
-<p>Quantitative data are always numbers. Quantitative data are the result of counting or measuring attributes of a population. Amount of money, pulse rate, weight, number of people living in your town, and number of students who take statistics are examples of quantitative data. Quantitative data may be either discrete or continuous.</p>
-<p>All data that are the result of counting are called quantitative discrete data. These data take on only certain numerical values. If you count the number of phone calls you receive for each day of the week, you might get values such as zero, one, two, or three.</p>
-<p>Data that are not only made up of counting numbers, but that may include fractions, decimals, or irrational numbers, are called quantitative continuous data. Continuous data are often the results of measurements like lengths, weights, or times. A list of the lengths in minutes for all the phone calls that you make in a week, with numbers like 2.4, 7.5, or 11.0, would be quantitative continuous data.</p>
-<p><span class="citation" data-cites="illowskyIntroductoryStatistics2e2023">(<a href="#ref-illowskyIntroductoryStatistics2e2023" role="doc-biblioref"><strong>illowskyIntroductoryStatistics2e2023?</strong></a>)</span></p>
-<ol type="1">
-<li>Quantitatives (<em>continuous data</em>) : données chiffrées. Les algorithmes [[ds.ml.sl.reg]] permettent de prédire les données quantitatives ;</li>
-</ol>
 
 
 </section>
@@ -1174,8 +1002,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./descriptive/dataset.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>Data, Sampling, and Variation in Data and Sampling Data</span>">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Data, Sampling, and Variation in Data and Sampling Data</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./qualitative.html" class="pagination-link" aria-label="<span class='chapter-number'>2</span>&nbsp; <span class='chapter-title'>Analyzing Qualitative (categorial) Data</span>">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Analyzing Qualitative (categorial) Data</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

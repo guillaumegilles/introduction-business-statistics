@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./data.html" rel="next">
 <link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -71,10 +91,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -123,12 +172,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
@@ -140,26 +183,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./descriptive/dataset.html" class="sidebar-item-text sidebar-link">
+  <a href="./data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Data, Sampling, and Variation in Data and Sampling Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./descriptive/central-tendency.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Measures of the center of the data</span></span></a>
+  <a href="./qualitative.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Analyzing Qualitative (categorial) Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./descriptive/variability.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Measure of Variability</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./descriptive/data-visualization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Visualization</span></span></a>
+  <a href="./quantitative.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Analyzing Quantitative Data</span></span></a>
   </div>
 </li>
       </ul>
@@ -175,8 +212,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inferential/sets-combinatorial-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Sets and Combinatorial Analysis</span></span></a>
+  <a href="./sets-combinatorial-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sets and Combinatorial Analysis</span></span></a>
   </div>
 </li>
       </ul>
@@ -192,14 +229,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./statistical-learning/tidyverse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tidyverse</span></span></a>
+  <a href="./tidyverse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Tidyverse</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./statistical-learning/variance-biais.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Variance - Biais Dilemma</span></span></a>
+  <a href="./variance-biais.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Variance - Biais Dilemma</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workflow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Modeling Workflow</span></span></a>
   </div>
 </li>
       </ul>
@@ -215,7 +258,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./appendices/glossary.html" class="sidebar-item-text sidebar-link">
+  <a href="./sampling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Sampmling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Glossary</span></a>
   </div>
 </li>
@@ -227,10 +276,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#but-wait-i-understant-statistics-but-what-is-statistical-modeling" id="toc-but-wait-i-understant-statistics-but-what-is-statistical-modeling" class="nav-link active" data-scroll-target="#but-wait-i-understant-statistics-but-what-is-statistical-modeling">But wait, I understant statistics… but what is statistical modeling?</a></li>
+  <li><a href="#descriptive-models" id="toc-descriptive-models" class="nav-link" data-scroll-target="#descriptive-models">Descriptive Models</a></li>
+  <li><a href="#inferential-models" id="toc-inferential-models" class="nav-link" data-scroll-target="#inferential-models">Inferential Models</a></li>
+  <li><a href="#predictive-models" id="toc-predictive-models" class="nav-link" data-scroll-target="#predictive-models">Predictive Models</a>
+  <ul class="collapse">
+  <li><a href="#mechanistic-models" id="toc-mechanistic-models" class="nav-link" data-scroll-target="#mechanistic-models">Mechanistic Models</a></li>
+  <li><a href="#empirically-driven-models" id="toc-empirically-driven-models" class="nav-link" data-scroll-target="#empirically-driven-models">Empirically driven Models</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -251,8 +313,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>I have written this website form book in order to fully embrace statistics and modeling. This is a personnal project spanning for several months (years?). It took me uncountable number of hour of reading materials and studying to figure out the chapters arrangement</p>
+<p>I took the opportunity to build this book interactive as possible, using the capabilities that websites provides. Hence, a physical copy of this book is, in my opinion, impossible to replicate the same experience.</p>
+<p>I hope you find the content useful.</p>
+<section id="but-wait-i-understant-statistics-but-what-is-statistical-modeling" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="but-wait-i-understant-statistics-but-what-is-statistical-modeling">But wait, I understant statistics… but what is statistical modeling?</h2>
+<p>A model is a <strong>simplified version of a part of the real world</strong> in which precise calculations are possible. A model is therefore a mathematical tool to help us understand the world around us. It enables our limited brains to grasp real-life situations that are so complex they cannot be fully comprehended. Additionally, models introduce a layer of abstraction that provides a “simplified version of reality” <span class="citation" data-cites="gowersMathematicsVeryShort2002">(<a href="#ref-gowersMathematicsVeryShort2002" role="doc-biblioref">Gowers 2002</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-gowersMathematicsVeryShort2002" class="csl-entry" role="listitem">
+Gowers, Timothy. 2002. <em>Mathematics: A Very Short Introduction</em>. Very Short Introductions 66. Oxford ; New York: Oxford University Press.
+</div></div><p>While this list is not exhaustive, most statistical models falls into at least one of these 3 categories <span class="citation" data-cites="kuhnTidyModelingFramework2022">(<a href="#ref-kuhnTidyModelingFramework2022" role="doc-biblioref">Kuhn and Silge 2022</a>)</span>:</p>
+<ol type="1">
+<li>Descriptive</li>
+<li>Inferential</li>
+<li>Predictive</li>
+</ol>
+</section>
+<section id="descriptive-models" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="descriptive-models">Descriptive Models</h2>
+<p>The purpose of a descriptive model is to describe or illustrate characteristics of some data. The analysis might have no other purpose than to visually emphasize some trend or artifact in the data <span class="citation" data-cites="kuhnTidyModelingFramework2022">(<a href="#ref-kuhnTidyModelingFramework2022" role="doc-biblioref">Kuhn and Silge 2022</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-illowskyIntroductoryStatistics2e2023" class="csl-entry" role="listitem">
+Illowsky, Barbara, and Susan Dean. 2023. <em>Introductory <span>Statistics</span> 2e</em>. Openstax.
+</div></div><p>Organizing and summarizing data is called descriptive statistics. Two ways to summarize data are by graphing and by using numbers (for example, average) <span class="citation" data-cites="illowskyIntroductoryStatistics2e2023">(<a href="#ref-illowskyIntroductoryStatistics2e2023" role="doc-biblioref">Illowsky and Dean 2023</a>)</span>.</p>
+</section>
+<section id="inferential-models" class="level2">
+<h2 class="anchored" data-anchor-id="inferential-models">Inferential Models</h2>
+<p>The goal of an inferential model is to produce a decision for a research question or to explore a specific hypothesis, similar to how statistical tests are used</p>
+<p>An inferential model starts with a predefined conjecture, or idea, about a population and produces a statistical conclusion such as an interval estimate or the rejection of a hypothesis. For example, the goal of a clinical trial might be to provide confirmation that a new therapy does a better job in prolonging life than an alternative.</p>
+<p>Inferential model uses probability to determine how confident you can be that your conclusions are correct. Effective interpretation of data (inference) is based on good procedures for producing data and thoughtful examination of the data.</p>
+</section>
+<section id="predictive-models" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="predictive-models">Predictive Models</h2>
+<p>Sometimes data are modeled to produce the most accurate prediction possible for new data.</p>
+<p>For this type of model, the problem type is one of <strong>estimation</strong> rather than inference. For example, the buyer is usually not concerned with a question such as “Will I sell more than 100 copies of book X next month?” but rather “How many copies of book X will customers purchase next month? <span class="citation" data-cites="kuhnTidyModelingFramework2022">(<a href="#ref-kuhnTidyModelingFramework2022" role="doc-biblioref">Kuhn and Silge 2022</a>)</span>”</p>
+<div class="no-row-height column-margin column-container"><div id="ref-kuhnTidyModelingFramework2022" class="csl-entry" role="listitem">
+Kuhn, Max, and Julia Silge. 2022. <em>Tidy Modeling with <span>R</span>: A Framework for Modeling in the Tidyverse</em>. Sebastopol, CA: O’Reilly Media.
+</div></div><section id="mechanistic-models" class="level3">
+<h3 class="anchored" data-anchor-id="mechanistic-models">Mechanistic Models</h3>
+</section>
+<section id="empirically-driven-models" class="level3">
+<h3 class="anchored" data-anchor-id="empirically-driven-models">Empirically driven Models</h3>
+<p>Empirically driven models are created with more vague assumptions. These models tend to fall into the machine learning category. A good example is the <em>K</em>-nearest neighbor (KNN) model. Given a set of reference data, a new sample is predicted by using the values of the <span class="math inline">\(K\)</span> most similar data in thereference set.</p>
 
 
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -788,8 +893,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <span class="nav-page-text">Introduction</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./data.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>Data, Sampling, and Variation in Data and Sampling Data</span>">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Data, Sampling, and Variation in Data and Sampling Data</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -18,10 +18,10 @@ precise calculations are possible. A model is therefore a mathematical
 tool to help us understand the world around us. It enables our limited
 brains to grasp real-life situations that are so complex they cannot be
 fully comprehended. Additionally, models introduce a layer of abstraction
-that provides a "simplified" version of reality" [@mathematics:-a-very-short-introduction].
+that provides a "simplified version of reality" [@gowersMathematicsVeryShort2002].
 
 While this list is not exhaustive, most statistical models falls into at
-least one of these 3 categories [@978-1492096481 - Tidy Modeling with R: A Framework for Modeling in the Tidyverse]:
+least one of these 3 categories [@kuhnTidyModelingFramework2022]:
 
 1. Descriptive
 2. Inferential
@@ -31,7 +31,7 @@ least one of these 3 categories [@978-1492096481 - Tidy Modeling with R: A Frame
 
 The purpose of a descriptive model is to describe or illustrate
 characteristics of some data. The analysis might have no other purpose
-than to visually emphasize some trend or artifact in the data [@978-1492096481kuhnTidyModeling2022].
+than to visually emphasize some trend or artifact in the data [@kuhnTidyModelingFramework2022].
 
 Organizing and summarizing data is called descriptive statistics. Two
 ways to summarize data are by graphing and by using numbers (for example,
@@ -62,9 +62,8 @@ possible for new data.
 For this type of model, the problem type is one of **estimation** rather
 than inference. For example, the buyer is usually not concerned with a
 question such as “Will I sell more than 100 copies of book X next month?”
-but rather “How many copies of book X will customers purchase next month?”
-
-[@kuhnTidyModeling2022]
+but rather “How many copies of book X will customers purchase next month?
+[@kuhnTidyModelingFramework2022]”
 
 ### Mechanistic Models
 
