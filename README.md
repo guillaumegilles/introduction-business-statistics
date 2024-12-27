@@ -1,7 +1,7 @@
 ## TODOs
 
-- [ ] Embedded shiny app into a webpage pour faire les QCM
 - [ ] Create a glossary of all term with their appropriate mathematicl notation
+- [ ] Trouver un dataset pour créer un fil rouge tout au long du livre
 
 ## Materials
 
